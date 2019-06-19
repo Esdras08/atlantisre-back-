@@ -1,0 +1,1278 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="Inexa.Atlantis.Re.Dal.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2012" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:devart="http://devart.com/schemas/edml/StorageSchemaExtensions/1.0" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityContainer Name="BD_ATLANTIS_RE_EntitiesStoreContainer">
+    <EntitySet Name="Affaires" EntityType="Inexa.Atlantis.Re.Dal.Store.Affaire" store:Type="Tables" Schema="dbo" Table="Affaire" />
+    <EntitySet Name="Assures" EntityType="Inexa.Atlantis.Re.Dal.Store.Assure" store:Type="Tables" Schema="dbo" Table="Assure" />
+    <EntitySet Name="Branches" EntityType="Inexa.Atlantis.Re.Dal.Store.Branche" store:Type="Tables" Schema="dbo" Table="Branche" />
+    <EntitySet Name="DeclarationSinistres" EntityType="Inexa.Atlantis.Re.Dal.Store.DeclarationSinistre" store:Type="Tables" Schema="dbo" Table="DeclarationSinistre" />
+    <EntitySet Name="DemandePlacementFacultatives" EntityType="Inexa.Atlantis.Re.Dal.Store.DemandePlacementFacultative" store:Type="Tables" Schema="dbo" Table="DemandePlacementFacultative" />
+    <EntitySet Name="Devises" EntityType="Inexa.Atlantis.Re.Dal.Store.Devise" store:Type="Tables" Schema="dbo" Table="Devise" />
+    <EntitySet Name="DocumentEchanges" EntityType="Inexa.Atlantis.Re.Dal.Store.DocumentEchange" store:Type="Tables" Schema="dbo" Table="DocumentEchange" />
+    <EntitySet Name="DomaineActivites" EntityType="Inexa.Atlantis.Re.Dal.Store.DomaineActivite" store:Type="Tables" Schema="dbo" Table="DomaineActivite" />
+    <EntitySet Name="Echanges" EntityType="Inexa.Atlantis.Re.Dal.Store.Echange" store:Type="Tables" Schema="dbo" Table="Echange" />
+    <EntitySet Name="EtapeProcessus" EntityType="Inexa.Atlantis.Re.Dal.Store.EtapeProcessus" store:Type="Tables" Schema="dbo" Table="EtapeProcessus" />
+    <EntitySet Name="Filiales" EntityType="Inexa.Atlantis.Re.Dal.Store.Filiale" store:Type="Tables" Schema="dbo" Table="Filiale" />
+    <EntitySet Name="Fonctionnalites" EntityType="Inexa.Atlantis.Re.Dal.Store.Fonctionnalite" store:Type="Tables" Schema="dbo" Table="Fonctionnalite" />
+    <EntitySet Name="FormeJuridiques" EntityType="Inexa.Atlantis.Re.Dal.Store.FormeJuridique" store:Type="Tables" Schema="dbo" Table="FormeJuridique" />
+    <EntitySet Name="HistoriqueLigneSchemasPlacements" EntityType="Inexa.Atlantis.Re.Dal.Store.HistoriqueLigneSchemasPlacement" store:Type="Tables" Schema="dbo" Table="HistoriqueLigneSchemasPlacement" />
+    <EntitySet Name="HistoriqueLigneTableauRepartitionCharges" EntityType="Inexa.Atlantis.Re.Dal.Store.HistoriqueLigneTableauRepartitionCharge" store:Type="Tables" Schema="dbo" Table="HistoriqueLigneTableauRepartitionCharge" />
+    <EntitySet Name="InterlocuteurFiliales" EntityType="Inexa.Atlantis.Re.Dal.Store.InterlocuteurFiliale" store:Type="Tables" Schema="dbo" Table="InterlocuteurFiliale" />
+    <EntitySet Name="InterlocuteurReassureurs" EntityType="Inexa.Atlantis.Re.Dal.Store.InterlocuteurReassureur" store:Type="Tables" Schema="dbo" Table="InterlocuteurReassureur" />
+    <EntitySet Name="LigneRepartitionCharges" EntityType="Inexa.Atlantis.Re.Dal.Store.LigneRepartitionCharge" store:Type="Tables" Schema="dbo" Table="LigneRepartitionCharge" />
+    <EntitySet Name="LigneSchemasPlacements" EntityType="Inexa.Atlantis.Re.Dal.Store.LigneSchemasPlacement" store:Type="Tables" Schema="dbo" Table="LigneSchemasPlacement" />
+    <EntitySet Name="MailParametres" EntityType="Inexa.Atlantis.Re.Dal.Store.MailParametre" store:Type="Tables" Schema="dbo" Table="MailParametre" />
+    <EntitySet Name="MouvementTresoreries" EntityType="Inexa.Atlantis.Re.Dal.Store.MouvementTresorerie" store:Type="Tables" Schema="dbo" Table="MouvementTresorerie" />
+    <EntitySet Name="Pays" EntityType="Inexa.Atlantis.Re.Dal.Store.Pays" store:Type="Tables" Schema="dbo" Table="Pays" />
+    <EntitySet Name="Personnes" EntityType="Inexa.Atlantis.Re.Dal.Store.Personne" store:Type="Tables" Schema="dbo" Table="Personne" />
+    <EntitySet Name="Processus" EntityType="Inexa.Atlantis.Re.Dal.Store.Processus" store:Type="Tables" Schema="dbo" Table="Processus" />
+    <EntitySet Name="Professions" EntityType="Inexa.Atlantis.Re.Dal.Store.Profession" store:Type="Tables" Schema="dbo" Table="Profession" />
+    <EntitySet Name="Profils" EntityType="Inexa.Atlantis.Re.Dal.Store.Profil" store:Type="Tables" Schema="dbo" Table="Profil" />
+    <EntitySet Name="ProfilFonctionnalites" EntityType="Inexa.Atlantis.Re.Dal.Store.ProfilFonctionnalite" store:Type="Tables" Schema="dbo" Table="ProfilFonctionnalite" />
+    <EntitySet Name="ProfilFonctionnaliteHistos" EntityType="Inexa.Atlantis.Re.Dal.Store.ProfilFonctionnaliteHisto" store:Type="Tables" Schema="dbo" Table="ProfilFonctionnaliteHisto" />
+    <EntitySet Name="Reassureurs" EntityType="Inexa.Atlantis.Re.Dal.Store.Reassureur" store:Type="Tables" Schema="dbo" Table="Reassureur" />
+    <EntitySet Name="SchemasPlacements" EntityType="Inexa.Atlantis.Re.Dal.Store.SchemasPlacement" store:Type="Tables" Schema="dbo" Table="SchemasPlacement" />
+    <EntitySet Name="SecteurActivites" EntityType="Inexa.Atlantis.Re.Dal.Store.SecteurActivite" store:Type="Tables" Schema="dbo" Table="SecteurActivite" />
+    <EntitySet Name="SituationMatrimoniales" EntityType="Inexa.Atlantis.Re.Dal.Store.SituationMatrimoniale" store:Type="Tables" Schema="dbo" Table="SituationMatrimoniale" />
+    <EntitySet Name="StatutAffaires" EntityType="Inexa.Atlantis.Re.Dal.Store.StatutAffaire" store:Type="Tables" Schema="dbo" Table="StatutAffaire" />
+    <EntitySet Name="StatutMouvements" EntityType="Inexa.Atlantis.Re.Dal.Store.StatutMouvement" store:Type="Tables" Schema="dbo" Table="StatutMouvement" />
+    <EntitySet Name="SuiviProcessus" EntityType="Inexa.Atlantis.Re.Dal.Store.SuiviProcessus" store:Type="Tables" Schema="dbo" Table="SuiviProcessus" />
+    <EntitySet Name="SysComplexiteMotDePasses" EntityType="Inexa.Atlantis.Re.Dal.Store.SysComplexiteMotDePasse" store:Type="Tables" Schema="dbo" Table="SysComplexiteMotDePasse" />
+    <EntitySet Name="SysLogs" EntityType="Inexa.Atlantis.Re.Dal.Store.SysLog" store:Type="Tables" Schema="dbo" Table="SysLog" />
+    <EntitySet Name="SysMailBoxes" EntityType="Inexa.Atlantis.Re.Dal.Store.SysMailBox" store:Type="Tables" Schema="dbo" Table="SysMailBox" />
+    <EntitySet Name="SysNotifications" EntityType="Inexa.Atlantis.Re.Dal.Store.SysNotification" store:Type="Tables" Schema="dbo" Table="SysNotification" />
+    <EntitySet Name="SysObjets" EntityType="Inexa.Atlantis.Re.Dal.Store.SysObjet" store:Type="Tables" Schema="dbo" Table="SysObjet" />
+    <EntitySet Name="SysStrategieMotDePasses" EntityType="Inexa.Atlantis.Re.Dal.Store.SysStrategieMotDePasse" store:Type="Tables" Schema="dbo" Table="SysStrategieMotDePasse" />
+    <EntitySet Name="SysStrategieMotDePasseHistos" EntityType="Inexa.Atlantis.Re.Dal.Store.SysStrategieMotDePasseHisto" store:Type="Tables" Schema="dbo" Table="SysStrategieMotDePasseHisto" />
+    <EntitySet Name="TableauRepartitionCharges" EntityType="Inexa.Atlantis.Re.Dal.Store.TableauRepartitionCharge" store:Type="Tables" Schema="dbo" Table="TableauRepartitionCharge" />
+    <EntitySet Name="Termes" EntityType="Inexa.Atlantis.Re.Dal.Store.Terme" store:Type="Tables" Schema="dbo" Table="Terme" />
+    <EntitySet Name="TermeTraites" EntityType="Inexa.Atlantis.Re.Dal.Store.TermeTraite" store:Type="Tables" Schema="dbo" Table="TermeTraite" />
+    <EntitySet Name="Traces" EntityType="Inexa.Atlantis.Re.Dal.Store.Trace" store:Type="Tables" Schema="dbo" Table="Trace" />
+    <EntitySet Name="Traites" EntityType="Inexa.Atlantis.Re.Dal.Store.Traite" store:Type="Tables" Schema="dbo" Table="Traite" />
+    <EntitySet Name="TypeEchanges" EntityType="Inexa.Atlantis.Re.Dal.Store.TypeEchange" store:Type="Tables" Schema="dbo" Table="TypeEchange" />
+    <EntitySet Name="TypePersonnes" EntityType="Inexa.Atlantis.Re.Dal.Store.TypePersonne" store:Type="Tables" Schema="dbo" Table="TypePersonne" />
+    <EntitySet Name="TypeProcessus" EntityType="Inexa.Atlantis.Re.Dal.Store.TypeProcessus" store:Type="Tables" Schema="dbo" Table="TypeProcessus" />
+    <EntitySet Name="Utilisateurs" EntityType="Inexa.Atlantis.Re.Dal.Store.Utilisateur" store:Type="Tables" Schema="dbo" Table="Utilisateur" />
+    <EntitySet Name="UtilisateurFonctionnalites" EntityType="Inexa.Atlantis.Re.Dal.Store.UtilisateurFonctionnalite" store:Type="Tables" Schema="dbo" Table="UtilisateurFonctionnalite" />
+    <EntitySet Name="UtilisateurFonctionnaliteHistos" EntityType="Inexa.Atlantis.Re.Dal.Store.UtilisateurFonctionnaliteHisto" store:Type="Tables" Schema="dbo" Table="UtilisateurFonctionnaliteHisto" />
+    <EntitySet Name="UtilisateurFonctionnalitePrives" EntityType="Inexa.Atlantis.Re.Dal.Store.UtilisateurFonctionnalitePrive" store:Type="Tables" Schema="dbo" Table="UtilisateurFonctionnalitePrive" />
+    <EntitySet Name="UtilisateurFonctionnalitePriveHistos" EntityType="Inexa.Atlantis.Re.Dal.Store.UtilisateurFonctionnalitePriveHisto" store:Type="Tables" Schema="dbo" Table="UtilisateurFonctionnalitePriveHisto" />
+    <EntitySet Name="UtilisateurHistos" EntityType="Inexa.Atlantis.Re.Dal.Store.UtilisateurHisto" store:Type="Tables" Schema="dbo" Table="UtilisateurHisto" />
+    <EntitySet Name="UtilisateurProfils" EntityType="Inexa.Atlantis.Re.Dal.Store.UtilisateurProfil" store:Type="Tables" Schema="dbo" Table="UtilisateurProfil" />
+    <EntitySet Name="UtilisateurProfilHistos" EntityType="Inexa.Atlantis.Re.Dal.Store.UtilisateurProfilHisto" store:Type="Tables" Schema="dbo" Table="UtilisateurProfilHisto" />
+    <EntitySet Name="UtilisateurRestrictions" EntityType="Inexa.Atlantis.Re.Dal.Store.UtilisateurRestriction" store:Type="Tables" Schema="dbo" Table="UtilisateurRestriction" />
+    <EntitySet Name="UtilisateurRestrictionHistos" EntityType="Inexa.Atlantis.Re.Dal.Store.UtilisateurRestrictionHisto" store:Type="Tables" Schema="dbo" Table="UtilisateurRestrictionHisto" />
+    <EntitySet Name="UtilisateurSessions" EntityType="Inexa.Atlantis.Re.Dal.Store.UtilisateurSession" store:Type="Tables" Schema="dbo" Table="UtilisateurSession" />
+    <EntitySet Name="ViewSysStrategieMotDePasses" EntityType="Inexa.Atlantis.Re.Dal.Store.ViewSysStrategieMotDePasse" store:Type="Views" Schema="dbo" Table="ViewSysStrategieMotDePasse" />
+    <EntitySet Name="ViewUtilisateurs" EntityType="Inexa.Atlantis.Re.Dal.Store.ViewUtilisateur" store:Type="Views" Schema="dbo" Table="ViewUtilisateur" />
+    <EntitySet Name="ViewUtilisateurProfils" EntityType="Inexa.Atlantis.Re.Dal.Store.ViewUtilisateurProfil" store:Type="Views" Schema="dbo" Table="ViewUtilisateurProfil" />
+    <EntitySet Name="ViewUtilisateurRestrictions" EntityType="Inexa.Atlantis.Re.Dal.Store.ViewUtilisateurRestriction" store:Type="Views" Schema="dbo" Table="ViewUtilisateurRestriction" />
+    <EntitySet Name="Structures" EntityType="Inexa.Atlantis.Re.Dal.Store.Structure" store:Type="Tables" Schema="dbo" Table="Structure" />
+    <EntitySet Name="Civilites" EntityType="Inexa.Atlantis.Re.Dal.Store.Civilite" store:Type="Tables" Schema="dbo" Table="Civilite" />
+    <EntitySet Name="TypePieceIdentites" EntityType="Inexa.Atlantis.Re.Dal.Store.TypePieceIdentite" store:Type="Tables" Schema="dbo" Table="TypePieceIdentite" />
+    <EntitySet Name="CategorieProcessus" EntityType="Inexa.Atlantis.Re.Dal.Store.CategorieProcessus" store:Type="Tables" Schema="dbo" Table="CategorieProcessus" />
+    <AssociationSet Name="FK__Structure__idDev__75E27017" Association="Inexa.Atlantis.Re.Dal.Store.FK__Structure__idDev__75E27017">
+      <End Role="Devise" EntitySet="Devises" />
+      <End Role="Structure" EntitySet="Structures" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Structure__idPay__76D69450" Association="Inexa.Atlantis.Re.Dal.Store.FK__Structure__idPay__76D69450">
+      <End Role="Pays" EntitySet="Pays" />
+      <End Role="Structure" EntitySet="Structures" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="Affaire">
+    <Key>
+      <PropertyRef Name="IdAffaire" />
+    </Key>
+    <Property Name="IdAffaire" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="NumeroOrdre" Type="varchar" MaxLength="50" />
+    <Property Name="NumeroPolice" Type="varchar" MaxLength="50" />
+    <Property Name="CapitauxAssure" Type="money" />
+    <Property Name="Activite" Type="varchar" MaxLength="250" />
+    <Property Name="IdStatutAffaire" Type="bigint" />
+    <Property Name="IdBranche" Type="bigint" />
+    <Property Name="IdFiliale" Type="bigint" />
+    <Property Name="IdAssure" Type="bigint" />
+    <Property Name="IsDeleted" Type="bit" Nullable="false" />
+    <Property Name="DateCreation" Type="datetime" />
+    <Property Name="DateMAJ" Type="datetime" />
+    <Property Name="DataKey" Type="varchar" MaxLength="50" />
+    <Property Name="CreatedBy" Type="bigint" Nullable="false" />
+    <Property Name="ModifiedBy" Type="bigint" />
+  </EntityType>
+  <EntityType Name="Assure">
+    <Key>
+      <PropertyRef Name="IdAssure" />
+    </Key>
+    <Property Name="IdAssure" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="NumeroAssure" Type="varchar" MaxLength="250" />
+    <Property Name="IdFiliale" Type="bigint" />
+    <Property Name="IdPersonne" Type="bigint" />
+    <Property Name="IsDeleted" Type="bit" Nullable="false" />
+    <Property Name="DateCreation" Type="datetime" />
+    <Property Name="DateMAJ" Type="datetime" />
+    <Property Name="DataKey" Type="varchar" MaxLength="50" />
+    <Property Name="CreatedBy" Type="bigint" />
+    <Property Name="ModifiedBy" Type="bigint" />
+  </EntityType>
+  <EntityType Name="Branche">
+    <Key>
+      <PropertyRef Name="IdBranche" />
+    </Key>
+    <Property Name="IdBranche" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Libelle" Type="varchar" MaxLength="250" />
+    <Property Name="Description" Type="varbinary" MaxLength="250" />
+    <Property Name="Code" Type="varchar" MaxLength="50" />
+    <Property Name="IsDeleted" Type="bit" Nullable="false" />
+    <Property Name="DateCreation" Type="datetime" />
+    <Property Name="DateMAJ" Type="datetime" />
+    <Property Name="DataKey" Type="varchar" MaxLength="50" />
+    <Property Name="CreatedBy" Type="bigint" />
+    <Property Name="ModifiedBy" Type="bigint" />
+  </EntityType>
+  <EntityType Name="DeclarationSinistre">
+    <Key>
+      <PropertyRef Name="IdDeclarationSinistre" />
+    </Key>
+    <Property Name="IdDeclarationSinistre" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="DateSurvenance" Type="datetime" />
+    <Property Name="DateDeclaration" Type="datetime" />
+    <Property Name="NatureSinistre" Type="varchar" MaxLength="50" />
+    <Property Name="Evaluation" Type="money" />
+    <Property Name="HonoraireExperts" Type="money" />
+    <Property Name="MontantPaye" Type="money" />
+    <Property Name="MontantRestant" Type="money" />
+    <Property Name="IdProcessus" Type="bigint" />
+    <Property Name="IsDeleted" Type="bit" Nullable="false" />
+    <Property Name="DateCreation" Type="datetime" />
+    <Property Name="DateMAJ" Type="datetime" />
+    <Property Name="DataKey" Type="varchar" MaxLength="50" />
+    <Property Name="CreatedBy" Type="bigint" />
+    <Property Name="ModifiedBy" Type="bigint" />
+  </EntityType>
+  <EntityType Name="DemandePlacementFacultative">
+    <Key>
+      <PropertyRef Name="IdDemandePlacementFacultative" />
+    </Key>
+    <Property Name="IdDemandePlacementFacultative" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="DateConsultation" Type="date" Nullable="false" />
+    <Property Name="GarantieCedee" Type="money" Nullable="false" />
+    <Property Name="Prime" Type="money" Nullable="false" />
+    <Property Name="DateEffet" Type="datetime" Nullable="false" />
+    <Property Name="DateEcheance" Type="datetime" Nullable="false" />
+    <Property Name="EnCours" Type="bit" />
+    <Property Name="SMP" Type="money" Nullable="false" />
+    <Property Name="PartFiliale" Type="money" Nullable="false" />
+    <Property Name="VersementAuTraite" Type="bit" />
+    <Property Name="IdProcessus" Type="bigint" Nullable="false" />
+    <Property Name="IdPays" Type="bigint" Nullable="false" />
+    <Property Name="IsDeleted" Type="bit" Nullable="false" />
+    <Property Name="DateCreation" Type="datetime" />
+    <Property Name="DateMAJ" Type="datetime" />
+    <Property Name="DataKey" Type="varchar" MaxLength="50" />
+    <Property Name="CreatedBy" Type="bigint" />
+    <Property Name="ModifiedBy" Type="bigint" />
+  </EntityType>
+  <EntityType Name="Devise">
+    <Key>
+      <PropertyRef Name="idDevise" />
+    </Key>
+    <Property Name="idDevise" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="codeDevise" Type="varchar" MaxLength="50" />
+    <Property Name="symboleDevise" Type="char" MaxLength="5" />
+    <Property Name="libelleDevise" Type="varchar" MaxLength="100" />
+    <Property Name="DateCreation" Type="datetime" />
+    <Property Name="DateMAJ" Type="datetime" />
+    <Property Name="DataKey" Type="varchar" MaxLength="50" />
+    <Property Name="ModifiedBy" Type="bigint" />
+    <Property Name="IsDeleted" Type="bit" />
+    <Property Name="CreatedBy" Type="bigint" />
+  </EntityType>
+  <EntityType Name="DocumentEchange">
+    <Key>
+      <PropertyRef Name="IdEchange" />
+    </Key>
+    <Property Name="IdEchange" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="IdDocument" Type="bigint" Nullable="false" />
+    <Property Name="IsDeleted" Type="bit" Nullable="false" />
+    <Property Name="CreatedBy" Type="bigint" />
+    <Property Name="DateCreation" Type="datetime" />
+    <Property Name="DateMAJ" Type="datetime" />
+    <Property Name="DataKey" Type="varchar" MaxLength="50" />
+    <Property Name="ModifiedBy" Type="bigint" />
+  </EntityType>
+  <EntityType Name="DomaineActivite">
+    <Key>
+      <PropertyRef Name="idDomaineActivite" />
+    </Key>
+    <Property Name="idDomaineActivite" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="libelle" Type="varchar" MaxLength="100" />
+    <Property Name="DateCreation" Type="datetime" />
+    <Property Name="DateMAJ" Type="datetime" />
+    <Property Name="DataKey" Type="varchar" MaxLength="50" />
+    <Property Name="ModifiedBy" Type="bigint" />
+    <Property Name="IsDeleted" Type="bit" />
+    <Property Name="Description" Type="varchar" MaxLength="250" />
+  </EntityType>
+  <EntityType Name="Echange">
+    <Key>
+      <PropertyRef Name="IdEchange" />
+    </Key>
+    <Property Name="IdEchange" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="DateEchange" Type="int" Nullable="false" />
+    <Property Name="IdEmetteur" Type="int" Nullable="false" />
+    <Property Name="IdDestinataire" Type="int" Nullable="false" />
+    <Property Name="NatureEmetteur" Type="int" Nullable="false" />
+    <Property Name="NatureDestinataire" Type="int" Nullable="false" />
+    <Property Name="IdProcessus" Type="int" Nullable="false" />
+    <Property Name="IdTypeEchange" Type="bigint" Nullable="false" />
+    <Property Name="IsDeleted" Type="bit" Nullable="false" />
+    <Property Name="CreatedBy" Type="bigint" />
+    <Property Name="DateCreation" Type="datetime" />
+    <Property Name="DateMAJ" Type="datetime" />
+    <Property Name="DataKey" Type="varchar" MaxLength="50" />
+    <Property Name="ModifiedBy" Type="bigint" />
+  </EntityType>
+  <EntityType Name="EtapeProcessus">
+    <Key>
+      <PropertyRef Name="IdEtapeProcessus" />
+    </Key>
+    <Property Name="IdEtapeProcessus" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Libelle" Type="varchar" Nullable="false" MaxLength="255" />
+    <Property Name="Description" Type="varchar" Nullable="false" MaxLength="255" />
+    <Property Name="Position" Type="int" Nullable="false" />
+    <Property Name="IsDeleted" Type="bit" Nullable="false" />
+    <Property Name="CreatedBy" Type="bigint" />
+    <Property Name="DateCreation" Type="datetime" />
+    <Property Name="DateMAJ" Type="datetime" />
+    <Property Name="DataKey" Type="varchar" MaxLength="50" />
+    <Property Name="ModifiedBy" Type="bigint" />
+  </EntityType>
+  <EntityType Name="Filiale">
+    <Key>
+      <PropertyRef Name="IdFiliale" />
+    </Key>
+    <Property Name="IdFiliale" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="NomFilliale" Type="varchar" MaxLength="250" />
+    <Property Name="AdresseFiliale" Type="varchar" MaxLength="250" />
+    <Property Name="CodeFiliale" Type="varchar" MaxLength="250" />
+    <Property Name="IdPays" Type="bigint" />
+    <Property Name="IsDeleted" Type="bit" Nullable="false" />
+    <Property Name="DateCreation" Type="datetime" />
+    <Property Name="DateMAJ" Type="datetime" />
+    <Property Name="DataKey" Type="varchar" MaxLength="50" />
+    <Property Name="CreatedBy" Type="bigint" />
+    <Property Name="ModifiedBy" Type="bigint" />
+  </EntityType>
+  <EntityType Name="Fonctionnalite">
+    <Key>
+      <PropertyRef Name="idFonctionnalite" />
+    </Key>
+    <Property Name="idFonctionnalite" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="CodeParent" Type="varchar" MaxLength="100" />
+    <Property Name="Code" Type="varchar" Nullable="false" MaxLength="100" />
+    <Property Name="Libelle" Type="varchar" Nullable="false" MaxLength="250" />
+    <Property Name="Description" Type="varchar" MaxLength="500" />
+    <Property Name="IdModule" Type="int" Nullable="false" />
+    <Property Name="CodeSousModule" Type="varchar" MaxLength="50" devart:DefaultValue="''" DefaultValue="" />
+    <Property Name="OrdreSousModule" Type="int" DefaultValue="0" />
+    <Property Name="Ordre" Type="int" />
+    <Property Name="Activer" Type="varchar" MaxLength="3" devart:DefaultValue="'Oui'" DefaultValue="Oui" />
+    <Property Name="Police" Type="varchar" MaxLength="50" />
+    <Property Name="IsDeleted" Type="bit" />
+    <Property Name="CreatedBy" Type="bigint" />
+    <Property Name="DateCreation" Type="datetime" />
+    <Property Name="DateMAJ" Type="datetime" />
+    <Property Name="DataKey" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="FormeJuridique">
+    <Key>
+      <PropertyRef Name="idFormeJuridique" />
+    </Key>
+    <Property Name="idFormeJuridique" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="libelle" Type="varchar" MaxLength="100" />
+    <Property Name="DateCreation" Type="datetime" />
+    <Property Name="DateMAJ" Type="datetime" />
+    <Property Name="DataKey" Type="varchar" MaxLength="50" />
+    <Property Name="ModifiedBy" Type="bigint" />
+    <Property Name="IsDeleted" Type="bit" />
+    <Property Name="CreatedBy" Type="bigint" />
+  </EntityType>
+  <EntityType Name="HistoriqueLigneSchemasPlacement">
+    <Key>
+      <PropertyRef Name="IdHistoriqueLigneSchemaPlacement" />
+    </Key>
+    <Property Name="IdHistoriqueLigneSchemaPlacement" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="IdLigneSchemaPlacement" Type="bigint" Nullable="false" />
+    <Property Name="Proposition" Type="int" Nullable="false" />
+    <Property Name="Pourcentage" Type="decimal" Nullable="false" Precision="18" Scale="0" />
+    <Property Name="CapitauxAssures" Type="money" Nullable="false" />
+    <Property Name="TauxCommission" Type="decimal" Nullable="false" Precision="18" Scale="0" />
+    <Property Name="Commission" Type="money" Nullable="false" />
+    <Property Name="PrimeNette" Type="money" Nullable="false" />
+    <Property Name="IdReassureur" Type="bigint" Nullable="false" />
+    <Property Name="IsDeleted" Type="bit" Nullable="false" />
+    <Property Name="DateCreation" Type="datetime" />
+    <Property Name="DateMAJ" Type="datetime" />
+    <Property Name="DataKey" Type="varchar" MaxLength="50" />
+    <Property Name="CreatedBy" Type="bigint" />
+    <Property Name="ModifiedBy" Type="bigint" />
+  </EntityType>
+  <EntityType Name="HistoriqueLigneTableauRepartitionCharge">
+    <Key>
+      <PropertyRef Name="IdHistoriqueLigneTableauRepartitionCharge" />
+    </Key>
+    <Property Name="IdHistoriqueLigneTableauRepartitionCharge" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="IdTableauRepartition" Type="bigint" />
+    <Property Name="IsDeleted" Type="bit" Nullable="false" />
+    <Property Name="CreatedBy" Type="bigint" />
+    <Property Name="ModifiedBy" Type="bigint" />
+    <Property Name="DateCreation" Type="datetime" />
+    <Property Name="DateMAJ" Type="datetime" />
+    <Property Name="DataKey" Type="varchar" MaxLength="50" />
+    <Property Name="Proposition" Type="bigint" />
+    <Property Name="IdReassureur" Type="bigint" />
+  </EntityType>
+  <EntityType Name="InterlocuteurFiliale">
+    <Key>
+      <PropertyRef Name="IdInterlocuteurFiliale" />
+    </Key>
+    <Property Name="IdInterlocuteurFiliale" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Poste" Type="varchar" Nullable="false" MaxLength="255" />
+    <Property Name="IdFiliale" Type="bigint" Nullable="false" />
+    <Property Name="IdPersonne" Type="bigint" Nullable="false" />
+    <Property Name="IsDeleted" Type="bit" Nullable="false" />
+    <Property Name="CreatedBy" Type="bigint" />
+    <Property Name="DateCreation" Type="datetime" />
+    <Property Name="DateMAJ" Type="datetime" />
+    <Property Name="DataKey" Type="varchar" MaxLength="50" />
+    <Property Name="ModifiedBy" Type="bigint" />
+  </EntityType>
+  <EntityType Name="InterlocuteurReassureur">
+    <Key>
+      <PropertyRef Name="IdInterlocuteurReassureur" />
+    </Key>
+    <Property Name="IdInterlocuteurReassureur" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Poste" Type="varchar" Nullable="false" MaxLength="255" />
+    <Property Name="IdReassureur" Type="bigint" Nullable="false" />
+    <Property Name="IdPersonne" Type="bigint" Nullable="false" />
+    <Property Name="IsDeleted" Type="bit" Nullable="false" />
+    <Property Name="CreatedBy" Type="bigint" />
+    <Property Name="DateCreation" Type="datetime" />
+    <Property Name="DateMAJ" Type="datetime" />
+    <Property Name="DataKey" Type="varchar" MaxLength="50" />
+    <Property Name="ModifiedBy" Type="bigint" />
+  </EntityType>
+  <EntityType Name="LigneRepartitionCharge">
+    <Key>
+      <PropertyRef Name="IdLigneRepartitionCharge" />
+    </Key>
+    <Property Name="IdLigneRepartitionCharge" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="IdTableauRepartitionCharge" Type="bigint" />
+    <Property Name="IsDeleted" Type="bit" Nullable="false" />
+    <Property Name="CreatedBy" Type="bigint" />
+    <Property Name="DateCreation" Type="datetime" />
+    <Property Name="DateMAJ" Type="datetime" />
+    <Property Name="DataKey" Type="varchar" MaxLength="50" />
+    <Property Name="ModifiedBy" Type="bigint" />
+    <Property Name="IdReassureur" Type="bigint" />
+  </EntityType>
+  <EntityType Name="LigneSchemasPlacement">
+    <Key>
+      <PropertyRef Name="IdLigneSchemaPlacement" />
+    </Key>
+    <Property Name="IdLigneSchemaPlacement" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Proposition" Type="int" Nullable="false" />
+    <Property Name="Pourcentage" Type="decimal" Nullable="false" Precision="18" Scale="0" />
+    <Property Name="CapitauxAssures" Type="money" Nullable="false" />
+    <Property Name="TauxCommission" Type="decimal" Nullable="false" Precision="18" Scale="0" />
+    <Property Name="Commission" Type="money" Nullable="false" />
+    <Property Name="PrimeNette" Type="money" Nullable="false" />
+    <Property Name="IdReassureur" Type="bigint" Nullable="false" />
+    <Property Name="IsDeleted" Type="bit" Nullable="false" />
+    <Property Name="CreatedBy" Type="bigint" />
+    <Property Name="DateCreation" Type="datetime" />
+    <Property Name="DateMAJ" Type="datetime" />
+    <Property Name="DataKey" Type="varchar" MaxLength="50" />
+    <Property Name="ModifiedBy" Type="bigint" />
+    <Property Name="IdSchemasPlacement" Type="bigint" />
+  </EntityType>
+  <EntityType Name="MailParametre">
+    <Key>
+      <PropertyRef Name="IdMailParametre" />
+    </Key>
+    <Property Name="IdMailParametre" Type="bigint" Nullable="false" />
+    <Property Name="Code" Type="varchar" MaxLength="100" />
+    <Property Name="Description" Type="varchar" MaxLength="250" />
+    <Property Name="Valeur" Type="varchar(max)" />
+    <Property Name="Ordre" Type="int" DefaultValue="0" />
+    <Property Name="DateCreation" Type="datetime" />
+    <Property Name="DateMAJ" Type="datetime" />
+    <Property Name="DataKey" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="MouvementTresorerie">
+    <Key>
+      <PropertyRef Name="IdMouvement" />
+    </Key>
+    <Property Name="IdMouvement" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="IdStatutMouvement" Type="bigint" Nullable="false" />
+    <Property Name="Entrant" Type="bit" />
+    <Property Name="Libelle" Type="varchar" Nullable="false" MaxLength="255" />
+    <Property Name="Code" Type="varchar" Nullable="false" MaxLength="255" />
+    <Property Name="IdProcessus" Type="bigint" Nullable="false" />
+    <Property Name="IsDeleted" Type="bit" Nullable="false" />
+    <Property Name="DateCreation" Type="datetime" />
+    <Property Name="DateMAJ" Type="datetime" />
+    <Property Name="DataKey" Type="varchar" MaxLength="50" />
+    <Property Name="CreatedBy" Type="bigint" Nullable="false" />
+    <Property Name="ModifiedBy" Type="bigint" />
+  </EntityType>
+  <EntityType Name="Pays">
+    <Key>
+      <PropertyRef Name="IdPays" />
+    </Key>
+    <Property Name="IdPays" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Libelle" Type="nvarchar" Nullable="false" MaxLength="200" />
+    <Property Name="LibelleNationnalite" Type="nvarchar" Nullable="false" MaxLength="200" />
+    <Property Name="DateCreation" Type="datetime" />
+    <Property Name="DateMAJ" Type="datetime" />
+    <Property Name="DataKey" Type="varchar" MaxLength="50" />
+    <Property Name="ModifiedBy" Type="bigint" />
+    <Property Name="IsDeleted" Type="bit" />
+    <Property Name="CreatedBy" Type="bigint" />
+  </EntityType>
+  <EntityType Name="Personne">
+    <Key>
+      <PropertyRef Name="IdPersonne" />
+    </Key>
+    <Property Name="IdPersonne" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="TypePersonne" Type="varchar" MaxLength="50" />
+    <Property Name="IdCivilite" Type="nchar" MaxLength="10" />
+    <Property Name="Nom" Type="varchar" MaxLength="350" />
+    <Property Name="Prenom" Type="varchar" MaxLength="350" />
+    <Property Name="DateNaissance" Type="date" />
+    <Property Name="LieuNaissance" Type="varchar" MaxLength="350" />
+    <Property Name="IdTypePieceIdentite" Type="int" />
+    <Property Name="NumeroPieceIdentite" Type="varchar" MaxLength="150" />
+    <Property Name="IdPays" Type="int" />
+    <Property Name="DatePieceIdentite" Type="date" />
+    <Property Name="DateValiditePieceIdentite" Type="date" />
+    <Property Name="IdFormeJuridique" Type="int" />
+    <Property Name="Actif" Type="bit" />
+    <Property Name="IsDeleted" Type="bit" />
+    <Property Name="DateCreation" Type="datetime" Nullable="false" />
+    <Property Name="DateMaj" Type="datetime" />
+    <Property Name="CreatedBy" Type="bigint" Nullable="false" />
+    <Property Name="DataKey" Type="varchar" MaxLength="50" />
+    <Property Name="ModifiedBy" Type="bigint" />
+  </EntityType>
+  <EntityType Name="Processus">
+    <Key>
+      <PropertyRef Name="IdProcessus" />
+    </Key>
+    <Property Name="IdProcessus" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="IdAffaire" Type="int" Nullable="false" />
+    <Property Name="IdTypeProcessus" Type="int" Nullable="false" />
+    <Property Name="Categorie" Type="varchar(max)" Nullable="false" />
+    <Property Name="IsDeleted" Type="bit" Nullable="false" />
+    <Property Name="CreatedBy" Type="bigint" />
+    <Property Name="DateCreation" Type="datetime" />
+    <Property Name="DateMAJ" Type="datetime" />
+    <Property Name="DataKey" Type="varchar" MaxLength="50" />
+    <Property Name="ModifiedBy" Type="bigint" />
+  </EntityType>
+  <EntityType Name="Profession">
+    <Key>
+      <PropertyRef Name="IdProfession" />
+    </Key>
+    <Property Name="IdProfession" Type="numeric" Nullable="false" Precision="18" Scale="0" StoreGeneratedPattern="Identity" />
+    <Property Name="libelle" Type="varchar" MaxLength="150" />
+    <Property Name="IsDeleted" Type="bit" />
+    <Property Name="DateCreation" Type="datetime" />
+    <Property Name="DateMAJ" Type="datetime" />
+    <Property Name="DataKey" Type="varchar" MaxLength="50" />
+    <Property Name="ModifiedBy" Type="bigint" />
+    <Property Name="CreatedBy" Type="bigint" />
+    <Property Name="Description" Type="varchar" MaxLength="250" />
+  </EntityType>
+  <EntityType Name="Profil">
+    <Key>
+      <PropertyRef Name="IdProfil" />
+    </Key>
+    <Property Name="IdProfil" Type="int" Nullable="false" />
+    <Property Name="CodeProfil" Type="varchar" MaxLength="50" />
+    <Property Name="Intitule" Type="varchar" Nullable="false" MaxLength="150" />
+    <Property Name="Description" Type="varchar" MaxLength="250" />
+    <Property Name="IsDeleted" Type="bit" devart:DefaultValue="0" />
+    <Property Name="CreatedBy" Type="bigint" Nullable="false" />
+    <Property Name="ModifiedBy" Type="bigint" />
+    <Property Name="DateCreation" Type="datetime" Nullable="false" />
+    <Property Name="DateMaj" Type="datetime" />
+    <Property Name="DataKey" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="ProfilFonctionnalite">
+    <Key>
+      <PropertyRef Name="IdProfilFonctionnalite" />
+    </Key>
+    <Property Name="IdProfilFonctionnalite" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="IdProfil" Type="int" Nullable="false" />
+    <Property Name="CodeFonctionnalite" Type="varchar" Nullable="false" MaxLength="100" />
+    <Property Name="Autorise" Type="bit" Nullable="false" devart:DefaultValue="1" />
+    <Property Name="DateCreation" Type="datetime" />
+    <Property Name="DateMAJ" Type="datetime" />
+    <Property Name="DataKey" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="ProfilFonctionnaliteHisto">
+    <Key>
+      <PropertyRef Name="IdProfilFonctionnalite" />
+    </Key>
+    <Property Name="IdProfilFonctionnalite" Type="bigint" Nullable="false" />
+    <Property Name="IdProfil" Type="int" Nullable="false" />
+    <Property Name="CodeFonctionnalite" Type="varchar" Nullable="false" MaxLength="100" />
+    <Property Name="Autorise" Type="bit" Nullable="false" devart:DefaultValue="1" />
+    <Property Name="DateCreation" Type="datetime" />
+    <Property Name="DateMAJ" Type="datetime" />
+    <Property Name="DataKey" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="Reassureur">
+    <Key>
+      <PropertyRef Name="IdReassureur" />
+    </Key>
+    <Property Name="IdReassureur" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="CodeReassureur" Type="varchar" MaxLength="50" />
+    <Property Name="NomReassureur" Type="varchar" MaxLength="250" />
+    <Property Name="IdPays" Type="bigint" />
+    <Property Name="IsDeleted" Type="bit" Nullable="false" />
+    <Property Name="DateCreation" Type="datetime" />
+    <Property Name="DateMAJ" Type="datetime" />
+    <Property Name="DataKey" Type="varchar" MaxLength="50" />
+    <Property Name="CreatedBy" Type="bigint" />
+    <Property Name="ModifiedBy" Type="bigint" />
+  </EntityType>
+  <EntityType Name="SchemasPlacement">
+    <Key>
+      <PropertyRef Name="IdSchemaPlacement" />
+    </Key>
+    <Property Name="IdSchemaPlacement" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Proposition" Type="int" Nullable="false" />
+    <Property Name="NumeroFiche" Type="int" Nullable="false" />
+    <Property Name="IdProcessus" Type="bigint" Nullable="false" />
+    <Property Name="IsDeleted" Type="bit" Nullable="false" />
+    <Property Name="DateCreation" Type="datetime" />
+    <Property Name="DateMAJ" Type="datetime" />
+    <Property Name="DataKey" Type="varchar" MaxLength="50" />
+    <Property Name="CreatedBy" Type="bigint" />
+    <Property Name="ModifiedBy" Type="bigint" />
+  </EntityType>
+  <EntityType Name="SecteurActivite">
+    <Key>
+      <PropertyRef Name="idDomaineActivite" />
+    </Key>
+    <Property Name="idDomaineActivite" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="libelle" Type="varchar" MaxLength="100" />
+    <Property Name="DateCreation" Type="datetime" />
+    <Property Name="DateMAJ" Type="datetime" />
+    <Property Name="DataKey" Type="varchar" MaxLength="50" />
+    <Property Name="ModifiedBy" Type="bigint" />
+    <Property Name="IsDeleted" Type="bit" />
+    <Property Name="CreatedBy" Type="bigint" />
+  </EntityType>
+  <EntityType Name="SituationMatrimoniale">
+    <Key>
+      <PropertyRef Name="IdSituationMatrimoniale" />
+    </Key>
+    <Property Name="IdSituationMatrimoniale" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="libelle" Type="varchar" Nullable="false" MaxLength="200" />
+    <Property Name="ModifiedBy" Type="bigint" />
+    <Property Name="DateCreation" Type="datetime" />
+    <Property Name="DateMAJ" Type="datetime" />
+    <Property Name="DataKey" Type="varchar" MaxLength="50" />
+    <Property Name="IsDeleted" Type="bit" />
+    <Property Name="CreatedBy" Type="bigint" />
+  </EntityType>
+  <EntityType Name="StatutAffaire">
+    <Key>
+      <PropertyRef Name="IdStatutAffaire" />
+    </Key>
+    <Property Name="IdStatutAffaire" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Description" Type="varchar" MaxLength="250" />
+    <Property Name="Libelle" Type="varchar" MaxLength="250" />
+    <Property Name="IsDeleted" Type="bit" Nullable="false" />
+    <Property Name="DateCreation" Type="datetime" />
+    <Property Name="DateMAJ" Type="datetime" />
+    <Property Name="DataKey" Type="varchar" MaxLength="50" />
+    <Property Name="CreatedBy" Type="bigint" />
+    <Property Name="ModifiedBy" Type="bigint" />
+  </EntityType>
+  <EntityType Name="StatutMouvement">
+    <Key>
+      <PropertyRef Name="IdStatutMouvement" />
+    </Key>
+    <Property Name="IdStatutMouvement" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Libelle" Type="varchar" Nullable="false" MaxLength="255" />
+    <Property Name="IsDeleted" Type="bit" Nullable="false" />
+    <Property Name="CreatedBy" Type="bigint" />
+    <Property Name="DateCreation" Type="datetime" />
+    <Property Name="DateMAJ" Type="datetime" />
+    <Property Name="DataKey" Type="varchar" MaxLength="50" />
+    <Property Name="ModifiedBy" Type="bigint" />
+  </EntityType>
+  <EntityType Name="SuiviProcessus">
+    <Key>
+      <PropertyRef Name="IdTypeEchange" />
+    </Key>
+    <Property Name="IdTypeEchange" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="IdEtapeProcessus" Type="bigint" Nullable="false" />
+    <Property Name="IsDeleted" Type="bit" Nullable="false" />
+    <Property Name="CreatedBy" Type="bigint" />
+    <Property Name="DateCreation" Type="datetime" />
+    <Property Name="DateMAJ" Type="datetime" />
+    <Property Name="DataKey" Type="varchar" MaxLength="50" />
+    <Property Name="ModifiedBy" Type="bigint" />
+  </EntityType>
+  <EntityType Name="SysComplexiteMotDePasse">
+    <Key>
+      <PropertyRef Name="IdSysComplexiteMotDePasse" />
+    </Key>
+    <Property Name="IdSysComplexiteMotDePasse" Type="int" Nullable="false" />
+    <Property Name="Code" Type="varchar" MaxLength="30" />
+    <Property Name="Libelle" Type="varchar" Nullable="false" MaxLength="150" />
+    <Property Name="DateCreation" Type="datetime" />
+    <Property Name="DateMAJ" Type="datetime" />
+    <Property Name="DataKey" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="SysLog">
+    <Key>
+      <PropertyRef Name="IdSysLog" />
+    </Key>
+    <Property Name="IdSysLog" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Entite" Type="varchar" MaxLength="50" />
+    <Property Name="IdEntite" Type="bigint" />
+    <Property Name="AppMessage" Type="varchar(max)" />
+    <Property Name="SysMessage" Type="varchar(max)" />
+    <Property Name="CreatedBy" Type="bigint" />
+    <Property Name="DateCreation" Type="datetime" />
+    <Property Name="DateMAJ" Type="datetime" />
+    <Property Name="DataKey" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="SysMailBox">
+    <Key>
+      <PropertyRef Name="IdSysMailBox" />
+    </Key>
+    <Property Name="IdSysMailBox" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Entite" Type="varchar" MaxLength="50" />
+    <Property Name="IdEntite" Type="bigint" />
+    <Property Name="IdMailitem" Type="int" />
+    <Property Name="Statut" Type="varchar" MaxLength="50" />
+    <Property Name="DateCreation" Type="datetime" />
+    <Property Name="MailMessage" Type="varchar(max)" />
+    <Property Name="DateMAJ" Type="datetime" />
+    <Property Name="DataKey" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="SysNotification">
+    <Key>
+      <PropertyRef Name="IdNotification" />
+    </Key>
+    <Property Name="IdNotification" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Titre" Type="varchar" Nullable="false" MaxLength="150" />
+    <Property Name="Message" Type="nvarchar(max)" />
+    <Property Name="Url" Type="varchar" MaxLength="150" />
+    <Property Name="IdUtilisateur" Type="bigint" Nullable="false" DefaultValue="0" />
+    <Property Name="DateCreation" Type="datetime" />
+    <Property Name="IsClicked" Type="bit" devart:DefaultValue="0" />
+    <Property Name="IsDeleted" Type="bit" />
+    <Property Name="CreatedBy" Type="bigint" Nullable="false" DefaultValue="1" />
+    <Property Name="DateMAJ" Type="datetime" />
+    <Property Name="DataKey" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="SysObjet">
+    <Key>
+      <PropertyRef Name="IdSysObjet" />
+    </Key>
+    <Property Name="IdSysObjet" Type="int" Nullable="false" />
+    <Property Name="TypeObjet" Type="varchar" MaxLength="100" />
+    <Property Name="Code" Type="varchar" MaxLength="100" />
+    <Property Name="Libelle" Type="varchar" MaxLength="250" />
+    <Property Name="Description" Type="varchar" MaxLength="500" />
+    <Property Name="DateCreation" Type="datetime" />
+    <Property Name="DateMAJ" Type="datetime" />
+    <Property Name="DataKey" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="SysStrategieMotDePasse">
+    <Key>
+      <PropertyRef Name="IdSysStrategieMotDePasse" />
+    </Key>
+    <Property Name="IdSysStrategieMotDePasse" Type="int" Nullable="false" />
+    <Property Name="Libelle" Type="varchar" MaxLength="150" />
+    <Property Name="LongeurMinimum" Type="int" />
+    <Property Name="DureeDeVie" Type="int" />
+    <Property Name="NombreTentativeAvantVerrouillage" Type="int" />
+    <Property Name="IdSysComplexiteMotDePasse" Type="int" Nullable="false" />
+    <Property Name="UtiliserAncienMotDePasse" Type="varchar" MaxLength="3" />
+    <Property Name="ChangerMotDePasseApresAttribution" Type="varchar" MaxLength="3" />
+    <Property Name="Actif" Type="bit" Nullable="false" />
+    <Property Name="IsDeleted" Type="bit" Nullable="false" />
+    <Property Name="DateCreation" Type="datetime" Nullable="false" />
+    <Property Name="DateMaj" Type="datetime" Nullable="false" />
+    <Property Name="CreatedBy" Type="bigint" Nullable="false" />
+    <Property Name="ModifiedBy" Type="bigint" Nullable="false" />
+    <Property Name="DataKey" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="SysStrategieMotDePasseHisto">
+    <Key>
+      <PropertyRef Name="IdSysStrategieMotDePasseHisto" />
+    </Key>
+    <Property Name="IdSysStrategieMotDePasseHisto" Type="bigint" Nullable="false" />
+    <Property Name="IdSysStrategieMotDePasse" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Libelle" Type="varchar" MaxLength="150" />
+    <Property Name="LongeurMinimum" Type="int" />
+    <Property Name="DureeDeVie" Type="int" />
+    <Property Name="NombreTentativeAvantVerrouillage" Type="int" />
+    <Property Name="IdSysComplexiteMotDePasse" Type="int" Nullable="false" />
+    <Property Name="UtiliserAncienMotDePasse" Type="varchar" MaxLength="3" />
+    <Property Name="ChangerMotDePasseApresAttribution" Type="varchar" MaxLength="3" />
+    <Property Name="Actif" Type="bit" Nullable="false" />
+    <Property Name="IsDeleted" Type="bit" Nullable="false" />
+    <Property Name="DateCreation" Type="datetime" Nullable="false" />
+    <Property Name="DateMaj" Type="datetime" Nullable="false" />
+    <Property Name="CreatedBy" Type="bigint" Nullable="false" />
+    <Property Name="ModifiedBy" Type="bigint" Nullable="false" />
+    <Property Name="Temps" Type="varchar" MaxLength="2" />
+    <Property Name="DataKey" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="TableauRepartitionCharge">
+    <Key>
+      <PropertyRef Name="IdTableauRepartitionCharge" />
+    </Key>
+    <Property Name="IdTableauRepartitionCharge" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="NumeroFiche" Type="varchar" MaxLength="50" />
+    <Property Name="Proposition" Type="int" />
+    <Property Name="IdProcessus" Type="bigint" />
+    <Property Name="IsDeleted" Type="bit" Nullable="false" />
+    <Property Name="DateCreation" Type="datetime" />
+    <Property Name="DateMAJ" Type="datetime" />
+    <Property Name="DataKey" Type="varchar" MaxLength="50" />
+    <Property Name="CreatedBy" Type="bigint" />
+    <Property Name="ModifiedBy" Type="bigint" />
+  </EntityType>
+  <EntityType Name="Terme">
+    <Key>
+      <PropertyRef Name="IdTerme" />
+    </Key>
+    <Property Name="IdTerme" Type="bigint" Nullable="false" />
+    <Property Name="LimiteSouscription" Type="varbinary" MaxLength="250" />
+    <Property Name="Exclusion" Type="varchar" MaxLength="250" />
+    <Property Name="Taux" Type="float" />
+    <Property Name="IsDeleted" Type="bit" Nullable="false" />
+    <Property Name="DateCreation" Type="datetime" />
+    <Property Name="DateMAJ" Type="datetime" />
+    <Property Name="DataKey" Type="varchar" MaxLength="50" />
+    <Property Name="CreatedBy" Type="bigint" />
+    <Property Name="ModifiedBy" Type="bigint" />
+  </EntityType>
+  <EntityType Name="TermeTraite">
+    <Key>
+      <PropertyRef Name="IdTermeTraite" />
+    </Key>
+    <Property Name="IdTermeTraite" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="IdTraite" Type="bigint" Nullable="false" />
+    <Property Name="IdTerme" Type="bigint" Nullable="false" />
+    <Property Name="IsDeleted" Type="bit" Nullable="false" />
+    <Property Name="DateCreation" Type="datetime" />
+    <Property Name="DateMAJ" Type="datetime" />
+    <Property Name="DataKey" Type="varchar" MaxLength="50" />
+    <Property Name="CreatedBy" Type="bigint" />
+    <Property Name="ModifiedBy" Type="bigint" />
+  </EntityType>
+  <EntityType Name="Trace">
+    <Key>
+      <PropertyRef Name="IdTrace" />
+    </Key>
+    <Property Name="IdTrace" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="IdStructure" Type="bigint" />
+    <Property Name="IdUtilisateur" Type="bigint" Nullable="false" />
+    <Property Name="DateOperation" Type="date" />
+    <Property Name="HeureOperation" Type="time" />
+    <Property Name="DateSysteme" Type="datetime" />
+    <Property Name="HeureSysteme" Type="time" />
+    <Property Name="IdTypeOperation" Type="int" />
+    <Property Name="CodeOperation" Type="varchar" MaxLength="50" devart:DefaultValue="''" DefaultValue="" />
+    <Property Name="Origine" Type="varchar" MaxLength="100" devart:DefaultValue="''" DefaultValue="" />
+    <Property Name="IdOrigine" Type="bigint" DefaultValue="0" />
+    <Property Name="IdFormulaire" Type="int" />
+    <Property Name="CodeFormulaire" Type="varchar" MaxLength="150" devart:DefaultValue="''" DefaultValue="" />
+    <Property Name="LibelleOperation" Type="text" />
+    <Property Name="DateCreation" Type="datetime" />
+    <Property Name="DateMAJ" Type="datetime" />
+    <Property Name="DataKey" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="Traite">
+    <Key>
+      <PropertyRef Name="IdTraite" />
+    </Key>
+    <Property Name="IdTraite" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Libelle" Type="varchar" MaxLength="250" />
+    <Property Name="Description" Type="varchar" MaxLength="250" />
+    <Property Name="NatureActivite" Type="varchar" MaxLength="50" />
+    <Property Name="IdBranche" Type="bigint" />
+    <Property Name="IdReassureur" Type="int" />
+    <Property Name="IdStructure" Type="int" />
+    <Property Name="IsDeleted" Type="bit" Nullable="false" />
+    <Property Name="DateCreation" Type="datetime" />
+    <Property Name="DateMAJ" Type="datetime" />
+    <Property Name="DataKey" Type="varchar" MaxLength="50" />
+    <Property Name="CreatedBy" Type="bigint" />
+    <Property Name="ModifiedBy" Type="bigint" />
+  </EntityType>
+  <EntityType Name="TypeEchange">
+    <Key>
+      <PropertyRef Name="IdTypeEchange" />
+    </Key>
+    <Property Name="IdTypeEchange" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Libelle" Type="varchar" Nullable="false" MaxLength="255" />
+    <Property Name="Description" Type="varchar" Nullable="false" MaxLength="255" />
+    <Property Name="IsDeleted" Type="bit" Nullable="false" />
+    <Property Name="CreatedBy" Type="bigint" />
+    <Property Name="DateCreation" Type="datetime" />
+    <Property Name="DateMAJ" Type="datetime" />
+    <Property Name="DataKey" Type="varchar" MaxLength="50" />
+    <Property Name="ModifiedBy" Type="bigint" />
+  </EntityType>
+  <EntityType Name="TypePersonne">
+    <Key>
+      <PropertyRef Name="IdTypePersonne" />
+    </Key>
+    <Property Name="IdTypePersonne" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="LibelleTypePersonne" Type="varchar" MaxLength="250" />
+    <Property Name="IsDeleted" Type="bit" Nullable="false" />
+    <Property Name="DateCreation" Type="datetime" />
+    <Property Name="DateMAJ" Type="datetime" />
+    <Property Name="DataKey" Type="varchar" MaxLength="50" />
+    <Property Name="CreatedBy" Type="bigint" />
+    <Property Name="ModifiedBy" Type="bigint" />
+  </EntityType>
+  <EntityType Name="TypeProcessus">
+    <Key>
+      <PropertyRef Name="IdTypeProcessus" />
+    </Key>
+    <Property Name="IdTypeProcessus" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Libelle" Type="varchar" Nullable="false" MaxLength="255" />
+    <Property Name="IsDeleted" Type="bit" Nullable="false" />
+    <Property Name="CreatedBy" Type="bigint" />
+    <Property Name="DateCreation" Type="datetime" />
+    <Property Name="DateMAJ" Type="datetime" />
+    <Property Name="DataKey" Type="varchar" MaxLength="50" />
+    <Property Name="ModifiedBy" Type="bigint" />
+  </EntityType>
+  <EntityType Name="Utilisateur">
+    <Key>
+      <PropertyRef Name="IdUtilisateur" />
+    </Key>
+    <Property Name="IdUtilisateur" Type="bigint" Nullable="false" />
+    <Property Name="Login" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="Password" Type="varchar(max)" Nullable="false" />
+    <Property Name="Nom" Type="varchar" MaxLength="150" />
+    <Property Name="Prenom" Type="varchar" MaxLength="150" />
+    <Property Name="Email" Type="varchar" MaxLength="250" />
+    <Property Name="Telephone" Type="varchar" MaxLength="250" />
+    <Property Name="Adresse" Type="varchar" MaxLength="250" />
+    <Property Name="Photo" Type="varchar(max)" />
+    <Property Name="VoirCompteSensible" Type="bit" devart:DefaultValue="0" />
+    <Property Name="ChangeLogin" Type="bit" devart:DefaultValue="0" />
+    <Property Name="ChangePassword" Type="bit" devart:DefaultValue="1" />
+    <Property Name="TimeSession" Type="int" DefaultValue="25" />
+    <Property Name="Actif" Type="varchar" MaxLength="3" devart:DefaultValue="'Oui'" DefaultValue="Oui" />
+    <Property Name="IsConnected" Type="varchar" MaxLength="3" devart:DefaultValue="'Non'" DefaultValue="Non" />
+    <Property Name="ComptePermanent" Type="varchar" MaxLength="3" devart:DefaultValue="'Oui'" DefaultValue="Oui" />
+    <Property Name="DateDebutValidite" Type="date" />
+    <Property Name="DateFinValidite" Type="date" />
+    <Property Name="RecevoirMail" Type="varchar" MaxLength="3" devart:DefaultValue="'Non'" DefaultValue="Non" />
+    <Property Name="RecevoirMailSysteme" Type="varchar" MaxLength="3" devart:DefaultValue="'Non'" DefaultValue="Non" />
+    <Property Name="IdProfil" Type="bigint" />
+    <Property Name="CanApplySingleSession" Type="bit" devart:DefaultValue="1" />
+    <Property Name="IsOldUser" Type="bit" devart:DefaultValue="0" />
+    <Property Name="IsWindowAccount" Type="bit" devart:DefaultValue="0" />
+    <Property Name="IsDeleted" Type="bit" Nullable="false" devart:DefaultValue="0" />
+    <Property Name="DateCreation" Type="datetime" Nullable="false" />
+    <Property Name="DateMaj" Type="datetime" />
+    <Property Name="CreatedBy" Type="bigint" Nullable="false" />
+    <Property Name="ModifiedBy" Type="bigint" />
+    <Property Name="IdStructure" Type="bigint" DefaultValue="1" />
+    <Property Name="TentativeConnexion" Type="int" DefaultValue="0" />
+    <Property Name="DateDebutValiditePassword" Type="date" />
+    <Property Name="DateFinValiditePassword" Type="date" />
+    <Property Name="UserSageCode" Type="varchar" MaxLength="50" devart:DefaultValue="''" DefaultValue="" />
+    <Property Name="DataKey" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="UtilisateurFonctionnalite">
+    <Key>
+      <PropertyRef Name="IdUtilisateurFonctionnalite" />
+    </Key>
+    <Property Name="IdUtilisateurFonctionnalite" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="IdUtilisateur" Type="bigint" />
+    <Property Name="CodeFonctionnalite" Type="varchar" MaxLength="150" />
+    <Property Name="Autorise" Type="bit" devart:DefaultValue="1" />
+    <Property Name="DateCreation" Type="datetime" Nullable="false" />
+    <Property Name="CreatedBy" Type="bigint" Nullable="false" />
+    <Property Name="DateMAJ" Type="datetime" />
+    <Property Name="DataKey" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="UtilisateurFonctionnaliteHisto">
+    <Key>
+      <PropertyRef Name="IdUtilisateurFonctionnalite" />
+    </Key>
+    <Property Name="IdUtilisateurFonctionnalite" Type="bigint" Nullable="false" />
+    <Property Name="IdUtilisateur" Type="bigint" Nullable="false" />
+    <Property Name="CodeFonctionnalite" Type="varchar" Nullable="false" MaxLength="150" />
+    <Property Name="Autorise" Type="bit" Nullable="false" devart:DefaultValue="1" />
+    <Property Name="DateCreation" Type="datetime" />
+    <Property Name="CreatedBy" Type="bigint" Nullable="false" />
+    <Property Name="DateMAJ" Type="datetime" />
+    <Property Name="DataKey" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="UtilisateurFonctionnalitePrive">
+    <Key>
+      <PropertyRef Name="IdUtilisateurFonctionnalitePrive" />
+    </Key>
+    <Property Name="IdUtilisateurFonctionnalitePrive" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="IdUtilisateur" Type="bigint" />
+    <Property Name="CodeFonctionnalite" Type="varchar" MaxLength="150" />
+    <Property Name="Autorise" Type="bit" devart:DefaultValue="1" />
+    <Property Name="DateCreation" Type="datetime" Nullable="false" />
+    <Property Name="CreatedBy" Type="bigint" Nullable="false" />
+    <Property Name="DateMAJ" Type="datetime" />
+    <Property Name="DataKey" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="UtilisateurFonctionnalitePriveHisto">
+    <Key>
+      <PropertyRef Name="IdUtilisateurFonctionnalitePrive" />
+    </Key>
+    <Property Name="IdUtilisateurFonctionnalitePrive" Type="bigint" Nullable="false" />
+    <Property Name="IdUtilisateur" Type="bigint" />
+    <Property Name="CodeFonctionnalite" Type="varchar" MaxLength="150" />
+    <Property Name="Autorise" Type="bit" devart:DefaultValue="1" />
+    <Property Name="DateCreation" Type="datetime" Nullable="false" />
+    <Property Name="CreatedBy" Type="bigint" Nullable="false" />
+    <Property Name="DateMAJ" Type="datetime" />
+    <Property Name="DataKey" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="UtilisateurHisto">
+    <Key>
+      <PropertyRef Name="IdUtilisateurHisto" />
+    </Key>
+    <Property Name="IdUtilisateurHisto" Type="bigint" Nullable="false" />
+    <Property Name="IdUtilisateur" Type="bigint" Nullable="false" />
+    <Property Name="Login" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="Password" Type="varchar" Nullable="false" MaxLength="250" />
+    <Property Name="Nom" Type="varchar" MaxLength="150" />
+    <Property Name="Prenom" Type="varchar" MaxLength="150" />
+    <Property Name="Email" Type="varchar" MaxLength="250" />
+    <Property Name="Telephone" Type="varchar" MaxLength="250" />
+    <Property Name="Adresse" Type="varchar" MaxLength="250" />
+    <Property Name="Photo" Type="varchar(max)" />
+    <Property Name="VoirCompteSensible" Type="bit" devart:DefaultValue="0" />
+    <Property Name="ChangeLogin" Type="bit" devart:DefaultValue="0" />
+    <Property Name="ChangePassword" Type="bit" devart:DefaultValue="1" />
+    <Property Name="TimeSession" Type="int" />
+    <Property Name="Actif" Type="varchar" MaxLength="3" devart:DefaultValue="'Oui'" DefaultValue="Oui" />
+    <Property Name="IsConnected" Type="varchar" MaxLength="3" devart:DefaultValue="'Non'" DefaultValue="Non" />
+    <Property Name="ComptePermanent" Type="varchar" MaxLength="3" devart:DefaultValue="'Oui'" DefaultValue="Oui" />
+    <Property Name="DateDebutValidite" Type="date" />
+    <Property Name="DateFinValidite" Type="date" />
+    <Property Name="RecevoirMail" Type="varchar" MaxLength="3" devart:DefaultValue="'Non'" DefaultValue="Non" />
+    <Property Name="RecevoirMailSysteme" Type="varchar" MaxLength="3" devart:DefaultValue="'Non'" DefaultValue="Non" />
+    <Property Name="IdProfil" Type="bigint" />
+    <Property Name="CanApplySingleSession" Type="bit" devart:DefaultValue="1" />
+    <Property Name="IsOldUser" Type="bit" devart:DefaultValue="0" />
+    <Property Name="IsWindowAccount" Type="bit" devart:DefaultValue="0" />
+    <Property Name="IsDeleted" Type="bit" Nullable="false" devart:DefaultValue="0" />
+    <Property Name="DateCreation" Type="datetime" Nullable="false" />
+    <Property Name="DateMaj" Type="datetime" />
+    <Property Name="CreatedBy" Type="bigint" Nullable="false" />
+    <Property Name="ModifiedBy" Type="bigint" />
+    <Property Name="IdStructure" Type="bigint" />
+    <Property Name="TentativeConnexion" Type="int" DefaultValue="0" />
+    <Property Name="DateDebutValiditePassword" Type="date" />
+    <Property Name="DateFinValiditePassword" Type="date" />
+    <Property Name="UserSageCode" Type="varchar" MaxLength="50" devart:DefaultValue="''" DefaultValue="" />
+    <Property Name="DataKey" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="UtilisateurProfil">
+    <Key>
+      <PropertyRef Name="IdUtilisateurProfil" />
+    </Key>
+    <Property Name="IdUtilisateurProfil" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="IdUtilisateur" Type="bigint" Nullable="false" />
+    <Property Name="IdProfil" Type="int" Nullable="false" />
+    <Property Name="DateValiditeDebut" Type="date" />
+    <Property Name="DateValiditeFin" Type="date" />
+    <Property Name="DateFinIndeterminer" Type="bit" devart:DefaultValue="1" />
+    <Property Name="Autorise" Type="bit" />
+    <Property Name="IsDeleted" Type="bit" Nullable="false" devart:DefaultValue="0" />
+    <Property Name="CreatedBy" Type="bigint" Nullable="false" />
+    <Property Name="ModifiedBy" Type="bigint" Nullable="false" />
+    <Property Name="DateCreation" Type="datetime" Nullable="false" />
+    <Property Name="DateMaj" Type="datetime" Nullable="false" />
+    <Property Name="DataKey" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="UtilisateurProfilHisto">
+    <Key>
+      <PropertyRef Name="IdUtilisateurProfil" />
+    </Key>
+    <Property Name="IdUtilisateurProfil" Type="bigint" Nullable="false" />
+    <Property Name="IdUtilisateur" Type="bigint" Nullable="false" />
+    <Property Name="IdProfil" Type="int" Nullable="false" />
+    <Property Name="DateValiditeDebut" Type="date" />
+    <Property Name="DateValiditeFin" Type="date" />
+    <Property Name="DateFinIndeterminer" Type="bit" devart:DefaultValue="1" />
+    <Property Name="Autorise" Type="bit" />
+    <Property Name="IsDeleted" Type="bit" Nullable="false" devart:DefaultValue="0" />
+    <Property Name="CreatedBy" Type="bigint" Nullable="false" />
+    <Property Name="ModifiedBy" Type="bigint" Nullable="false" />
+    <Property Name="DateCreation" Type="datetime" Nullable="false" />
+    <Property Name="DateMaj" Type="datetime" Nullable="false" />
+    <Property Name="DataKey" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="UtilisateurRestriction">
+    <Key>
+      <PropertyRef Name="IdUtilisateurRestriction" />
+    </Key>
+    <Property Name="IdUtilisateurRestriction" Type="int" Nullable="false" />
+    <Property Name="IdUtilisateur" Type="bigint" Nullable="false" />
+    <Property Name="IdSysObjet" Type="int" Nullable="false" />
+    <Property Name="DateCreation" Type="datetime" Nullable="false" />
+    <Property Name="CreatedBy" Type="bigint" Nullable="false" />
+    <Property Name="DateMAJ" Type="datetime" />
+    <Property Name="DataKey" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="UtilisateurRestrictionHisto">
+    <Key>
+      <PropertyRef Name="IdUtilisateurRestrictionHisto" />
+    </Key>
+    <Property Name="IdUtilisateurRestrictionHisto" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="IdUtilisateurRestriction" Type="int" Nullable="false" />
+    <Property Name="IdUtilisateur" Type="bigint" Nullable="false" />
+    <Property Name="IdSysObjet" Type="int" Nullable="false" />
+    <Property Name="DateCreation" Type="datetime" Nullable="false" />
+    <Property Name="CreatedBy" Type="bigint" Nullable="false" />
+    <Property Name="DateMAJ" Type="datetime" />
+    <Property Name="DataKey" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="UtilisateurSession">
+    <Key>
+      <PropertyRef Name="IdUtilisateurSession" />
+    </Key>
+    <Property Name="IdUtilisateurSession" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="IdUtilisateur" Type="bigint" Nullable="false" />
+    <Property Name="TimeSession" Type="int" />
+    <Property Name="IsConnected" Type="bit" Nullable="false" devart:DefaultValue="1" />
+    <Property Name="DateLastConnection" Type="datetime" />
+    <Property Name="DateLastActivity" Type="datetime" />
+    <Property Name="DateCreation" Type="datetime" Nullable="false" />
+    <Property Name="DateMaj" Type="datetime" />
+    <Property Name="IsDeleted" Type="bit" Nullable="false" devart:DefaultValue="0" />
+    <Property Name="DataKey" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="ViewSysStrategieMotDePasse">
+    <Key>
+      <PropertyRef Name="IdSysStrategieMotDePasse" />
+      <PropertyRef Name="IdSysComplexiteMotDePasse" />
+      <PropertyRef Name="Actif" />
+      <PropertyRef Name="IsDeleted" />
+      <PropertyRef Name="DateCreation" />
+      <PropertyRef Name="DateMaj" />
+      <PropertyRef Name="CreatedBy" />
+      <PropertyRef Name="ModifiedBy" />
+    </Key>
+    <Property Name="IdSysStrategieMotDePasse" Type="int" Nullable="false" />
+    <Property Name="Libelle" Type="varchar" MaxLength="150" />
+    <Property Name="LongeurMinimum" Type="int" />
+    <Property Name="DureeDeVie" Type="int" />
+    <Property Name="NombreTentativeAvantVerrouillage" Type="int" />
+    <Property Name="IdSysComplexiteMotDePasse" Type="int" Nullable="false" />
+    <Property Name="LibelleComplexite" Type="varchar" MaxLength="150" />
+    <Property Name="UtiliserAncienMotDePasse" Type="varchar" MaxLength="3" />
+    <Property Name="ChangerMotDePasseApresAttribution" Type="varchar" MaxLength="3" />
+    <Property Name="Actif" Type="bit" Nullable="false" />
+    <Property Name="IsDeleted" Type="bit" Nullable="false" />
+    <Property Name="DateCreation" Type="datetime" Nullable="false" />
+    <Property Name="DateMaj" Type="datetime" Nullable="false" />
+    <Property Name="CreatedBy" Type="bigint" Nullable="false" />
+    <Property Name="ModifiedBy" Type="bigint" Nullable="false" />
+    <Property Name="Code" Type="varchar" MaxLength="30" />
+  </EntityType>
+  <EntityType Name="ViewUtilisateur">
+    <Key>
+      <PropertyRef Name="IdUtilisateur" />
+      <PropertyRef Name="Login" />
+      <PropertyRef Name="Password" />
+      <PropertyRef Name="IsDeleted" />
+      <PropertyRef Name="DateCreation" />
+      <PropertyRef Name="CreatedBy" />
+    </Key>
+    <Property Name="IdUtilisateur" Type="bigint" Nullable="false" />
+    <Property Name="Login" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="Password" Type="varchar(max)" Nullable="false" />
+    <Property Name="TimeSession" Type="int" />
+    <Property Name="Actif" Type="varchar" MaxLength="3" />
+    <Property Name="IsWindowAccount" Type="bit" />
+    <Property Name="CanApplySingleSession" Type="bit" />
+    <Property Name="IsDeleted" Type="bit" Nullable="false" />
+    <Property Name="DateMaj" Type="datetime" />
+    <Property Name="DateCreation" Type="datetime" Nullable="false" />
+    <Property Name="CreatedBy" Type="bigint" Nullable="false" />
+    <Property Name="ModifiedBy" Type="bigint" />
+    <Property Name="Adresse" Type="varchar" MaxLength="250" />
+    <Property Name="Email" Type="varchar" MaxLength="250" />
+    <Property Name="Telephone" Type="varchar" MaxLength="250" />
+    <Property Name="NomUtilisateur" Type="varchar" MaxLength="301" />
+    <Property Name="Photo" Type="varchar(max)" />
+    <Property Name="VoirCompteSensible" Type="bit" />
+    <Property Name="IsOldUser" Type="bit" />
+    <Property Name="Nom" Type="varchar" MaxLength="150" />
+    <Property Name="Prenom" Type="varchar" MaxLength="150" />
+    <Property Name="IsConnected" Type="varchar" MaxLength="3" />
+    <Property Name="ComptePermanent" Type="varchar" MaxLength="3" />
+    <Property Name="DateDebutValidite" Type="date" />
+    <Property Name="DateFinValidite" Type="date" />
+    <Property Name="ChangeLogin" Type="bit" />
+    <Property Name="ChangePassword" Type="bit" />
+    <Property Name="IdProfil" Type="bigint" />
+    <Property Name="IdStructure" Type="bigint" />
+    <Property Name="RecevoirMail" Type="varchar" MaxLength="3" />
+    <Property Name="RecevoirMailSysteme" Type="varchar" MaxLength="3" />
+    <Property Name="TentativeConnexion" Type="int" />
+    <Property Name="DateDebutValiditePassword" Type="date" />
+    <Property Name="DateFinValiditePassword" Type="date" />
+    <Property Name="UserSageCode" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="ViewUtilisateurProfil">
+    <Key>
+      <PropertyRef Name="IdUtilisateurProfil" />
+      <PropertyRef Name="IdUtilisateur" />
+      <PropertyRef Name="IdProfil" />
+      <PropertyRef Name="IsDeleted" />
+      <PropertyRef Name="CreatedBy" />
+      <PropertyRef Name="ModifiedBy" />
+      <PropertyRef Name="DateCreation" />
+      <PropertyRef Name="DateMaj" />
+    </Key>
+    <Property Name="IdUtilisateurProfil" Type="bigint" Nullable="false" />
+    <Property Name="IdUtilisateur" Type="bigint" Nullable="false" />
+    <Property Name="NomUtilisateur" Type="varchar" MaxLength="301" />
+    <Property Name="IdProfil" Type="int" Nullable="false" />
+    <Property Name="Intitule" Type="varchar" MaxLength="150" />
+    <Property Name="DateValiditeDebut" Type="date" />
+    <Property Name="DateValiditeFin" Type="date" />
+    <Property Name="DateFinIndeterminer" Type="bit" />
+    <Property Name="Autorise" Type="bit" />
+    <Property Name="IsDeleted" Type="bit" Nullable="false" />
+    <Property Name="CreatedBy" Type="bigint" Nullable="false" />
+    <Property Name="ModifiedBy" Type="bigint" Nullable="false" />
+    <Property Name="DateCreation" Type="datetime" Nullable="false" />
+    <Property Name="DateMaj" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="ViewUtilisateurRestriction">
+    <Key>
+      <PropertyRef Name="IdUtilisateurRestriction" />
+      <PropertyRef Name="IdUtilisateur" />
+      <PropertyRef Name="IdSysObjet" />
+      <PropertyRef Name="Autorise" />
+      <PropertyRef Name="DateCreation" />
+      <PropertyRef Name="CreatedBy" />
+    </Key>
+    <Property Name="IdUtilisateurRestriction" Type="int" Nullable="false" />
+    <Property Name="IdUtilisateur" Type="bigint" Nullable="false" />
+    <Property Name="Login" Type="varchar" MaxLength="50" />
+    <Property Name="Nom" Type="varchar" MaxLength="150" />
+    <Property Name="Prenom" Type="varchar" MaxLength="150" />
+    <Property Name="IdSysObjet" Type="int" Nullable="false" />
+    <Property Name="TypeObjet" Type="varchar" MaxLength="100" />
+    <Property Name="Code" Type="varchar" MaxLength="100" />
+    <Property Name="Libelle" Type="varchar" MaxLength="250" />
+    <Property Name="Description" Type="varchar" MaxLength="500" />
+    <Property Name="Autorise" Type="varchar" Nullable="false" MaxLength="3" />
+    <Property Name="DateCreation" Type="datetime" Nullable="false" />
+    <Property Name="CreatedBy" Type="bigint" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Structure">
+    <Key>
+      <PropertyRef Name="idStructure" />
+    </Key>
+    <Property Name="idStructure" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="raisonSocialeStructure" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="dateCreation" Type="datetime" />
+    <Property Name="decretCreation" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="numeroAgrement" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="idDevise" Type="int" Nullable="false" />
+    <Property Name="capitalSocial" Type="decimal" Nullable="false" Precision="18" Scale="2" />
+    <Property Name="idPays" Type="int" Nullable="false" />
+    <Property Name="DateMAJ" Type="datetime" />
+    <Property Name="DataKey" Type="varchar" MaxLength="50" />
+    <Property Name="ModifiedBy" Type="bigint" />
+    <Property Name="IsDeleted" Type="bit" />
+    <Property Name="CreatedBy" Type="bigint" />
+  </EntityType>
+  <EntityType Name="Civilite">
+    <Key>
+      <PropertyRef Name="IdCivilite" />
+    </Key>
+    <Property Name="IdCivilite" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Libelle" Type="varchar" MaxLength="250" />
+    <Property Name="IsDeleted" Type="bit" Nullable="false" />
+    <Property Name="CreatedBy" Type="bigint" />
+    <Property Name="ModifiedBy" Type="bigint" />
+    <Property Name="DateCreation" Type="datetime" />
+    <Property Name="DateMAJ" Type="datetime" />
+    <Property Name="DataKey" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="TypePieceIdentite">
+    <Key>
+      <PropertyRef Name="IdTypePieceIdentite" />
+    </Key>
+    <Property Name="IdTypePieceIdentite" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Libelle" Type="varchar" MaxLength="250" />
+    <Property Name="IsDeleted" Type="bit" Nullable="false" />
+    <Property Name="CreatedBy" Type="bigint" />
+    <Property Name="ModifiedBy" Type="bigint" />
+    <Property Name="DateCreation" Type="datetime" />
+    <Property Name="DateMAJ" Type="datetime" />
+    <Property Name="DataKey" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="CategorieProcessus">
+    <Key>
+      <PropertyRef Name="IdCategorieProcessus" />
+    </Key>
+    <Property Name="IdCategorieProcessus" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Libelle" Type="varchar" Nullable="false" MaxLength="255" />
+    <Property Name="IsDeleted" Type="bit" Nullable="false" />
+    <Property Name="CreatedBy" Type="bigint" />
+    <Property Name="ModifiedBy" Type="bigint" />
+    <Property Name="DateCreation" Type="datetime" />
+    <Property Name="DateMAJ" Type="datetime" />
+    <Property Name="DataKey" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <Association Name="FK__Structure__idDev__75E27017">
+    <End Role="Devise" Type="Inexa.Atlantis.Re.Dal.Store.Devise" Multiplicity="1" />
+    <End Role="Structure" Type="Inexa.Atlantis.Re.Dal.Store.Structure" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Devise">
+        <PropertyRef Name="idDevise" />
+      </Principal>
+      <Dependent Role="Structure">
+        <PropertyRef Name="idDevise" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Structure__idPay__76D69450">
+    <End Role="Pays" Type="Inexa.Atlantis.Re.Dal.Store.Pays" Multiplicity="1" />
+    <End Role="Structure" Type="Inexa.Atlantis.Re.Dal.Store.Structure" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Pays">
+        <PropertyRef Name="IdPays" />
+      </Principal>
+      <Dependent Role="Structure">
+        <PropertyRef Name="idPays" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

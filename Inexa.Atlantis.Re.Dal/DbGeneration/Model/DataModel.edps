@@ -1,0 +1,445 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<EntityDeveloper Version="6.2.366.0">
+  <ModelSettings xmlns:ed="http://devart.com/schemas/EntityDeveloper/1.0" AppConnectionStringName="BD_ATLANTIS_RE_EntitiesConnectionString" ConnectionStringInAppConfig="True" RegenareteConnectionStringInAppConfig="True" TargetFramework="Net45" DetectTPTInheritance="False" EntityFrameworkVersion="Version6" IncludeForeignKeysInModel="true" DetectFunctionBasedColumnDefault="false">
+    <Connection ConnectionString="Data Source=INEXA-DEV-PC4\SQLExpress;Initial Catalog=BD_ATLANTIS_RE_DEV;Integrated Security=False;Persist Security Info=True;User ID=sa;Password=P@ssword" Provider="System.Data.SqlClient" />
+    <Generation>
+      <GeneratedFiles>
+        <File Name="Models.cs" Project="Inexa.Atlantis.Re.Commons" ProjectFolder="Infras\CodeInterface" />
+        <File Name="Services.cs" Project="Inexa.Atlantis.Re.Commons" ProjectFolder="Infras\CodeInterface" />
+        <File Name="NodeApi.cs" Project="Inexa.Atlantis.Re.Commons" ProjectFolder="Infras\CodeInterface" />
+        <File Name="DataModel.DTOs.cs" Project="Inexa.Atlantis.Re.Commons" ProjectFolder="Dtos\Generated" />
+        <File Name="DataModel.Converters.cs" Project="Inexa.Atlantis.Re.Dal" ProjectFolder="Transformers\Converters" />
+        <File Name="DataModel.Designer.cs" Project="Inexa.Atlantis.Re.Dal" ProjectFolder="DbGeneration\Context" />
+        <File Name="AtlantisReDbContextManager.cs" Project="Inexa.Atlantis.Re.Bll" ProjectFolder="Managers" OverwriteMode="None" />
+        <File Name="AffaireManager.cs" Project="Inexa.Atlantis.Re.Bll" ProjectFolder="Managers" OverwriteMode="None" />
+        <File Name="AssureManager.cs" Project="Inexa.Atlantis.Re.Bll" ProjectFolder="Managers" OverwriteMode="None" />
+        <File Name="BrancheManager.cs" Project="Inexa.Atlantis.Re.Bll" ProjectFolder="Managers" OverwriteMode="None" />
+        <File Name="DeclarationSinistreManager.cs" Project="Inexa.Atlantis.Re.Bll" ProjectFolder="Managers" OverwriteMode="None" />
+        <File Name="DemandePlacementFacultativeManager.cs" Project="Inexa.Atlantis.Re.Bll" ProjectFolder="Managers" OverwriteMode="None" />
+        <File Name="DeviseManager.cs" Project="Inexa.Atlantis.Re.Bll" ProjectFolder="Managers" OverwriteMode="None" />
+        <File Name="DocumentEchangeManager.cs" Project="Inexa.Atlantis.Re.Bll" ProjectFolder="Managers" OverwriteMode="None" />
+        <File Name="DomaineActiviteManager.cs" Project="Inexa.Atlantis.Re.Bll" ProjectFolder="Managers" OverwriteMode="None" />
+        <File Name="EchangeManager.cs" Project="Inexa.Atlantis.Re.Bll" ProjectFolder="Managers" OverwriteMode="None" />
+        <File Name="EtapeProcessuManager.cs" Project="Inexa.Atlantis.Re.Bll" ProjectFolder="Managers" OverwriteMode="None" />
+        <File Name="FilialeManager.cs" Project="Inexa.Atlantis.Re.Bll" ProjectFolder="Managers" OverwriteMode="None" />
+        <File Name="FonctionnaliteManager.cs" Project="Inexa.Atlantis.Re.Bll" ProjectFolder="Managers" OverwriteMode="None" />
+        <File Name="FormeJuridiqueManager.cs" Project="Inexa.Atlantis.Re.Bll" ProjectFolder="Managers" OverwriteMode="None" />
+        <File Name="HistoriqueLigneSchemasPlacementManager.cs" Project="Inexa.Atlantis.Re.Bll" ProjectFolder="Managers" OverwriteMode="None" />
+        <File Name="HistoriqueLigneTableauRepartitionChargeManager.cs" Project="Inexa.Atlantis.Re.Bll" ProjectFolder="Managers" OverwriteMode="None" />
+        <File Name="InterlocuteurFilialeManager.cs" Project="Inexa.Atlantis.Re.Bll" ProjectFolder="Managers" OverwriteMode="None" />
+        <File Name="InterlocuteurReassureurManager.cs" Project="Inexa.Atlantis.Re.Bll" ProjectFolder="Managers" OverwriteMode="None" />
+        <File Name="LigneRepartitionChargeManager.cs" Project="Inexa.Atlantis.Re.Bll" ProjectFolder="Managers" OverwriteMode="None" />
+        <File Name="LigneSchemasPlacementManager.cs" Project="Inexa.Atlantis.Re.Bll" ProjectFolder="Managers" OverwriteMode="None" />
+        <File Name="MailParametreManager.cs" Project="Inexa.Atlantis.Re.Bll" ProjectFolder="Managers" OverwriteMode="None" />
+        <File Name="MouvementTresorerieManager.cs" Project="Inexa.Atlantis.Re.Bll" ProjectFolder="Managers" OverwriteMode="None" />
+        <File Name="PayManager.cs" Project="Inexa.Atlantis.Re.Bll" ProjectFolder="Managers" OverwriteMode="None" />
+        <File Name="PersonneManager.cs" Project="Inexa.Atlantis.Re.Bll" ProjectFolder="Managers" OverwriteMode="None" />
+        <File Name="ProcessuManager.cs" Project="Inexa.Atlantis.Re.Bll" ProjectFolder="Managers" OverwriteMode="None" />
+        <File Name="ProfessionManager.cs" Project="Inexa.Atlantis.Re.Bll" ProjectFolder="Managers" OverwriteMode="None" />
+        <File Name="ProfilManager.cs" Project="Inexa.Atlantis.Re.Bll" ProjectFolder="Managers" OverwriteMode="None" />
+        <File Name="ProfilFonctionnaliteManager.cs" Project="Inexa.Atlantis.Re.Bll" ProjectFolder="Managers" OverwriteMode="None" />
+        <File Name="ProfilFonctionnaliteHistoManager.cs" Project="Inexa.Atlantis.Re.Bll" ProjectFolder="Managers" OverwriteMode="None" />
+        <File Name="ReassureurManager.cs" Project="Inexa.Atlantis.Re.Bll" ProjectFolder="Managers" OverwriteMode="None" />
+        <File Name="SchemasPlacementManager.cs" Project="Inexa.Atlantis.Re.Bll" ProjectFolder="Managers" OverwriteMode="None" />
+        <File Name="SecteurActiviteManager.cs" Project="Inexa.Atlantis.Re.Bll" ProjectFolder="Managers" OverwriteMode="None" />
+        <File Name="SituationMatrimonialeManager.cs" Project="Inexa.Atlantis.Re.Bll" ProjectFolder="Managers" OverwriteMode="None" />
+        <File Name="StatutAffaireManager.cs" Project="Inexa.Atlantis.Re.Bll" ProjectFolder="Managers" OverwriteMode="None" />
+        <File Name="StatutMouvementManager.cs" Project="Inexa.Atlantis.Re.Bll" ProjectFolder="Managers" OverwriteMode="None" />
+        <File Name="SuiviProcessuManager.cs" Project="Inexa.Atlantis.Re.Bll" ProjectFolder="Managers" OverwriteMode="None" />
+        <File Name="SysComplexiteMotDePasseManager.cs" Project="Inexa.Atlantis.Re.Bll" ProjectFolder="Managers" OverwriteMode="None" />
+        <File Name="SysLogManager.cs" Project="Inexa.Atlantis.Re.Bll" ProjectFolder="Managers" OverwriteMode="None" />
+        <File Name="SysMailBoxManager.cs" Project="Inexa.Atlantis.Re.Bll" ProjectFolder="Managers" OverwriteMode="None" />
+        <File Name="SysNotificationManager.cs" Project="Inexa.Atlantis.Re.Bll" ProjectFolder="Managers" OverwriteMode="None" />
+        <File Name="SysObjetManager.cs" Project="Inexa.Atlantis.Re.Bll" ProjectFolder="Managers" OverwriteMode="None" />
+        <File Name="SysStrategieMotDePasseManager.cs" Project="Inexa.Atlantis.Re.Bll" ProjectFolder="Managers" OverwriteMode="None" />
+        <File Name="SysStrategieMotDePasseHistoManager.cs" Project="Inexa.Atlantis.Re.Bll" ProjectFolder="Managers" OverwriteMode="None" />
+        <File Name="TableauRepartitionChargeManager.cs" Project="Inexa.Atlantis.Re.Bll" ProjectFolder="Managers" OverwriteMode="None" />
+        <File Name="TermeManager.cs" Project="Inexa.Atlantis.Re.Bll" ProjectFolder="Managers" OverwriteMode="None" />
+        <File Name="TermeTraiteManager.cs" Project="Inexa.Atlantis.Re.Bll" ProjectFolder="Managers" OverwriteMode="None" />
+        <File Name="TraceManager.cs" Project="Inexa.Atlantis.Re.Bll" ProjectFolder="Managers" OverwriteMode="None" />
+        <File Name="TraiteManager.cs" Project="Inexa.Atlantis.Re.Bll" ProjectFolder="Managers" OverwriteMode="None" />
+        <File Name="TypeEchangeManager.cs" Project="Inexa.Atlantis.Re.Bll" ProjectFolder="Managers" OverwriteMode="None" />
+        <File Name="TypePersonneManager.cs" Project="Inexa.Atlantis.Re.Bll" ProjectFolder="Managers" OverwriteMode="None" />
+        <File Name="TypeProcessuManager.cs" Project="Inexa.Atlantis.Re.Bll" ProjectFolder="Managers" OverwriteMode="None" />
+        <File Name="UtilisateurManager.cs" Project="Inexa.Atlantis.Re.Bll" ProjectFolder="Managers" OverwriteMode="None" />
+        <File Name="UtilisateurFonctionnaliteManager.cs" Project="Inexa.Atlantis.Re.Bll" ProjectFolder="Managers" OverwriteMode="None" />
+        <File Name="UtilisateurFonctionnaliteHistoManager.cs" Project="Inexa.Atlantis.Re.Bll" ProjectFolder="Managers" OverwriteMode="None" />
+        <File Name="UtilisateurFonctionnalitePriveManager.cs" Project="Inexa.Atlantis.Re.Bll" ProjectFolder="Managers" OverwriteMode="None" />
+        <File Name="UtilisateurFonctionnalitePriveHistoManager.cs" Project="Inexa.Atlantis.Re.Bll" ProjectFolder="Managers" OverwriteMode="None" />
+        <File Name="UtilisateurHistoManager.cs" Project="Inexa.Atlantis.Re.Bll" ProjectFolder="Managers" OverwriteMode="None" />
+        <File Name="UtilisateurProfilManager.cs" Project="Inexa.Atlantis.Re.Bll" ProjectFolder="Managers" OverwriteMode="None" />
+        <File Name="UtilisateurProfilHistoManager.cs" Project="Inexa.Atlantis.Re.Bll" ProjectFolder="Managers" OverwriteMode="None" />
+        <File Name="UtilisateurRestrictionManager.cs" Project="Inexa.Atlantis.Re.Bll" ProjectFolder="Managers" OverwriteMode="None" />
+        <File Name="UtilisateurRestrictionHistoManager.cs" Project="Inexa.Atlantis.Re.Bll" ProjectFolder="Managers" OverwriteMode="None" />
+        <File Name="UtilisateurSessionManager.cs" Project="Inexa.Atlantis.Re.Bll" ProjectFolder="Managers" OverwriteMode="None" />
+        <File Name="ViewSysStrategieMotDePasseManager.cs" Project="Inexa.Atlantis.Re.Bll" ProjectFolder="Managers" OverwriteMode="None" />
+        <File Name="ViewUtilisateurManager.cs" Project="Inexa.Atlantis.Re.Bll" ProjectFolder="Managers" OverwriteMode="None" />
+        <File Name="ViewUtilisateurProfilManager.cs" Project="Inexa.Atlantis.Re.Bll" ProjectFolder="Managers" OverwriteMode="None" />
+        <File Name="ViewUtilisateurRestrictionManager.cs" Project="Inexa.Atlantis.Re.Bll" ProjectFolder="Managers" OverwriteMode="None" />
+        <File Name="StructureManager.cs" Project="Inexa.Atlantis.Re.Bll" ProjectFolder="Managers" OverwriteMode="None" />
+        <File Name="CiviliteManager.cs" Project="Inexa.Atlantis.Re.Bll" ProjectFolder="Managers" OverwriteMode="None" />
+        <File Name="TypePieceIdentiteManager.cs" Project="Inexa.Atlantis.Re.Bll" ProjectFolder="Managers" OverwriteMode="None" />
+        <File Name="CategorieProcessuManager.cs" Project="Inexa.Atlantis.Re.Bll" ProjectFolder="Managers" OverwriteMode="None" />
+        <File Name="AtlantisReDbContextProvider.cs" Project="Inexa.Atlantis.Re.Dal" ProjectFolder="Providers" />
+        <File Name="AffaireProvider.cs" Project="Inexa.Atlantis.Re.Dal" ProjectFolder="Providers" />
+        <File Name="AssureProvider.cs" Project="Inexa.Atlantis.Re.Dal" ProjectFolder="Providers" />
+        <File Name="BrancheProvider.cs" Project="Inexa.Atlantis.Re.Dal" ProjectFolder="Providers" />
+        <File Name="DeclarationSinistreProvider.cs" Project="Inexa.Atlantis.Re.Dal" ProjectFolder="Providers" />
+        <File Name="DemandePlacementFacultativeProvider.cs" Project="Inexa.Atlantis.Re.Dal" ProjectFolder="Providers" />
+        <File Name="DeviseProvider.cs" Project="Inexa.Atlantis.Re.Dal" ProjectFolder="Providers" />
+        <File Name="DocumentEchangeProvider.cs" Project="Inexa.Atlantis.Re.Dal" ProjectFolder="Providers" />
+        <File Name="DomaineActiviteProvider.cs" Project="Inexa.Atlantis.Re.Dal" ProjectFolder="Providers" />
+        <File Name="EchangeProvider.cs" Project="Inexa.Atlantis.Re.Dal" ProjectFolder="Providers" />
+        <File Name="EtapeProcessuProvider.cs" Project="Inexa.Atlantis.Re.Dal" ProjectFolder="Providers" />
+        <File Name="FilialeProvider.cs" Project="Inexa.Atlantis.Re.Dal" ProjectFolder="Providers" />
+        <File Name="FonctionnaliteProvider.cs" Project="Inexa.Atlantis.Re.Dal" ProjectFolder="Providers" />
+        <File Name="FormeJuridiqueProvider.cs" Project="Inexa.Atlantis.Re.Dal" ProjectFolder="Providers" />
+        <File Name="HistoriqueLigneSchemasPlacementProvider.cs" Project="Inexa.Atlantis.Re.Dal" ProjectFolder="Providers" />
+        <File Name="HistoriqueLigneTableauRepartitionChargeProvider.cs" Project="Inexa.Atlantis.Re.Dal" ProjectFolder="Providers" />
+        <File Name="InterlocuteurFilialeProvider.cs" Project="Inexa.Atlantis.Re.Dal" ProjectFolder="Providers" />
+        <File Name="InterlocuteurReassureurProvider.cs" Project="Inexa.Atlantis.Re.Dal" ProjectFolder="Providers" />
+        <File Name="LigneRepartitionChargeProvider.cs" Project="Inexa.Atlantis.Re.Dal" ProjectFolder="Providers" />
+        <File Name="LigneSchemasPlacementProvider.cs" Project="Inexa.Atlantis.Re.Dal" ProjectFolder="Providers" />
+        <File Name="MailParametreProvider.cs" Project="Inexa.Atlantis.Re.Dal" ProjectFolder="Providers" />
+        <File Name="MouvementTresorerieProvider.cs" Project="Inexa.Atlantis.Re.Dal" ProjectFolder="Providers" />
+        <File Name="PayProvider.cs" Project="Inexa.Atlantis.Re.Dal" ProjectFolder="Providers" />
+        <File Name="PersonneProvider.cs" Project="Inexa.Atlantis.Re.Dal" ProjectFolder="Providers" />
+        <File Name="ProcessuProvider.cs" Project="Inexa.Atlantis.Re.Dal" ProjectFolder="Providers" />
+        <File Name="ProfessionProvider.cs" Project="Inexa.Atlantis.Re.Dal" ProjectFolder="Providers" />
+        <File Name="ProfilProvider.cs" Project="Inexa.Atlantis.Re.Dal" ProjectFolder="Providers" />
+        <File Name="ProfilFonctionnaliteProvider.cs" Project="Inexa.Atlantis.Re.Dal" ProjectFolder="Providers" />
+        <File Name="ProfilFonctionnaliteHistoProvider.cs" Project="Inexa.Atlantis.Re.Dal" ProjectFolder="Providers" />
+        <File Name="ReassureurProvider.cs" Project="Inexa.Atlantis.Re.Dal" ProjectFolder="Providers" />
+        <File Name="SchemasPlacementProvider.cs" Project="Inexa.Atlantis.Re.Dal" ProjectFolder="Providers" />
+        <File Name="SecteurActiviteProvider.cs" Project="Inexa.Atlantis.Re.Dal" ProjectFolder="Providers" />
+        <File Name="SituationMatrimonialeProvider.cs" Project="Inexa.Atlantis.Re.Dal" ProjectFolder="Providers" />
+        <File Name="StatutAffaireProvider.cs" Project="Inexa.Atlantis.Re.Dal" ProjectFolder="Providers" />
+        <File Name="StatutMouvementProvider.cs" Project="Inexa.Atlantis.Re.Dal" ProjectFolder="Providers" />
+        <File Name="SuiviProcessuProvider.cs" Project="Inexa.Atlantis.Re.Dal" ProjectFolder="Providers" />
+        <File Name="SysComplexiteMotDePasseProvider.cs" Project="Inexa.Atlantis.Re.Dal" ProjectFolder="Providers" />
+        <File Name="SysLogProvider.cs" Project="Inexa.Atlantis.Re.Dal" ProjectFolder="Providers" />
+        <File Name="SysMailBoxProvider.cs" Project="Inexa.Atlantis.Re.Dal" ProjectFolder="Providers" />
+        <File Name="SysNotificationProvider.cs" Project="Inexa.Atlantis.Re.Dal" ProjectFolder="Providers" />
+        <File Name="SysObjetProvider.cs" Project="Inexa.Atlantis.Re.Dal" ProjectFolder="Providers" />
+        <File Name="SysStrategieMotDePasseProvider.cs" Project="Inexa.Atlantis.Re.Dal" ProjectFolder="Providers" />
+        <File Name="SysStrategieMotDePasseHistoProvider.cs" Project="Inexa.Atlantis.Re.Dal" ProjectFolder="Providers" />
+        <File Name="TableauRepartitionChargeProvider.cs" Project="Inexa.Atlantis.Re.Dal" ProjectFolder="Providers" />
+        <File Name="TermeProvider.cs" Project="Inexa.Atlantis.Re.Dal" ProjectFolder="Providers" />
+        <File Name="TermeTraiteProvider.cs" Project="Inexa.Atlantis.Re.Dal" ProjectFolder="Providers" />
+        <File Name="TraceProvider.cs" Project="Inexa.Atlantis.Re.Dal" ProjectFolder="Providers" />
+        <File Name="TraiteProvider.cs" Project="Inexa.Atlantis.Re.Dal" ProjectFolder="Providers" />
+        <File Name="TypeEchangeProvider.cs" Project="Inexa.Atlantis.Re.Dal" ProjectFolder="Providers" />
+        <File Name="TypePersonneProvider.cs" Project="Inexa.Atlantis.Re.Dal" ProjectFolder="Providers" />
+        <File Name="TypeProcessuProvider.cs" Project="Inexa.Atlantis.Re.Dal" ProjectFolder="Providers" />
+        <File Name="UtilisateurProvider.cs" Project="Inexa.Atlantis.Re.Dal" ProjectFolder="Providers" />
+        <File Name="UtilisateurFonctionnaliteProvider.cs" Project="Inexa.Atlantis.Re.Dal" ProjectFolder="Providers" />
+        <File Name="UtilisateurFonctionnaliteHistoProvider.cs" Project="Inexa.Atlantis.Re.Dal" ProjectFolder="Providers" />
+        <File Name="UtilisateurFonctionnalitePriveProvider.cs" Project="Inexa.Atlantis.Re.Dal" ProjectFolder="Providers" />
+        <File Name="UtilisateurFonctionnalitePriveHistoProvider.cs" Project="Inexa.Atlantis.Re.Dal" ProjectFolder="Providers" />
+        <File Name="UtilisateurHistoProvider.cs" Project="Inexa.Atlantis.Re.Dal" ProjectFolder="Providers" />
+        <File Name="UtilisateurProfilProvider.cs" Project="Inexa.Atlantis.Re.Dal" ProjectFolder="Providers" />
+        <File Name="UtilisateurProfilHistoProvider.cs" Project="Inexa.Atlantis.Re.Dal" ProjectFolder="Providers" />
+        <File Name="UtilisateurRestrictionProvider.cs" Project="Inexa.Atlantis.Re.Dal" ProjectFolder="Providers" />
+        <File Name="UtilisateurRestrictionHistoProvider.cs" Project="Inexa.Atlantis.Re.Dal" ProjectFolder="Providers" />
+        <File Name="UtilisateurSessionProvider.cs" Project="Inexa.Atlantis.Re.Dal" ProjectFolder="Providers" />
+        <File Name="ViewSysStrategieMotDePasseProvider.cs" Project="Inexa.Atlantis.Re.Dal" ProjectFolder="Providers" />
+        <File Name="ViewUtilisateurProvider.cs" Project="Inexa.Atlantis.Re.Dal" ProjectFolder="Providers" />
+        <File Name="ViewUtilisateurProfilProvider.cs" Project="Inexa.Atlantis.Re.Dal" ProjectFolder="Providers" />
+        <File Name="ViewUtilisateurRestrictionProvider.cs" Project="Inexa.Atlantis.Re.Dal" ProjectFolder="Providers" />
+        <File Name="StructureProvider.cs" Project="Inexa.Atlantis.Re.Dal" ProjectFolder="Providers" />
+        <File Name="CiviliteProvider.cs" Project="Inexa.Atlantis.Re.Dal" ProjectFolder="Providers" />
+        <File Name="TypePieceIdentiteProvider.cs" Project="Inexa.Atlantis.Re.Dal" ProjectFolder="Providers" />
+        <File Name="CategorieProcessuProvider.cs" Project="Inexa.Atlantis.Re.Dal" ProjectFolder="Providers" />
+        <File Name="ReGeneratedCtrlController.cs" Project="Inexa.Atlantis.Re.Services" ProjectFolder="Controllers" />
+      </GeneratedFiles>
+    </Generation>
+    <DatabaseFirstNamingRules>
+      <EntitySet PluralizationName="Pluralize" />
+      <Class UseSchemaAsPrefix="False" PluralizeCollectionNavigationPropertyName="True" AddConstraintColumnsToNavigationPropertyName="False" RemoveUnderscores="True" AddUnderscores="False" RemoveInvalidCharacters="True" CodeCase="FirstLetterUppercase" AddPrefix="" AddSuffix="" RemovePrefixes="" RemoveSuffixes="" PluralizationName="Singularize" />
+      <Property RemoveUnderscores="True" AddUnderscores="False" RemoveInvalidCharacters="True" CodeCase="FirstLetterUppercase" AddPrefix="" AddSuffix="" RemovePrefixes="" RemoveSuffixes="" PluralizationName="Unchanged" />
+    </DatabaseFirstNamingRules>
+    <ModelFirst StorageSynchronizationEnabled="False" TargetSchema="dbo" TargetProviderName="System.Data.SqlClient">
+      <TargetServer Server="SQL Server" />
+      <ModelFirstNamingRules>
+        <Table RemoveUnderscores="False" AddUnderscores="False" RemoveInvalidCharacters="True" CodeCase="Unchanged" AddPrefix="" AddSuffix="" RemovePrefixes="" RemoveSuffixes="" PluralizationName="Pluralize" />
+        <Column RemoveUnderscores="False" AddUnderscores="False" RemoveInvalidCharacters="True" CodeCase="Unchanged" AddPrefix="" AddSuffix="" RemovePrefixes="" RemoveSuffixes="" PluralizationName="Unchanged" />
+      </ModelFirstNamingRules>
+    </ModelFirst>
+    <Diagrams>
+      <Diagram Name="Diagram1" DefaultDiagram="True" />
+    </Diagrams>
+    <Templates>
+      <Template Name="DataModel.CodeInterfaceGeneration" Enabled="True" File=".\DataModel.CodeInterfaceGeneration.tmpl">
+        <ed:Property Name="Output" Type="EntityDeveloper.TemplateEngine.OutputInfo, EntityDeveloper.Common, Version=6.2.366.0, Culture=neutral, PublicKeyToken=09af7300eec23701">
+          <OutputInfo xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+            <Project>Inexa.Atlantis.Re.Commons</Project>
+            <ProjectFolder>Infras\CodeInterface</ProjectFolder>
+            <DestinationFolder />
+          </OutputInfo>
+        </ed:Property>
+        <ed:Property Name="AbregeModule" Type="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+          <string>Re</string>
+        </ed:Property>
+        <ed:Property Name="CanAddAbregeModuleToNode" Type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+          <boolean>false</boolean>
+        </ed:Property>
+        <ed:Property Name="Namespace" Type="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+          <string d6p1:nil="true" xmlns:d6p1="http://www.w3.org/2001/XMLSchema-instance" />
+        </ed:Property>
+        <ed:Property Name="GeneratedControllerName" Type="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+          <string>ReGeneratedCtrl</string>
+        </ed:Property>
+        <ed:Property Name="RemoteTablePrefix" Type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+          <boolean>false</boolean>
+        </ed:Property>
+      </Template>
+      <Template Name="DataModel.Data Transfer Object" Enabled="True" File=".\DataModel.Data Transfer Object.tmpl">
+        <ed:Property Name="FilePerClass" Type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+          <boolean>false</boolean>
+        </ed:Property>
+        <ed:Property Name="DtosOutput" Type="EntityDeveloper.TemplateEngine.OutputInfo, EntityDeveloper.Common, Version=6.2.366.0, Culture=neutral, PublicKeyToken=09af7300eec23701">
+          <OutputInfo xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+            <Project>Inexa.Atlantis.Re.Commons</Project>
+            <ProjectFolder>Dtos\Generated</ProjectFolder>
+            <DestinationFolder />
+          </OutputInfo>
+        </ed:Property>
+        <ed:Property Name="AbregeModule" Type="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+          <string>Admin</string>
+        </ed:Property>
+        <ed:Property Name="InfraNamespace" Type="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+          <string>Infrastructures</string>
+        </ed:Property>
+        <ed:Property Name="ConvertersOutput" Type="EntityDeveloper.TemplateEngine.OutputInfo, EntityDeveloper.Common, Version=6.2.366.0, Culture=neutral, PublicKeyToken=09af7300eec23701">
+          <OutputInfo xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+            <Project>Inexa.Atlantis.Re.Dal</Project>
+            <ProjectFolder>Transformers\Converters</ProjectFolder>
+            <DestinationFolder />
+          </OutputInfo>
+        </ed:Property>
+        <ed:Property Name="GeneratePartialDtos" Type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+          <boolean>false</boolean>
+        </ed:Property>
+        <ed:Property Name="GeneratePartialConverters" Type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+          <boolean>false</boolean>
+        </ed:Property>
+        <ed:Property Name="DtoNamespace" Type="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+          <string>Inexa.Atlantis.Re.Commons.Dtos</string>
+        </ed:Property>
+        <ed:Property Name="HeaderTimestampVersionControlTag" Type="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+          <string d6p1:nil="true" xmlns:d6p1="http://www.w3.org/2001/XMLSchema-instance" />
+        </ed:Property>
+        <ed:Property Name="DtoClassNamePrefix" Type="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+          <string d6p1:nil="true" xmlns:d6p1="http://www.w3.org/2001/XMLSchema-instance" />
+        </ed:Property>
+        <ed:Property Name="DtoClassNameSuffix" Type="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+          <string>Dto</string>
+        </ed:Property>
+        <ed:Property Name="WcfDataContractAttributes" Type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+          <boolean>false</boolean>
+        </ed:Property>
+        <ed:Property Name="GenerateDtoConstructors" Type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+          <boolean>true</boolean>
+        </ed:Property>
+        <ed:Property Name="UseDtoClassesInAssociations" Type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+          <boolean>true</boolean>
+        </ed:Property>
+        <ed:Property Name="GenerateConverters" Type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+          <boolean>true</boolean>
+        </ed:Property>
+        <ed:Property Name="ConverterClassNamePrefix" Type="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+          <string d6p1:nil="true" xmlns:d6p1="http://www.w3.org/2001/XMLSchema-instance" />
+        </ed:Property>
+        <ed:Property Name="ConverterClassNameSuffix" Type="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+          <string>Converter</string>
+        </ed:Property>
+        <ed:Property Name="DomainNamespace" Type="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+          <string>Inexa.Atlantis.Re.Commons.Infras.Domains</string>
+        </ed:Property>
+      </Template>
+      <Template Name="DataModel.DbContext" Enabled="True" File=".\DataModel.DbContext.tmpl">
+        <ed:Property Name="ValidationFramework" Type="EntityDeveloper.TemplateEngine.ValidationFramework, EntityDeveloper.Common, Version=6.2.366.0, Culture=neutral, PublicKeyToken=09af7300eec23701">
+          <ValidationFramework>None</ValidationFramework>
+        </ed:Property>
+        <ed:Property Name="ValidationErrorMessages" Type="EntityDeveloper.TemplateEngine.ValidationErrorMessages, EntityDeveloper.Common, Version=6.2.366.0, Culture=neutral, PublicKeyToken=09af7300eec23701">
+          <ValidationErrorMessages xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" />
+        </ed:Property>
+        <ed:Property Name="FilePerClass" Type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+          <boolean>false</boolean>
+        </ed:Property>
+        <ed:Property Name="ModelNameAsFilesPrefix" Type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+          <boolean>false</boolean>
+        </ed:Property>
+        <ed:Property Name="HeaderTimestampVersionControlTag" Type="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+          <string d6p1:nil="true" xmlns:d6p1="http://www.w3.org/2001/XMLSchema-instance" />
+        </ed:Property>
+        <ed:Property Name="EntitiesOutput" Type="EntityDeveloper.TemplateEngine.OutputInfo, EntityDeveloper.Common, Version=6.2.366.0, Culture=neutral, PublicKeyToken=09af7300eec23701">
+          <OutputInfo xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+            <Project>Inexa.Atlantis.Re.Dal</Project>
+            <ProjectFolder>DbGeneration\Entities</ProjectFolder>
+            <DestinationFolder />
+          </OutputInfo>
+        </ed:Property>
+        <ed:Property Name="ContextOutput" Type="EntityDeveloper.TemplateEngine.OutputInfo, EntityDeveloper.Common, Version=6.2.366.0, Culture=neutral, PublicKeyToken=09af7300eec23701">
+          <OutputInfo xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+            <Project>Inexa.Atlantis.Re.Dal</Project>
+            <ProjectFolder>DbGeneration\Context</ProjectFolder>
+            <DestinationFolder />
+          </OutputInfo>
+        </ed:Property>
+        <ed:Property Name="GeneratePartialClass" Type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+          <boolean>false</boolean>
+        </ed:Property>
+        <ed:Property Name="ImplementCloneable" Type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+          <boolean>false</boolean>
+        </ed:Property>
+        <ed:Property Name="ImplementINotifyPropertyChanging" Type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+          <boolean>false</boolean>
+        </ed:Property>
+        <ed:Property Name="ImplementINotifyPropertyChanged" Type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+          <boolean>false</boolean>
+        </ed:Property>
+        <ed:Property Name="WcfDataContractAttributes" Type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+          <boolean>false</boolean>
+        </ed:Property>
+        <ed:Property Name="WcfDataMemberOnNavigationProperties" Type="EntityDeveloper.WcfDataMemberGenerationBehavior, EntityDeveloper.Orm.Common, Version=6.2.366.0, Culture=neutral, PublicKeyToken=09af7300eec23701">
+          <WcfDataMemberGenerationBehavior>All</WcfDataMemberGenerationBehavior>
+        </ed:Property>
+        <ed:Property Name="FluentMapping" Type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+          <boolean>false</boolean>
+        </ed:Property>
+        <ed:Property Name="MappingGenerationStrategy" Type="EntityDeveloper.EntityFramework.CodeFirstMappingGenerationStrategy, EntityDeveloper.Orm.EntityFramework, Version=6.2.366.0, Culture=neutral, PublicKeyToken=09af7300eec23701">
+          <CodeFirstMappingGenerationStrategy>UseOnModelCreatingMethod</CodeFirstMappingGenerationStrategy>
+        </ed:Property>
+        <ed:Property Name="DatabaseIndependent" Type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+          <boolean>false</boolean>
+        </ed:Property>
+        <ed:Property Name="DisabledConventions" Type="EntityDeveloper.EntityFramework.CodeFirstConfigurationConvention, EntityDeveloper.Orm.EntityFramework, Version=6.2.366.0, Culture=neutral, PublicKeyToken=09af7300eec23701">
+          <CodeFirstConfigurationConvention />
+        </ed:Property>
+        <ed:Property Name="ConfigurationsOutput" Type="EntityDeveloper.TemplateEngine.OutputInfo, EntityDeveloper.Common, Version=6.2.366.0, Culture=neutral, PublicKeyToken=09af7300eec23701">
+          <OutputInfo xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+            <Project />
+            <ProjectFolder />
+            <DestinationFolder />
+          </OutputInfo>
+        </ed:Property>
+        <ed:Property Name="AutoDetectChangesEnabled" Type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+          <boolean>true</boolean>
+        </ed:Property>
+        <ed:Property Name="ProxyCreationEnabled" Type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+          <boolean>true</boolean>
+        </ed:Property>
+        <ed:Property Name="ValidateOnSaveEnabled" Type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+          <boolean>true</boolean>
+        </ed:Property>
+        <ed:Property Name="DomainNamespace" Type="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+          <string>Inexa.Atlantis.Re.Commons.Infras.Domains</string>
+        </ed:Property>
+        <ed:Property Name="EntityBaseName" Type="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+          <string>EntityBase</string>
+        </ed:Property>
+      </Template>
+      <Template Name="DataModel.ISD-ManagersGeneration" Enabled="True" File=".\DataModel.ISD-ManagersGeneration.tmpl">
+        <ed:Property Name="RemoteTablePrefix" Type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+          <boolean>false</boolean>
+        </ed:Property>
+        <ed:Property Name="GenerateManagers" Type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+          <boolean>true</boolean>
+        </ed:Property>
+        <ed:Property Name="Namespace" Type="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+          <string>Inexa.Atlantis.Re.Bll.Managers</string>
+        </ed:Property>
+        <ed:Property Name="EnumsNamespace" Type="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+          <string>Inexa.Atlantis.Re.Commons.Infras.Enums</string>
+        </ed:Property>
+        <ed:Property Name="HelperNamespace" Type="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+          <string>Inexa.Atlantis.Re.Commons.Infras.Helpers</string>
+        </ed:Property>
+        <ed:Property Name="ProvidersNamespace" Type="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+          <string>Inexa.Atlantis.Re.Dal.Providers</string>
+        </ed:Property>
+        <ed:Property Name="DtoRootNamespace" Type="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+          <string>Inexa.Atlantis.Re.Commons.Dtos</string>
+        </ed:Property>
+        <ed:Property Name="DomainNamespace" Type="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+          <string>Inexa.Atlantis.Re.Commons.Infras.Domains</string>
+        </ed:Property>
+        <ed:Property Name="ManagersOutput" Type="EntityDeveloper.TemplateEngine.OutputInfo, EntityDeveloper.Common, Version=6.2.366.0, Culture=neutral, PublicKeyToken=09af7300eec23701">
+          <OutputInfo xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+            <Project>Inexa.Atlantis.Re.Bll</Project>
+            <ProjectFolder>Managers</ProjectFolder>
+            <DestinationFolder />
+          </OutputInfo>
+        </ed:Property>
+      </Template>
+      <Template Name="DataModel.ISD-ProvidersGeneration" Enabled="True" File=".\DataModel.ISD-ProvidersGeneration.tmpl">
+        <ed:Property Name="RemoteTablePrefix" Type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+          <boolean>false</boolean>
+        </ed:Property>
+        <ed:Property Name="Output" Type="EntityDeveloper.TemplateEngine.OutputInfo, EntityDeveloper.Common, Version=6.2.366.0, Culture=neutral, PublicKeyToken=09af7300eec23701">
+          <OutputInfo xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+            <Project>Inexa.Atlantis.Re.Dal</Project>
+            <ProjectFolder>Providers</ProjectFolder>
+            <DestinationFolder />
+          </OutputInfo>
+        </ed:Property>
+        <ed:Property Name="AbregeModule" Type="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+          <string>Admin</string>
+        </ed:Property>
+        <ed:Property Name="Namespace" Type="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+          <string d6p1:nil="true" xmlns:d6p1="http://www.w3.org/2001/XMLSchema-instance" />
+        </ed:Property>
+        <ed:Property Name="DomainNamespace" Type="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+          <string>Inexa.Atlantis.Re.Commons.Infras.Domains</string>
+        </ed:Property>
+        <ed:Property Name="EnumsNamespace" Type="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+          <string>Inexa.Atlantis.Re.Commons.Infras.Enums</string>
+        </ed:Property>
+        <ed:Property Name="HelperNamespace" Type="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+          <string>Inexa.Atlantis.Re.Commons.Infras.Helpers</string>
+        </ed:Property>
+        <ed:Property Name="RepositoryNamespace" Type="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+          <string>Inexa.Atlantis.Re.Dal.Repository</string>
+        </ed:Property>
+        <ed:Property Name="DtoRootNamespace" Type="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+          <string>Inexa.Atlantis.Re.Commons.Dtos</string>
+        </ed:Property>
+        <ed:Property Name="DalRootNamespace" Type="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+          <string>Inexa.Atlantis.Re.Dal</string>
+        </ed:Property>
+      </Template>
+      <Template Name="DataModel.WSImplGeneration" Enabled="True" File=".\DataModel.WSImplGeneration.tmpl">
+        <ed:Property Name="Output" Type="EntityDeveloper.TemplateEngine.OutputInfo, EntityDeveloper.Common, Version=6.2.366.0, Culture=neutral, PublicKeyToken=09af7300eec23701">
+          <OutputInfo xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+            <Project>Inexa.Atlantis.Re.Services</Project>
+            <ProjectFolder>Controllers</ProjectFolder>
+            <DestinationFolder />
+          </OutputInfo>
+        </ed:Property>
+        <ed:Property Name="RemoteTablePrefix" Type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+          <boolean>false</boolean>
+        </ed:Property>
+        <ed:Property Name="AbregeModule" Type="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+          <string>Admin</string>
+        </ed:Property>
+        <ed:Property Name="GeneratedControllerName" Type="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+          <string>ReGeneratedCtrl</string>
+        </ed:Property>
+        <ed:Property Name="DtoRootNamespace" Type="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+          <string>Inexa.Atlantis.Re.Commons.Dtos</string>
+        </ed:Property>
+        <ed:Property Name="DomainNamespace" Type="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+          <string>Inexa.Atlantis.Re.Commons.Infras.Domains</string>
+        </ed:Property>
+        <ed:Property Name="Namespace" Type="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+          <string>Inexa.Atlantis.Re.Services.Controllers</string>
+        </ed:Property>
+        <ed:Property Name="ManagersNamespace" Type="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+          <string>Inexa.Atlantis.Re.Bll.Managers</string>
+        </ed:Property>
+      </Template>
+    </Templates>
+    <AttributeAssemblies />
+  </ModelSettings>
+</EntityDeveloper>

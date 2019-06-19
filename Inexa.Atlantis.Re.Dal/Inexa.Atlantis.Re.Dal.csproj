@@ -1,0 +1,198 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{699FFCFA-BFE3-488E-8B7C-71F7700CC583}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Inexa.Atlantis.Re.Dal</RootNamespace>
+    <AssemblyName>Inexa.Atlantis.Re.Dal</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Dapper, Version=1.50.2.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Dapper.1.50.2\lib\net45\Dapper.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="RestSharp, Version=105.1.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\RestSharp.105.1.0\lib\net45\RestSharp.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+    <Reference Include="TextmagicRest, Version=1.0.0.5, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\TextmagicRest.1.0.0.5\lib\net45\TextmagicRest.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DapperProvider\AdminProvider.cs" />
+    <Compile Include="DapperProvider\DbManager.cs" />
+    <Compile Include="DbGeneration\Context\DataModel.Designer.cs" />
+    <Compile Include="DbGeneration\Model\BD_ATLANTIS_RE_EntitiesManager.cs">
+      <DependentUpon>DataModel.edml</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Providers\AffaireProvider.cs" />
+    <Compile Include="Providers\AssureProvider.cs" />
+    <Compile Include="Providers\AtlantisReDbContextProvider.cs" />
+    <Compile Include="Providers\BD_ATLANTIS_RE_DEVEntitiesProvider.cs" />
+    <Compile Include="Providers\BrancheProvider.cs" />
+    <Compile Include="Providers\CategorieProcessuProvider.cs" />
+    <Compile Include="Providers\CiviliteProvider.cs" />
+    <Compile Include="Providers\DeclarationSinistreProvider.cs" />
+    <Compile Include="Providers\DemandePlacementFacultativeProvider.cs" />
+    <Compile Include="Providers\DeviseProvider.cs" />
+    <Compile Include="Providers\DocumentEchangeProvider.cs" />
+    <Compile Include="Providers\DomaineActiviteProvider.cs" />
+    <Compile Include="Providers\EchangeProvider.cs" />
+    <Compile Include="Providers\EtapeProcessuProvider.cs" />
+    <Compile Include="Providers\FilialeProvider.cs" />
+    <Compile Include="Providers\FonctionnaliteProvider.cs" />
+    <Compile Include="Providers\FormeJuridiqueProvider.cs" />
+    <Compile Include="Providers\HistoriqueLigneSchemasPlacementProvider.cs" />
+    <Compile Include="Providers\HistoriqueLigneTableauRepartitionChargeProvider.cs" />
+    <Compile Include="Providers\InterlocuteurFilialeProvider.cs" />
+    <Compile Include="Providers\InterlocuteurReassureurProvider.cs" />
+    <Compile Include="Providers\LigneRepartitionChargeProvider.cs" />
+    <Compile Include="Providers\LigneSchemasPlacementProvider.cs" />
+    <Compile Include="Providers\MailParametreProvider.cs" />
+    <Compile Include="Providers\MouvementTresorerieProvider.cs" />
+    <Compile Include="Providers\PayProvider.cs" />
+    <Compile Include="Providers\PersonneProvider.cs" />
+    <Compile Include="Providers\ProcessuProvider.cs" />
+    <Compile Include="Providers\ProfessionProvider.cs" />
+    <Compile Include="Providers\ProfilFonctionnaliteHistoProvider.cs" />
+    <Compile Include="Providers\ProfilFonctionnaliteProvider.cs" />
+    <Compile Include="Providers\ProfilProvider.cs" />
+    <Compile Include="Providers\ReassureurProvider.cs" />
+    <Compile Include="Providers\SchemasPlacementProvider.cs" />
+    <Compile Include="Providers\SecteurActiviteProvider.cs" />
+    <Compile Include="Providers\SituationMatrimonialeProvider.cs" />
+    <Compile Include="Providers\StatutAffaireProvider.cs" />
+    <Compile Include="Providers\StatutMouvementProvider.cs" />
+    <Compile Include="Providers\StructureProvider.cs" />
+    <Compile Include="Providers\SuiviProcessuProvider.cs" />
+    <Compile Include="Providers\SysComplexiteMotDePasseProvider.cs" />
+    <Compile Include="Providers\SysLogProvider.cs" />
+    <Compile Include="Providers\SysMailBoxProvider.cs" />
+    <Compile Include="Providers\SysNotificationProvider.cs" />
+    <Compile Include="Providers\SysObjetProvider.cs" />
+    <Compile Include="Providers\SysStrategieMotDePasseHistoProvider.cs" />
+    <Compile Include="Providers\SysStrategieMotDePasseProvider.cs" />
+    <Compile Include="Providers\TableauRepartitionChargeProvider.cs" />
+    <Compile Include="Providers\TermeProvider.cs" />
+    <Compile Include="Providers\TermeTraiteProvider.cs" />
+    <Compile Include="Providers\TraceProvider.cs" />
+    <Compile Include="Providers\TraiteProvider.cs" />
+    <Compile Include="Providers\TypeEchangeProvider.cs" />
+    <Compile Include="Providers\TypePersonneProvider.cs" />
+    <Compile Include="Providers\TypePieceIdentiteProvider.cs" />
+    <Compile Include="Providers\TypeProcessuProvider.cs" />
+    <Compile Include="Providers\UtilisateurFonctionnaliteHistoProvider.cs" />
+    <Compile Include="Providers\UtilisateurFonctionnalitePriveHistoProvider.cs" />
+    <Compile Include="Providers\UtilisateurFonctionnalitePriveProvider.cs" />
+    <Compile Include="Providers\UtilisateurFonctionnaliteProvider.cs" />
+    <Compile Include="Providers\UtilisateurHistoProvider.cs" />
+    <Compile Include="Providers\UtilisateurProfilHistoProvider.cs" />
+    <Compile Include="Providers\UtilisateurProfilProvider.cs" />
+    <Compile Include="Providers\UtilisateurProvider.cs" />
+    <Compile Include="Providers\UtilisateurRestrictionHistoProvider.cs" />
+    <Compile Include="Providers\UtilisateurRestrictionProvider.cs" />
+    <Compile Include="Providers\UtilisateurSessionProvider.cs" />
+    <Compile Include="Providers\ViewSysStrategieMotDePasseProvider.cs" />
+    <Compile Include="Providers\ViewUtilisateurProfilProvider.cs" />
+    <Compile Include="Providers\ViewUtilisateurProvider.cs" />
+    <Compile Include="Providers\ViewUtilisateurRestrictionProvider.cs" />
+    <Compile Include="Repository\DataContextFactory.cs" />
+    <Compile Include="Repository\DataContextStorage\DataContextStorageFactory.cs" />
+    <Compile Include="Repository\DataContextStorage\HttpDataContextStorageContainer.cs" />
+    <Compile Include="Repository\DataContextStorage\IDataContextStorageContainer.cs" />
+    <Compile Include="Repository\DataContextStorage\ThreadDataContextStorageContainer.cs" />
+    <Compile Include="Repository\EfUnitOfWork.cs" />
+    <Compile Include="Repository\IRepository.cs" />
+    <Compile Include="Repository\Repository.cs" />
+    <Compile Include="Repository\UnitOfWork\IUnitOfWork.cs" />
+    <Compile Include="Repository\UnitOfWork\IUnitOfWorkRepository.cs" />
+    <Compile Include="Repository\UnitOfWork\UnitOfWorkRepository.cs" />
+    <Compile Include="Transformers\Converters\DataModel.Converters.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Inexa.Atlantis.Re.Commons\Inexa.Atlantis.Re.Commons.csproj">
+      <Project>{07f2b8e3-6301-4f03-bfc1-b2d29c07308f}</Project>
+      <Name>Inexa.Atlantis.Re.Commons</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="DbGeneration\Model\DataModel.CodeInterfaceGeneration.tmpl" />
+    <None Include="DbGeneration\Model\DataModel.Data Transfer Object.tmpl" />
+    <None Include="DbGeneration\Model\DataModel.DbContext.tmpl" />
+    <None Include="DbGeneration\Model\DataModel.Diagram1.view">
+      <DependentUpon>DataModel.edml</DependentUpon>
+    </None>
+    <DevartEntityDeploy Include="DbGeneration\Model\DataModel.edml">
+      <Generator>DevartEfGenerator</Generator>
+      <LastGenOutput>DataModel.info</LastGenOutput>
+    </DevartEntityDeploy>
+    <None Include="DbGeneration\Model\DataModel.edps">
+      <DependentUpon>DataModel.edml</DependentUpon>
+    </None>
+    <None Include="DbGeneration\Model\DataModel.info">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataModel.edml</DependentUpon>
+    </None>
+    <None Include="DbGeneration\Model\DataModel.ISD-ManagersGeneration.tmpl" />
+    <None Include="DbGeneration\Model\DataModel.ISD-ProvidersGeneration.tmpl" />
+    <None Include="DbGeneration\Model\DataModel.WSImplGeneration.tmpl" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

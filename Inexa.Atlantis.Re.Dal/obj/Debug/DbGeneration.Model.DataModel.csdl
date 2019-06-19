@@ -1,0 +1,1282 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="Inexa.Atlantis.Re.Dal" Alias="Self" d4p1:ViewGeneration="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:devart="http://devart.com/schemas/edml/ConceptualSchemaExtensions/1.0" xmlns:ed="http://devart.com/schemas/EntityDeveloper/1.0" annotation:UseStrongSpatialTypes="false" xmlns:d4p1="http://devart.com/schemas/edml/ConceptualSchemaExtensions/1.0" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityContainer Name="AtlantisReDbContext" annotation:LazyLoadingEnabled="true" ed:Guid="bce3a9bf-6c05-46dc-a39f-7a25659135c3">
+    <EntitySet Name="Affaires" EntityType="Inexa.Atlantis.Re.Dal.Affaire" />
+    <EntitySet Name="Assures" EntityType="Inexa.Atlantis.Re.Dal.Assure" />
+    <EntitySet Name="Branches" EntityType="Inexa.Atlantis.Re.Dal.Branche" />
+    <EntitySet Name="DeclarationSinistres" EntityType="Inexa.Atlantis.Re.Dal.DeclarationSinistre" />
+    <EntitySet Name="DemandePlacementFacultatives" EntityType="Inexa.Atlantis.Re.Dal.DemandePlacementFacultative" />
+    <EntitySet Name="Devises" EntityType="Inexa.Atlantis.Re.Dal.Devise" />
+    <EntitySet Name="DocumentEchanges" EntityType="Inexa.Atlantis.Re.Dal.DocumentEchange" />
+    <EntitySet Name="DomaineActivites" EntityType="Inexa.Atlantis.Re.Dal.DomaineActivite" />
+    <EntitySet Name="Echanges" EntityType="Inexa.Atlantis.Re.Dal.Echange" />
+    <EntitySet Name="EtapeProcessus" EntityType="Inexa.Atlantis.Re.Dal.EtapeProcessu" />
+    <EntitySet Name="Filiales" EntityType="Inexa.Atlantis.Re.Dal.Filiale" />
+    <EntitySet Name="Fonctionnalites" EntityType="Inexa.Atlantis.Re.Dal.Fonctionnalite" />
+    <EntitySet Name="FormeJuridiques" EntityType="Inexa.Atlantis.Re.Dal.FormeJuridique" />
+    <EntitySet Name="HistoriqueLigneSchemasPlacements" EntityType="Inexa.Atlantis.Re.Dal.HistoriqueLigneSchemasPlacement" />
+    <EntitySet Name="HistoriqueLigneTableauRepartitionCharges" EntityType="Inexa.Atlantis.Re.Dal.HistoriqueLigneTableauRepartitionCharge" />
+    <EntitySet Name="InterlocuteurFiliales" EntityType="Inexa.Atlantis.Re.Dal.InterlocuteurFiliale" />
+    <EntitySet Name="InterlocuteurReassureurs" EntityType="Inexa.Atlantis.Re.Dal.InterlocuteurReassureur" />
+    <EntitySet Name="LigneRepartitionCharges" EntityType="Inexa.Atlantis.Re.Dal.LigneRepartitionCharge" />
+    <EntitySet Name="LigneSchemasPlacements" EntityType="Inexa.Atlantis.Re.Dal.LigneSchemasPlacement" />
+    <EntitySet Name="MailParametres" EntityType="Inexa.Atlantis.Re.Dal.MailParametre" />
+    <EntitySet Name="MouvementTresoreries" EntityType="Inexa.Atlantis.Re.Dal.MouvementTresorerie" />
+    <EntitySet Name="Pays" EntityType="Inexa.Atlantis.Re.Dal.Pay" />
+    <EntitySet Name="Personnes" EntityType="Inexa.Atlantis.Re.Dal.Personne" />
+    <EntitySet Name="Processus" EntityType="Inexa.Atlantis.Re.Dal.Processu" />
+    <EntitySet Name="Professions" EntityType="Inexa.Atlantis.Re.Dal.Profession" />
+    <EntitySet Name="Profils" EntityType="Inexa.Atlantis.Re.Dal.Profil" />
+    <EntitySet Name="ProfilFonctionnalites" EntityType="Inexa.Atlantis.Re.Dal.ProfilFonctionnalite" />
+    <EntitySet Name="ProfilFonctionnaliteHistos" EntityType="Inexa.Atlantis.Re.Dal.ProfilFonctionnaliteHisto" />
+    <EntitySet Name="Reassureurs" EntityType="Inexa.Atlantis.Re.Dal.Reassureur" />
+    <EntitySet Name="SchemasPlacements" EntityType="Inexa.Atlantis.Re.Dal.SchemasPlacement" />
+    <EntitySet Name="SecteurActivites" EntityType="Inexa.Atlantis.Re.Dal.SecteurActivite" />
+    <EntitySet Name="SituationMatrimoniales" EntityType="Inexa.Atlantis.Re.Dal.SituationMatrimoniale" />
+    <EntitySet Name="StatutAffaires" EntityType="Inexa.Atlantis.Re.Dal.StatutAffaire" />
+    <EntitySet Name="StatutMouvements" EntityType="Inexa.Atlantis.Re.Dal.StatutMouvement" />
+    <EntitySet Name="SuiviProcessus" EntityType="Inexa.Atlantis.Re.Dal.SuiviProcessu" />
+    <EntitySet Name="SysComplexiteMotDePasses" EntityType="Inexa.Atlantis.Re.Dal.SysComplexiteMotDePasse" />
+    <EntitySet Name="SysLogs" EntityType="Inexa.Atlantis.Re.Dal.SysLog" />
+    <EntitySet Name="SysMailBoxes" EntityType="Inexa.Atlantis.Re.Dal.SysMailBox" />
+    <EntitySet Name="SysNotifications" EntityType="Inexa.Atlantis.Re.Dal.SysNotification" />
+    <EntitySet Name="SysObjets" EntityType="Inexa.Atlantis.Re.Dal.SysObjet" />
+    <EntitySet Name="SysStrategieMotDePasses" EntityType="Inexa.Atlantis.Re.Dal.SysStrategieMotDePasse" />
+    <EntitySet Name="SysStrategieMotDePasseHistos" EntityType="Inexa.Atlantis.Re.Dal.SysStrategieMotDePasseHisto" />
+    <EntitySet Name="TableauRepartitionCharges" EntityType="Inexa.Atlantis.Re.Dal.TableauRepartitionCharge" />
+    <EntitySet Name="Termes" EntityType="Inexa.Atlantis.Re.Dal.Terme" />
+    <EntitySet Name="TermeTraites" EntityType="Inexa.Atlantis.Re.Dal.TermeTraite" />
+    <EntitySet Name="Traces" EntityType="Inexa.Atlantis.Re.Dal.Trace" />
+    <EntitySet Name="Traites" EntityType="Inexa.Atlantis.Re.Dal.Traite" />
+    <EntitySet Name="TypeEchanges" EntityType="Inexa.Atlantis.Re.Dal.TypeEchange" />
+    <EntitySet Name="TypePersonnes" EntityType="Inexa.Atlantis.Re.Dal.TypePersonne" />
+    <EntitySet Name="TypeProcessus" EntityType="Inexa.Atlantis.Re.Dal.TypeProcessu" />
+    <EntitySet Name="Utilisateurs" EntityType="Inexa.Atlantis.Re.Dal.Utilisateur" />
+    <EntitySet Name="UtilisateurFonctionnalites" EntityType="Inexa.Atlantis.Re.Dal.UtilisateurFonctionnalite" />
+    <EntitySet Name="UtilisateurFonctionnaliteHistos" EntityType="Inexa.Atlantis.Re.Dal.UtilisateurFonctionnaliteHisto" />
+    <EntitySet Name="UtilisateurFonctionnalitePrives" EntityType="Inexa.Atlantis.Re.Dal.UtilisateurFonctionnalitePrive" />
+    <EntitySet Name="UtilisateurFonctionnalitePriveHistos" EntityType="Inexa.Atlantis.Re.Dal.UtilisateurFonctionnalitePriveHisto" />
+    <EntitySet Name="UtilisateurHistos" EntityType="Inexa.Atlantis.Re.Dal.UtilisateurHisto" />
+    <EntitySet Name="UtilisateurProfils" EntityType="Inexa.Atlantis.Re.Dal.UtilisateurProfil" />
+    <EntitySet Name="UtilisateurProfilHistos" EntityType="Inexa.Atlantis.Re.Dal.UtilisateurProfilHisto" />
+    <EntitySet Name="UtilisateurRestrictions" EntityType="Inexa.Atlantis.Re.Dal.UtilisateurRestriction" />
+    <EntitySet Name="UtilisateurRestrictionHistos" EntityType="Inexa.Atlantis.Re.Dal.UtilisateurRestrictionHisto" />
+    <EntitySet Name="UtilisateurSessions" EntityType="Inexa.Atlantis.Re.Dal.UtilisateurSession" />
+    <EntitySet Name="ViewSysStrategieMotDePasses" EntityType="Inexa.Atlantis.Re.Dal.ViewSysStrategieMotDePasse" />
+    <EntitySet Name="ViewUtilisateurs" EntityType="Inexa.Atlantis.Re.Dal.ViewUtilisateur" />
+    <EntitySet Name="ViewUtilisateurProfils" EntityType="Inexa.Atlantis.Re.Dal.ViewUtilisateurProfil" />
+    <EntitySet Name="ViewUtilisateurRestrictions" EntityType="Inexa.Atlantis.Re.Dal.ViewUtilisateurRestriction" />
+    <EntitySet Name="Structures" EntityType="Inexa.Atlantis.Re.Dal.Structure" />
+    <EntitySet Name="Civilites" EntityType="Inexa.Atlantis.Re.Dal.Civilite" />
+    <EntitySet Name="TypePieceIdentites" EntityType="Inexa.Atlantis.Re.Dal.TypePieceIdentite" />
+    <EntitySet Name="CategorieProcessus" EntityType="Inexa.Atlantis.Re.Dal.CategorieProcessu" />
+    <AssociationSet Name="FK__Structure__idDev__75E27017Set" Association="Inexa.Atlantis.Re.Dal.FK__Structure__idDev__75E27017">
+      <End Role="Devise" EntitySet="Devises" />
+      <End Role="Structures" EntitySet="Structures" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Structure__idPay__76D69450Set" Association="Inexa.Atlantis.Re.Dal.FK__Structure__idPay__76D69450">
+      <End Role="Pay" EntitySet="Pays" />
+      <End Role="Structures" EntitySet="Structures" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="Affaire" ed:Guid="f96547f4-a1d8-4ac7-8e2f-68eff1a17f0e">
+    <Key>
+      <PropertyRef Name="IdAffaire" />
+    </Key>
+    <Property Name="IdAffaire" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" ed:ValidateRequired="true" ed:Guid="44f8ce3e-eda4-43ee-8c39-44d62c0d402d" />
+    <Property Name="NumeroOrdre" Type="String" MaxLength="50" ed:ValidateMaxLength="50" ed:ValidateRequired="false" ed:Guid="1a5401ad-31c2-40f9-ab67-699e668c7c61" />
+    <Property Name="NumeroPolice" Type="String" MaxLength="50" ed:ValidateMaxLength="50" ed:ValidateRequired="false" ed:Guid="724b4e57-3f23-4728-a74f-a55aa8e09bc1" />
+    <Property Name="CapitauxAssure" Type="Decimal" ed:ValidateRequired="false" ed:Guid="fe180a61-4df4-4c15-afd1-0e515477b67a" />
+    <Property Name="Activite" Type="String" MaxLength="250" ed:ValidateMaxLength="250" ed:ValidateRequired="false" ed:Guid="8c241a55-8dc6-469b-9a5c-32a79048461d" />
+    <Property Name="IdStatutAffaire" Type="Int64" ed:ValidateRequired="false" ed:Guid="6fb680b9-156b-457e-803a-273ba209fa5e" />
+    <Property Name="IdBranche" Type="Int64" ed:ValidateRequired="false" ed:Guid="2ef83170-43d8-41df-9382-e55db0ca3b2b" />
+    <Property Name="IdFiliale" Type="Int64" ed:ValidateRequired="false" ed:Guid="6ce6b3c9-4f1b-4c83-b9a3-aaccef6088c7" />
+    <Property Name="IdAssure" Type="Int64" ed:ValidateRequired="false" ed:Guid="a25ff94f-e504-46dd-a997-b4e15635855b" />
+    <Property Name="IsDeleted" Type="Boolean" Nullable="false" ed:ValidateRequired="true" ed:Guid="c878f950-e08d-4887-a30d-c3efd9d29dd6" />
+    <Property Name="DateCreation" Type="DateTime" ed:ValidateRequired="false" ed:Guid="c5a7daad-b5a4-4313-90df-960b69948366" />
+    <Property Name="DateMAJ" Type="DateTime" ed:ValidateRequired="false" ed:Guid="068159c3-37c0-40b0-b0f0-851b4c2d3473" />
+    <Property Name="DataKey" Type="String" MaxLength="50" ed:ValidateMaxLength="50" ed:ValidateRequired="false" ed:Guid="24560d8c-43c1-4e09-b888-635670bb2b6e" />
+    <Property Name="CreatedBy" Type="Int64" Nullable="false" ed:ValidateRequired="true" ed:Guid="397abac3-2a01-4499-9527-18c1ca868b27" />
+    <Property Name="ModifiedBy" Type="Int64" ed:ValidateRequired="false" ed:Guid="65ce5586-5d6d-4369-bbe1-40f48ff717a5" />
+  </EntityType>
+  <EntityType Name="Assure" ed:Guid="de3fd93b-637e-4c48-8c4e-d412571f0dd3">
+    <Key>
+      <PropertyRef Name="IdAssure" />
+    </Key>
+    <Property Name="IdAssure" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" ed:ValidateRequired="true" ed:Guid="48de823b-883d-4123-a6f1-d89a22b00403" />
+    <Property Name="NumeroAssure" Type="String" MaxLength="250" ed:ValidateMaxLength="250" ed:ValidateRequired="false" ed:Guid="91494974-f6ce-4d86-9d98-b73edcba3075" />
+    <Property Name="IdFiliale" Type="Int64" ed:ValidateRequired="false" ed:Guid="5347afc9-b07c-48a4-8b7c-f36f96a72297" />
+    <Property Name="IdPersonne" Type="Int64" ed:ValidateRequired="false" ed:Guid="e948e703-0807-44d0-acea-f09c2abf90d1" />
+    <Property Name="IsDeleted" Type="Boolean" Nullable="false" ed:ValidateRequired="true" ed:Guid="1ffd94f6-2d12-4286-b52f-fbb648d0fe37" />
+    <Property Name="DateCreation" Type="DateTime" ed:ValidateRequired="false" ed:Guid="d0a11e06-df3a-49b4-a31a-58453bdc75b8" />
+    <Property Name="DateMAJ" Type="DateTime" ed:ValidateRequired="false" ed:Guid="96f22be0-1aa0-42f4-af58-13b5bb2be6c1" />
+    <Property Name="DataKey" Type="String" MaxLength="50" ed:ValidateMaxLength="50" ed:ValidateRequired="false" ed:Guid="902240de-1d33-4408-aa30-8f58aa24d804" />
+    <Property Name="CreatedBy" Type="Int64" ed:ValidateRequired="false" ed:Guid="5fa50635-aba6-4ea4-8704-42793f7b05e3" />
+    <Property Name="ModifiedBy" Type="Int64" ed:ValidateRequired="false" ed:Guid="6077e058-b4a4-4620-a32b-53e9e6dde140" />
+  </EntityType>
+  <EntityType Name="Branche" ed:Guid="abf11dce-6a1f-485f-918d-5f86b1115796">
+    <Key>
+      <PropertyRef Name="IdBranche" />
+    </Key>
+    <Property Name="IdBranche" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" ed:ValidateRequired="true" ed:Guid="26237d6a-4ed6-4dc5-b122-f061d8313051" />
+    <Property Name="Libelle" Type="String" MaxLength="250" ed:ValidateMaxLength="250" ed:ValidateRequired="false" ed:Guid="b895fd32-f9a0-40da-9a98-730891fae522" />
+    <Property Name="Description" Type="Binary" MaxLength="250" ed:ValidateRequired="false" ed:Guid="63fef905-7425-4873-a450-512c8d499a7b" />
+    <Property Name="Code" Type="String" MaxLength="50" ed:ValidateMaxLength="50" ed:ValidateRequired="false" ed:Guid="9d693ee0-148d-458a-b5e0-96265856ce64" />
+    <Property Name="IsDeleted" Type="Boolean" Nullable="false" ed:ValidateRequired="true" ed:Guid="2f1b79ef-7f80-4e6a-84f0-9727e8c5e94f" />
+    <Property Name="DateCreation" Type="DateTime" ed:ValidateRequired="false" ed:Guid="b56d710e-4e5e-4df1-a83d-ee664a57f52a" />
+    <Property Name="DateMAJ" Type="DateTime" ed:ValidateRequired="false" ed:Guid="9af77806-d9d8-4793-b35e-6c197a2975b8" />
+    <Property Name="DataKey" Type="String" MaxLength="50" ed:ValidateMaxLength="50" ed:ValidateRequired="false" ed:Guid="ac007b9b-79fe-4657-99be-d9f5c96137ae" />
+    <Property Name="CreatedBy" Type="Int64" ed:ValidateRequired="false" ed:Guid="b78ea603-9bd4-4068-8899-f615b29b7239" />
+    <Property Name="ModifiedBy" Type="Int64" ed:ValidateRequired="false" ed:Guid="010993b9-5c97-4b74-a9cd-058389d55781" />
+  </EntityType>
+  <EntityType Name="DeclarationSinistre" ed:Guid="d1deca81-61f0-441c-b795-3ba377c1deb3">
+    <Key>
+      <PropertyRef Name="IdDeclarationSinistre" />
+    </Key>
+    <Property Name="IdDeclarationSinistre" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" ed:ValidateRequired="true" ed:Guid="20f1bc67-ce33-4bea-b3a3-2e77ca91bb75" />
+    <Property Name="DateSurvenance" Type="DateTime" ed:ValidateRequired="false" ed:Guid="f54113be-ddb4-4dd0-abf0-c4ba11be60bd" />
+    <Property Name="DateDeclaration" Type="DateTime" ed:ValidateRequired="false" ed:Guid="c718c9aa-3107-4193-997f-4fd02aa612a6" />
+    <Property Name="NatureSinistre" Type="String" MaxLength="50" ed:ValidateMaxLength="50" ed:ValidateRequired="false" ed:Guid="5b13a322-1f4a-4e85-aa4f-697d4540286e" />
+    <Property Name="Evaluation" Type="Decimal" ed:ValidateRequired="false" ed:Guid="34095a29-f847-490a-b2e4-42b981008f73" />
+    <Property Name="HonoraireExperts" Type="Decimal" ed:ValidateRequired="false" ed:Guid="fd0b1121-90a0-4b68-bcac-29f62662ec6e" />
+    <Property Name="MontantPaye" Type="Decimal" ed:ValidateRequired="false" ed:Guid="3e88a993-96f7-415a-b53a-bf09c5b595cd" />
+    <Property Name="MontantRestant" Type="Decimal" ed:ValidateRequired="false" ed:Guid="18ff5e02-bfa3-48a9-8a40-a4d8cc09c606" />
+    <Property Name="IdProcessus" Type="Int64" ed:ValidateRequired="false" ed:Guid="cffc23fa-ace3-40be-a43e-06a0cfebedb6" />
+    <Property Name="IsDeleted" Type="Boolean" Nullable="false" ed:ValidateRequired="true" ed:Guid="e4aaa129-3e35-413c-a728-60d4193ad71f" />
+    <Property Name="DateCreation" Type="DateTime" ed:ValidateRequired="false" ed:Guid="dc39c661-e80a-45fa-bcf0-afa4f695d0e8" />
+    <Property Name="DateMAJ" Type="DateTime" ed:ValidateRequired="false" ed:Guid="73861a09-da03-4625-930c-5a3b4574d381" />
+    <Property Name="DataKey" Type="String" MaxLength="50" ed:ValidateMaxLength="50" ed:ValidateRequired="false" ed:Guid="b44db26c-4d0f-4232-8238-84522a83fac6" />
+    <Property Name="CreatedBy" Type="Int64" ed:ValidateRequired="false" ed:Guid="af7e1e6a-65eb-4c6e-bc50-6dceda7ba596" />
+    <Property Name="ModifiedBy" Type="Int64" ed:ValidateRequired="false" ed:Guid="af3a4107-8581-4414-a0eb-b633787a456c" />
+  </EntityType>
+  <EntityType Name="DemandePlacementFacultative" ed:Guid="49c17779-e81d-4538-8094-7739db7ac785">
+    <Key>
+      <PropertyRef Name="IdDemandePlacementFacultative" />
+    </Key>
+    <Property Name="IdDemandePlacementFacultative" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" ed:ValidateRequired="true" ed:Guid="30d254cf-7ab7-4875-a239-81da6a5eef1f" />
+    <Property Name="DateConsultation" Type="DateTime" Nullable="false" ed:ValidateRequired="true" ed:Guid="023b95e8-f8e4-4e83-8f8c-86e3431f5a6c" />
+    <Property Name="GarantieCedee" Type="Decimal" Nullable="false" ed:ValidateRequired="true" ed:Guid="1f2d450f-47bd-4aaf-9b02-456aa4c7590a" />
+    <Property Name="Prime" Type="Decimal" Nullable="false" ed:ValidateRequired="true" ed:Guid="4c1ec72d-ffef-496e-ae48-ca7b8edbcc26" />
+    <Property Name="DateEffet" Type="DateTime" Nullable="false" ed:ValidateRequired="true" ed:Guid="9d3c4147-30c5-40b6-b8c3-8014dd2e98cc" />
+    <Property Name="DateEcheance" Type="DateTime" Nullable="false" ed:ValidateRequired="true" ed:Guid="1c88f7d8-d757-45f5-bcd7-acb563835835" />
+    <Property Name="EnCours" Type="Boolean" ed:ValidateRequired="false" ed:Guid="a693c0a2-1f2e-40d2-9445-4bbd1bbefc0e" />
+    <Property Name="SMP" Type="Decimal" Nullable="false" ed:ValidateRequired="true" ed:Guid="6f80bb0e-ba2e-4e08-bd78-1d5839a485f5" />
+    <Property Name="PartFiliale" Type="Decimal" Nullable="false" ed:ValidateRequired="true" ed:Guid="fabe8dc7-f875-4cba-a5ce-f4dc4b249163" />
+    <Property Name="VersementAuTraite" Type="Boolean" ed:ValidateRequired="false" ed:Guid="6849c531-7fc1-4606-ad25-b4f991b96549" />
+    <Property Name="IdProcessus" Type="Int64" Nullable="false" ed:ValidateRequired="true" ed:Guid="6eb9d804-1267-451d-8c82-ce6910211edf" />
+    <Property Name="IdPays" Type="Int64" Nullable="false" ed:ValidateRequired="true" ed:Guid="817a3afe-6618-4eb8-a88a-8539795aa784" />
+    <Property Name="IsDeleted" Type="Boolean" Nullable="false" ed:ValidateRequired="true" ed:Guid="aa0e6a3f-322a-4156-896a-a2ed6692501b" />
+    <Property Name="DateCreation" Type="DateTime" ed:ValidateRequired="false" ed:Guid="3015ded9-17af-4e17-9226-3b265ca44ff1" />
+    <Property Name="DateMAJ" Type="DateTime" ed:ValidateRequired="false" ed:Guid="550eeb29-8865-414a-b1bd-35813ee81c0f" />
+    <Property Name="DataKey" Type="String" MaxLength="50" ed:ValidateMaxLength="50" ed:ValidateRequired="false" ed:Guid="25fd6782-cf27-4e83-93e1-837af1f7863c" />
+    <Property Name="CreatedBy" Type="Int64" ed:ValidateRequired="false" ed:Guid="bbac99ec-b5a4-4f14-9d17-286d5d4d8c21" />
+    <Property Name="ModifiedBy" Type="Int64" ed:ValidateRequired="false" ed:Guid="5f78d61e-aeb7-45b6-a923-8730dcd09d66" />
+  </EntityType>
+  <EntityType Name="Devise" ed:Guid="1cddff12-f79c-44c3-9a48-1b73c31c2d4d">
+    <Key>
+      <PropertyRef Name="IdDevise" />
+    </Key>
+    <Property Name="IdDevise" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" ed:ValidateRequired="true" ed:Guid="7d764dbb-84f5-44ba-8a9e-1315b0b6dec3" />
+    <Property Name="CodeDevise" Type="String" MaxLength="50" ed:ValidateMaxLength="50" ed:ValidateRequired="false" ed:Guid="630def86-0e71-4f8a-8c35-5081c5671805" />
+    <Property Name="SymboleDevise" Type="String" MaxLength="5" FixedLength="true" ed:ValidateMaxLength="5" ed:ValidateRequired="false" ed:Guid="b0cd7bfe-2f26-4e97-940b-31e75e022f8f" />
+    <Property Name="LibelleDevise" Type="String" MaxLength="100" ed:ValidateMaxLength="100" ed:ValidateRequired="false" ed:Guid="6eb03a56-53d5-44c0-8429-f5f82a54454f" />
+    <Property Name="DateCreation" Type="DateTime" ed:ValidateRequired="false" ed:Guid="1c2ea685-7af1-42e2-942f-7e8c25f5eb96" />
+    <Property Name="DateMAJ" Type="DateTime" ed:ValidateRequired="false" ed:Guid="45460b48-3804-4cf2-ac28-b81adf041d68" />
+    <Property Name="DataKey" Type="String" MaxLength="50" ed:ValidateMaxLength="50" ed:ValidateRequired="false" ed:Guid="93e0cdfb-3ab1-4d92-9089-e0df83020f0c" />
+    <Property Name="ModifiedBy" Type="Int64" ed:ValidateRequired="false" ed:Guid="c558d7a1-3399-4653-a64a-6da8a8f76cb7" />
+    <Property Name="IsDeleted" Type="Boolean" ed:ValidateRequired="false" ed:Guid="38c166ef-167f-4826-95b5-c629da12c2c1" />
+    <Property Name="CreatedBy" Type="Int64" ed:ValidateRequired="false" ed:Guid="8f0fb1df-c2a8-4145-9351-46b17bb07654" />
+    <NavigationProperty Name="Structures" Relationship="Inexa.Atlantis.Re.Dal.FK__Structure__idDev__75E27017" FromRole="Devise" ToRole="Structures" ed:Guid="b6eb7c4b-182c-4558-b325-961c21405851" />
+  </EntityType>
+  <EntityType Name="DocumentEchange" ed:Guid="062ad64a-6936-4541-9c45-2f0b4fc4c094">
+    <Key>
+      <PropertyRef Name="IdEchange" />
+    </Key>
+    <Property Name="IdEchange" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" ed:ValidateRequired="true" ed:Guid="fa4fa3e7-3118-4bc3-815c-97f4ec0a0f36" />
+    <Property Name="IdDocument" Type="Int64" Nullable="false" ed:ValidateRequired="true" ed:Guid="1fb1dfed-c672-4664-8c99-573a86402c9b" />
+    <Property Name="IsDeleted" Type="Boolean" Nullable="false" ed:ValidateRequired="true" ed:Guid="595c7d92-dba2-4281-ad6a-0de5d6933f5d" />
+    <Property Name="CreatedBy" Type="Int64" ed:ValidateRequired="false" ed:Guid="f963eab4-81ed-41ba-9e18-2999941fbf2f" />
+    <Property Name="DateCreation" Type="DateTime" ed:ValidateRequired="false" ed:Guid="e74fe3ff-1a11-42e4-b7f5-a64d979b9fbe" />
+    <Property Name="DateMAJ" Type="DateTime" ed:ValidateRequired="false" ed:Guid="1e783e0f-7d05-416d-a327-7490b8f7f226" />
+    <Property Name="DataKey" Type="String" MaxLength="50" ed:ValidateMaxLength="50" ed:ValidateRequired="false" ed:Guid="bfb9201d-59d1-4b5e-9b6b-94c8a2f6f851" />
+    <Property Name="ModifiedBy" Type="Int64" ed:ValidateRequired="false" ed:Guid="b74b22c2-1bdc-4849-80ac-fcdace3a3755" />
+  </EntityType>
+  <EntityType Name="DomaineActivite" ed:Guid="c8d3fd46-1c66-4547-a866-b615d1f98a6c">
+    <Key>
+      <PropertyRef Name="IdDomaineActivite" />
+    </Key>
+    <Property Name="IdDomaineActivite" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" ed:ValidateRequired="true" ed:Guid="0181bf8d-662d-4e2b-bde5-ef17f75feab0" />
+    <Property Name="Libelle" Type="String" MaxLength="100" ed:ValidateMaxLength="100" ed:ValidateRequired="false" ed:Guid="a9d21f1a-bc6a-4f4e-8f59-90fa758a372d" />
+    <Property Name="DateCreation" Type="DateTime" ed:ValidateRequired="false" ed:Guid="e8cda9ed-564f-41ac-b1c3-10dd8b750a09" />
+    <Property Name="DateMAJ" Type="DateTime" ed:ValidateRequired="false" ed:Guid="49fef4d3-6694-442e-9223-607e175330bb" />
+    <Property Name="DataKey" Type="String" MaxLength="50" ed:ValidateMaxLength="50" ed:ValidateRequired="false" ed:Guid="577f4dac-023c-470c-b497-e8d4e65f7548" />
+    <Property Name="ModifiedBy" Type="Int64" ed:ValidateRequired="false" ed:Guid="5dfd6b48-e866-425a-b0cf-bba64d8be9a1" />
+    <Property Name="IsDeleted" Type="Boolean" ed:ValidateRequired="false" ed:Guid="1675649c-a7d4-409a-94c6-dc185e0c681c" />
+    <Property Name="Description" Type="String" MaxLength="250" ed:ValidateMaxLength="250" ed:ValidateRequired="false" ed:Guid="8c5368da-89d5-4210-8c78-7b1b8f5e1f9c" />
+  </EntityType>
+  <EntityType Name="Echange" ed:Guid="9bca46ab-70ec-4ff1-a7f3-3f1e56495c89">
+    <Key>
+      <PropertyRef Name="IdEchange" />
+    </Key>
+    <Property Name="IdEchange" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" ed:ValidateRequired="true" ed:Guid="a226f218-12e5-44d2-9871-afd0eb3cfa5d" />
+    <Property Name="DateEchange" Type="Int32" Nullable="false" ed:ValidateRequired="true" ed:Guid="98bf99c1-40b5-4bbb-a843-8156f7c4ef2d" />
+    <Property Name="IdEmetteur" Type="Int32" Nullable="false" ed:ValidateRequired="true" ed:Guid="549d677b-ea3a-4a06-b9a5-cc2147c6858c" />
+    <Property Name="IdDestinataire" Type="Int32" Nullable="false" ed:ValidateRequired="true" ed:Guid="35185e6a-dc77-461d-b598-7073d805a11a" />
+    <Property Name="NatureEmetteur" Type="Int32" Nullable="false" ed:ValidateRequired="true" ed:Guid="c995a2ad-a27b-498b-a3a6-d4e40290b3d0" />
+    <Property Name="NatureDestinataire" Type="Int32" Nullable="false" ed:ValidateRequired="true" ed:Guid="718aa9cb-15e8-466a-8928-0f19b39567f5" />
+    <Property Name="IdProcessus" Type="Int32" Nullable="false" ed:ValidateRequired="true" ed:Guid="cd799cfa-0e81-4814-a120-a8c545f7b00c" />
+    <Property Name="IdTypeEchange" Type="Int64" Nullable="false" ed:ValidateRequired="true" ed:Guid="32ac7c25-27e2-4305-aea3-3acf1830998b" />
+    <Property Name="IsDeleted" Type="Boolean" Nullable="false" ed:ValidateRequired="true" ed:Guid="b7fc1d99-5c90-4431-ab4d-bc39bcac1d2f" />
+    <Property Name="CreatedBy" Type="Int64" ed:ValidateRequired="false" ed:Guid="6df20051-6a2f-4d3c-b14b-fa0af94c753c" />
+    <Property Name="DateCreation" Type="DateTime" ed:ValidateRequired="false" ed:Guid="78c4439e-569d-4bfc-bce9-2727cfde90ce" />
+    <Property Name="DateMAJ" Type="DateTime" ed:ValidateRequired="false" ed:Guid="31d9fb6a-ec5e-4368-b269-db503d9a28aa" />
+    <Property Name="DataKey" Type="String" MaxLength="50" ed:ValidateMaxLength="50" ed:ValidateRequired="false" ed:Guid="6869e01e-cda4-48aa-8856-abc5afb65aeb" />
+    <Property Name="ModifiedBy" Type="Int64" ed:ValidateRequired="false" ed:Guid="ea8fd342-5489-47e3-b75e-0fd6b8769dce" />
+  </EntityType>
+  <EntityType Name="EtapeProcessu" ed:Guid="ade98268-964c-40be-a1ab-52b06e7a5000">
+    <Key>
+      <PropertyRef Name="IdEtapeProcessus" />
+    </Key>
+    <Property Name="IdEtapeProcessus" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" ed:ValidateRequired="true" ed:Guid="c2e8bb0a-717b-430d-90b0-a5a32de5c2cf" />
+    <Property Name="Libelle" Type="String" Nullable="false" MaxLength="255" ed:ValidateMaxLength="255" ed:ValidateRequired="true" ed:Guid="c3af17f0-0092-45b1-a5cc-7fe552f5ed9d" />
+    <Property Name="Description" Type="String" Nullable="false" MaxLength="255" ed:ValidateMaxLength="255" ed:ValidateRequired="true" ed:Guid="06931853-d16a-45fa-a07d-ad7c83b45cf8" />
+    <Property Name="Position" Type="Int32" Nullable="false" ed:ValidateRequired="true" ed:Guid="518f1545-d014-4e79-9aff-c9dae332e92d" />
+    <Property Name="IsDeleted" Type="Boolean" Nullable="false" ed:ValidateRequired="true" ed:Guid="4a11487e-017b-48ce-b6e1-f5c48423b992" />
+    <Property Name="CreatedBy" Type="Int64" ed:ValidateRequired="false" ed:Guid="51a971b1-6b62-464d-af99-d5a923fadcdf" />
+    <Property Name="DateCreation" Type="DateTime" ed:ValidateRequired="false" ed:Guid="ad299be1-277c-462f-8e61-1eb6a39ede5e" />
+    <Property Name="DateMAJ" Type="DateTime" ed:ValidateRequired="false" ed:Guid="7e599ddf-14e4-4ea8-95a3-bf66b1774229" />
+    <Property Name="DataKey" Type="String" MaxLength="50" ed:ValidateMaxLength="50" ed:ValidateRequired="false" ed:Guid="246b6a36-7f53-4a86-bd12-8162ac48bc48" />
+    <Property Name="ModifiedBy" Type="Int64" ed:ValidateRequired="false" ed:Guid="66e1cdc9-8102-4deb-b32d-80e85a8115e2" />
+  </EntityType>
+  <EntityType Name="Filiale" ed:Guid="fb463dad-019a-4558-b641-078c27a32546">
+    <Key>
+      <PropertyRef Name="IdFiliale" />
+    </Key>
+    <Property Name="IdFiliale" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" ed:ValidateRequired="true" ed:Guid="f968af05-867d-4c45-a9ba-d981b35497ff" />
+    <Property Name="NomFilliale" Type="String" MaxLength="250" ed:ValidateMaxLength="250" ed:ValidateRequired="false" ed:Guid="6585134c-2003-4feb-be34-5809c30206e0" />
+    <Property Name="AdresseFiliale" Type="String" MaxLength="250" ed:ValidateMaxLength="250" ed:ValidateRequired="false" ed:Guid="efbd70eb-90cf-4d47-9436-568052a9564f" />
+    <Property Name="CodeFiliale" Type="String" MaxLength="250" ed:ValidateMaxLength="250" ed:ValidateRequired="false" ed:Guid="918b1027-c7fc-4656-b2e8-cd8274667ea1" />
+    <Property Name="IdPays" Type="Int64" ed:ValidateRequired="false" ed:Guid="06b69541-9ea5-47c0-959a-58fc931353d0" />
+    <Property Name="IsDeleted" Type="Boolean" Nullable="false" ed:ValidateRequired="true" ed:Guid="e8464d7b-c2b7-4533-93dd-a63a6f5368dc" />
+    <Property Name="DateCreation" Type="DateTime" ed:ValidateRequired="false" ed:Guid="d0627eda-572a-47b2-936a-dd3638b0944d" />
+    <Property Name="DateMAJ" Type="DateTime" ed:ValidateRequired="false" ed:Guid="c4aa4efe-c2a1-4fae-859c-fa0119b35098" />
+    <Property Name="DataKey" Type="String" MaxLength="50" ed:ValidateMaxLength="50" ed:ValidateRequired="false" ed:Guid="2852eb07-88f9-4254-9e8c-27256800fdc5" />
+    <Property Name="CreatedBy" Type="Int64" ed:ValidateRequired="false" ed:Guid="5b4f297e-d0da-4fc5-ade9-fd6bf730ee25" />
+    <Property Name="ModifiedBy" Type="Int64" ed:ValidateRequired="false" ed:Guid="d1755c86-73a6-4732-b50d-197451063f57" />
+  </EntityType>
+  <EntityType Name="Fonctionnalite" ed:Guid="5014f75e-2fae-431a-8cd2-ae0d0d5116cd">
+    <Key>
+      <PropertyRef Name="IdFonctionnalite" />
+    </Key>
+    <Property Name="IdFonctionnalite" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" ed:ValidateRequired="true" ed:Guid="568cab0b-a02c-4863-bc48-27fd99547d0f" />
+    <Property Name="CodeParent" Type="String" MaxLength="100" ed:ValidateMaxLength="100" ed:ValidateRequired="false" ed:Guid="fa54fdac-d659-424b-9ba7-a42fd26430a8" />
+    <Property Name="Code" Type="String" Nullable="false" MaxLength="100" ed:ValidateMaxLength="100" ed:ValidateRequired="true" ed:Guid="e3e00c1a-a26c-4669-b0d9-58ca040c2e23" />
+    <Property Name="Libelle" Type="String" Nullable="false" MaxLength="250" ed:ValidateMaxLength="250" ed:ValidateRequired="true" ed:Guid="c672aa88-892c-4bd6-97c4-9d55e1a15be4" />
+    <Property Name="Description" Type="String" MaxLength="500" ed:ValidateMaxLength="500" ed:ValidateRequired="false" ed:Guid="30528b88-2c47-4b51-b8d5-11bc0186522b" />
+    <Property Name="IdModule" Type="Int32" Nullable="false" ed:ValidateRequired="true" ed:Guid="87066a40-889f-4a05-98eb-6b1b858e7a61" />
+    <Property Name="CodeSousModule" Type="String" DefaultValue="''" MaxLength="50" ed:ValidateMaxLength="50" ed:ValidateRequired="false" ed:Guid="3008abd9-e2dd-4c51-8ea3-48094f421e9d" />
+    <Property Name="OrdreSousModule" Type="Int32" DefaultValue="0" ed:ValidateRequired="false" ed:Guid="e86b9fed-b65b-4a1a-94e2-e467e0bd5768" />
+    <Property Name="Ordre" Type="Int32" ed:ValidateRequired="false" ed:Guid="d3c6f29a-2c1a-4a7e-a2d7-9bb8bed8d5ba" />
+    <Property Name="Activer" Type="String" DefaultValue="'Oui'" MaxLength="3" ed:ValidateMaxLength="3" ed:ValidateRequired="false" ed:Guid="69903b9f-0ba4-4cf4-bebe-8194be8a8653" />
+    <Property Name="Police" Type="String" MaxLength="50" ed:ValidateMaxLength="50" ed:ValidateRequired="false" ed:Guid="e2c19034-c43a-4aa8-9d17-ec85413f9501" />
+    <Property Name="IsDeleted" Type="Boolean" ed:ValidateRequired="false" ed:Guid="75917fd6-999a-429b-9ffa-1316f2874f5d" />
+    <Property Name="CreatedBy" Type="Int64" ed:ValidateRequired="false" ed:Guid="532a54df-72ac-44cb-994b-2f7c448e051a" />
+    <Property Name="DateCreation" Type="DateTime" ed:ValidateRequired="false" ed:Guid="e50fff47-cdc1-4a4e-9da6-0d94b53ae7d9" />
+    <Property Name="DateMAJ" Type="DateTime" ed:ValidateRequired="false" ed:Guid="e365c200-0751-41c0-9086-b88a846ee465" />
+    <Property Name="DataKey" Type="String" MaxLength="50" ed:ValidateMaxLength="50" ed:ValidateRequired="false" ed:Guid="1f2bbc78-bfb5-4838-b3d8-209a78ec5d24" />
+  </EntityType>
+  <EntityType Name="FormeJuridique" ed:Guid="50284e9f-b830-4a70-ab61-7755f32c8cf9">
+    <Key>
+      <PropertyRef Name="IdFormeJuridique" />
+    </Key>
+    <Property Name="IdFormeJuridique" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" ed:ValidateRequired="true" ed:Guid="d1cf27aa-114f-4fa1-a89c-790b736e9cd7" />
+    <Property Name="Libelle" Type="String" MaxLength="100" ed:ValidateMaxLength="100" ed:ValidateRequired="false" ed:Guid="e5d29fcf-e833-4d0f-958a-71992e1ec8a0" />
+    <Property Name="DateCreation" Type="DateTime" ed:ValidateRequired="false" ed:Guid="7b1494ef-cc6e-4fbb-8eea-1d06f07eaa4f" />
+    <Property Name="DateMAJ" Type="DateTime" ed:ValidateRequired="false" ed:Guid="f07bf6ca-54f2-4ba0-91e6-a1a7ddbe7a63" />
+    <Property Name="DataKey" Type="String" MaxLength="50" ed:ValidateMaxLength="50" ed:ValidateRequired="false" ed:Guid="9d2d63a5-7f0d-483d-a049-06bffec3ccff" />
+    <Property Name="ModifiedBy" Type="Int64" ed:ValidateRequired="false" ed:Guid="4d5ca12c-32f9-4e94-a05b-a3b784ed9dbc" />
+    <Property Name="IsDeleted" Type="Boolean" ed:ValidateRequired="false" ed:Guid="d4499fdf-d7cb-4d72-9acb-735898aa85f3" />
+    <Property Name="CreatedBy" Type="Int64" ed:ValidateRequired="false" ed:Guid="c0de71ef-9038-42cb-b6ce-0d403196fbdb" />
+  </EntityType>
+  <EntityType Name="HistoriqueLigneSchemasPlacement" ed:Guid="f4fe2ee7-00b2-42e5-9774-45a08fbde9a2">
+    <Key>
+      <PropertyRef Name="IdHistoriqueLigneSchemaPlacement" />
+    </Key>
+    <Property Name="IdHistoriqueLigneSchemaPlacement" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" ed:ValidateRequired="true" ed:Guid="3062edf9-20d6-433a-9adc-654a00d8f14f" />
+    <Property Name="IdLigneSchemaPlacement" Type="Int64" Nullable="false" ed:ValidateRequired="true" ed:Guid="6b221bb0-0c76-4b39-aefb-72922e33b580" />
+    <Property Name="Proposition" Type="Int32" Nullable="false" ed:ValidateRequired="true" ed:Guid="64a319fa-d993-4b70-b344-44af8d68f87f" />
+    <Property Name="Pourcentage" Type="Decimal" Nullable="false" Precision="18" Scale="0" ed:ValidateRequired="true" ed:Guid="5d997f9d-a61c-4deb-a657-0f1753df5822" />
+    <Property Name="CapitauxAssures" Type="Decimal" Nullable="false" ed:ValidateRequired="true" ed:Guid="96cf5c63-3696-4abf-bb9a-3ffe356cfcd1" />
+    <Property Name="TauxCommission" Type="Decimal" Nullable="false" Precision="18" Scale="0" ed:ValidateRequired="true" ed:Guid="eac515fd-3fec-4243-8a85-3cbbe9823184" />
+    <Property Name="Commission" Type="Decimal" Nullable="false" ed:ValidateRequired="true" ed:Guid="22c36784-1ebd-43a1-ad23-ec21b0ce8daa" />
+    <Property Name="PrimeNette" Type="Decimal" Nullable="false" ed:ValidateRequired="true" ed:Guid="81b27c22-0a55-4ac8-9b2b-9ea83ba912a8" />
+    <Property Name="IdReassureur" Type="Int64" Nullable="false" ed:ValidateRequired="true" ed:Guid="dbde8a43-b682-4888-9a8f-35a2a7ca39be" />
+    <Property Name="IsDeleted" Type="Boolean" Nullable="false" ed:ValidateRequired="true" ed:Guid="029e20c6-b7f2-4e20-8309-27e76d7575f9" />
+    <Property Name="DateCreation" Type="DateTime" ed:ValidateRequired="false" ed:Guid="894dac16-5b23-4388-bda3-c50d3e3088a0" />
+    <Property Name="DateMAJ" Type="DateTime" ed:ValidateRequired="false" ed:Guid="d5098728-944a-4498-97cc-707934956263" />
+    <Property Name="DataKey" Type="String" MaxLength="50" ed:ValidateMaxLength="50" ed:ValidateRequired="false" ed:Guid="eafd7b38-a862-43ce-9f58-af83c56e140c" />
+    <Property Name="CreatedBy" Type="Int64" ed:ValidateRequired="false" ed:Guid="776e77f0-bd1f-4d31-9cc6-674a7cb4904b" />
+    <Property Name="ModifiedBy" Type="Int64" ed:ValidateRequired="false" ed:Guid="67e94bf1-2593-4556-87c0-7e1af6135423" />
+  </EntityType>
+  <EntityType Name="HistoriqueLigneTableauRepartitionCharge" ed:Guid="43bdf134-9374-4158-ba51-8db8710809db">
+    <Key>
+      <PropertyRef Name="IdHistoriqueLigneTableauRepartitionCharge" />
+    </Key>
+    <Property Name="IdHistoriqueLigneTableauRepartitionCharge" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" ed:ValidateRequired="true" ed:Guid="7ccb8c2f-e392-49aa-810b-16d5ee0e4993" />
+    <Property Name="IdTableauRepartition" Type="Int64" ed:ValidateRequired="false" ed:Guid="fce9d88f-6094-4f53-99d4-3dadd01dd4dd" />
+    <Property Name="IsDeleted" Type="Boolean" Nullable="false" ed:ValidateRequired="true" ed:Guid="e7339a83-2cc4-44c5-beae-d37ed65df247" />
+    <Property Name="CreatedBy" Type="Int64" ed:ValidateRequired="false" ed:Guid="edde1fb4-31e7-4e17-b00a-70b8258e0fad" />
+    <Property Name="ModifiedBy" Type="Int64" ed:ValidateRequired="false" ed:Guid="d1ab9576-e3a6-4094-b232-cb28b7a540f5" />
+    <Property Name="DateCreation" Type="DateTime" ed:ValidateRequired="false" ed:Guid="476719fb-ce87-4ab1-93ff-2f86de5097d5" />
+    <Property Name="DateMAJ" Type="DateTime" ed:ValidateRequired="false" ed:Guid="22a5cf94-db90-41bc-a17b-f2fc4c0dd92e" />
+    <Property Name="DataKey" Type="String" MaxLength="50" ed:ValidateMaxLength="50" ed:ValidateRequired="false" ed:Guid="7e832d1b-753f-45eb-86d4-c3e68eaeaf97" />
+    <Property Name="Proposition" Type="Int64" ed:ValidateRequired="false" ed:Guid="71baad0b-6f83-4dd3-a5eb-850d6e7bbdb0" />
+    <Property Name="IdReassureur" Type="Int64" ed:ValidateRequired="false" ed:Guid="0499c551-e943-41d1-bf63-31647e9a7d14" />
+  </EntityType>
+  <EntityType Name="InterlocuteurFiliale" ed:Guid="8cd3a6a6-a748-4c89-9221-8ec5b5c595c1">
+    <Key>
+      <PropertyRef Name="IdInterlocuteurFiliale" />
+    </Key>
+    <Property Name="IdInterlocuteurFiliale" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" ed:ValidateRequired="true" ed:Guid="9b8a1dd0-5cf1-4ddd-bb5e-075bdd4e9dfa" />
+    <Property Name="Poste" Type="String" Nullable="false" MaxLength="255" ed:ValidateMaxLength="255" ed:ValidateRequired="true" ed:Guid="23068aa7-a215-41a6-8ae9-6b290326ad10" />
+    <Property Name="IdFiliale" Type="Int64" Nullable="false" ed:ValidateRequired="true" ed:Guid="350dcd04-1257-4ccd-9129-107c581bf7df" />
+    <Property Name="IdPersonne" Type="Int64" Nullable="false" ed:ValidateRequired="true" ed:Guid="63d52c73-d792-4307-a253-b085cc773f99" />
+    <Property Name="IsDeleted" Type="Boolean" Nullable="false" ed:ValidateRequired="true" ed:Guid="fbec639a-02bc-4d99-b18e-2599e3519ee4" />
+    <Property Name="CreatedBy" Type="Int64" ed:ValidateRequired="false" ed:Guid="094b2e84-ffb4-4dbe-b7a9-51787365eaa2" />
+    <Property Name="DateCreation" Type="DateTime" ed:ValidateRequired="false" ed:Guid="6be3ab5a-de2a-4388-97a7-bac026a1cdd6" />
+    <Property Name="DateMAJ" Type="DateTime" ed:ValidateRequired="false" ed:Guid="3e75fab1-c8e7-40ab-a65b-2550a4e3b8c1" />
+    <Property Name="DataKey" Type="String" MaxLength="50" ed:ValidateMaxLength="50" ed:ValidateRequired="false" ed:Guid="02dc2a19-f3f8-44af-b302-36514e325131" />
+    <Property Name="ModifiedBy" Type="Int64" ed:ValidateRequired="false" ed:Guid="f60cc384-c25a-4454-a565-61dbb7ea6648" />
+  </EntityType>
+  <EntityType Name="InterlocuteurReassureur" ed:Guid="b2aa4d0d-1c9c-404b-8c62-79a974818586">
+    <Key>
+      <PropertyRef Name="IdInterlocuteurReassureur" />
+    </Key>
+    <Property Name="IdInterlocuteurReassureur" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" ed:ValidateRequired="true" ed:Guid="253a00b5-32a4-462e-91d0-9e083de8933f" />
+    <Property Name="Poste" Type="String" Nullable="false" MaxLength="255" ed:ValidateMaxLength="255" ed:ValidateRequired="true" ed:Guid="178f5437-3be1-417b-9f07-b7d94c999b67" />
+    <Property Name="IdReassureur" Type="Int64" Nullable="false" ed:ValidateRequired="true" ed:Guid="45b6e471-cc26-47fa-93cd-18ef352b99d4" />
+    <Property Name="IdPersonne" Type="Int64" Nullable="false" ed:ValidateRequired="true" ed:Guid="e84e90c1-a710-4644-9831-1dc0115f42d6" />
+    <Property Name="IsDeleted" Type="Boolean" Nullable="false" ed:ValidateRequired="true" ed:Guid="4ed9d782-a280-4bf1-9fa3-df375e8e8cd2" />
+    <Property Name="CreatedBy" Type="Int64" ed:ValidateRequired="false" ed:Guid="f954210f-304a-43c3-8660-e82d3e57c30f" />
+    <Property Name="DateCreation" Type="DateTime" ed:ValidateRequired="false" ed:Guid="4e3563bb-89bb-4783-8787-08cf3524df22" />
+    <Property Name="DateMAJ" Type="DateTime" ed:ValidateRequired="false" ed:Guid="9c9b3611-46dc-4670-adfa-f791ed043a66" />
+    <Property Name="DataKey" Type="String" MaxLength="50" ed:ValidateMaxLength="50" ed:ValidateRequired="false" ed:Guid="4df39255-4dde-4fb5-a09b-f11a50e6a55d" />
+    <Property Name="ModifiedBy" Type="Int64" ed:ValidateRequired="false" ed:Guid="5cc21129-de6b-4d71-9979-aa0e2167f325" />
+  </EntityType>
+  <EntityType Name="LigneRepartitionCharge" ed:Guid="df063fe8-91a5-41ab-8c57-88ab0bf37d9f">
+    <Key>
+      <PropertyRef Name="IdLigneRepartitionCharge" />
+    </Key>
+    <Property Name="IdLigneRepartitionCharge" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" ed:ValidateRequired="true" ed:Guid="0897eecd-4804-40f2-a495-26dcf6a96feb" />
+    <Property Name="IdTableauRepartitionCharge" Type="Int64" ed:ValidateRequired="false" ed:Guid="c9311714-6bce-4c0c-ac1b-72c8b77d5c36" />
+    <Property Name="IsDeleted" Type="Boolean" Nullable="false" ed:ValidateRequired="true" ed:Guid="144537c5-807b-48c1-a3b3-0f86551bc3fc" />
+    <Property Name="CreatedBy" Type="Int64" ed:ValidateRequired="false" ed:Guid="e046ceb2-e26a-48b1-ae23-27fcfaeec0b7" />
+    <Property Name="DateCreation" Type="DateTime" ed:ValidateRequired="false" ed:Guid="b3d6afe4-27bb-41e6-a296-5f3f149da1b0" />
+    <Property Name="DateMAJ" Type="DateTime" ed:ValidateRequired="false" ed:Guid="a6676f03-ff48-4b7e-9cef-8cf5201fd8cc" />
+    <Property Name="DataKey" Type="String" MaxLength="50" ed:ValidateMaxLength="50" ed:ValidateRequired="false" ed:Guid="f74c2ce6-0ad8-40f6-9aa5-b9b1531fbaa4" />
+    <Property Name="ModifiedBy" Type="Int64" ed:ValidateRequired="false" ed:Guid="92030aba-96ba-47ac-a5a3-c02836a61673" />
+    <Property Name="IdReassureur" Type="Int64" ed:ValidateRequired="false" ed:Guid="67e072d2-9459-42e1-be4c-873603f90f5c" />
+  </EntityType>
+  <EntityType Name="LigneSchemasPlacement" ed:Guid="50fa9af7-b6f7-4c4b-96a6-43ee8da9a92a">
+    <Key>
+      <PropertyRef Name="IdLigneSchemaPlacement" />
+    </Key>
+    <Property Name="IdLigneSchemaPlacement" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" ed:ValidateRequired="true" ed:Guid="103b55a0-fbe8-40b2-9225-ea76910972a6" />
+    <Property Name="Proposition" Type="Int32" Nullable="false" ed:ValidateRequired="true" ed:Guid="fd8ba68a-0fad-4149-8780-a11ea9e5f733" />
+    <Property Name="Pourcentage" Type="Decimal" Nullable="false" Precision="18" Scale="0" ed:ValidateRequired="true" ed:Guid="69e72e16-5075-4ca0-8cae-96a21ff892e6" />
+    <Property Name="CapitauxAssures" Type="Decimal" Nullable="false" ed:ValidateRequired="true" ed:Guid="169fd2dc-dbd9-4a66-9492-68d681496369" />
+    <Property Name="TauxCommission" Type="Decimal" Nullable="false" Precision="18" Scale="0" ed:ValidateRequired="true" ed:Guid="ceb56f6e-8272-4efd-a09a-d9ee2beb45ca" />
+    <Property Name="Commission" Type="Decimal" Nullable="false" ed:ValidateRequired="true" ed:Guid="cbc2a0d5-60ec-4d67-a8ee-cd91dcf7b074" />
+    <Property Name="PrimeNette" Type="Decimal" Nullable="false" ed:ValidateRequired="true" ed:Guid="41ccd03c-7831-4186-b953-9541f987e930" />
+    <Property Name="IdReassureur" Type="Int64" Nullable="false" ed:ValidateRequired="true" ed:Guid="1e0b3a02-4806-4725-83aa-1b2d8784eacf" />
+    <Property Name="IsDeleted" Type="Boolean" Nullable="false" ed:ValidateRequired="true" ed:Guid="f4630efe-2c50-4abb-b85b-b1dd660d7664" />
+    <Property Name="CreatedBy" Type="Int64" ed:ValidateRequired="false" ed:Guid="ceab29bf-d01f-411b-a2c6-959f0580f03b" />
+    <Property Name="DateCreation" Type="DateTime" ed:ValidateRequired="false" ed:Guid="bd27e148-8c1f-489c-aae1-72addcd640f5" />
+    <Property Name="DateMAJ" Type="DateTime" ed:ValidateRequired="false" ed:Guid="8f44dca0-07fb-4387-9d9d-53051c0df416" />
+    <Property Name="DataKey" Type="String" MaxLength="50" ed:ValidateMaxLength="50" ed:ValidateRequired="false" ed:Guid="2bf781d7-0214-4c32-b382-a68e4b12ef7f" />
+    <Property Name="ModifiedBy" Type="Int64" ed:ValidateRequired="false" ed:Guid="c16d81d0-b880-46ad-9166-165c4383de50" />
+    <Property Name="IdSchemasPlacement" Type="Int64" ed:ValidateRequired="false" ed:Guid="0fb7f0d5-f985-42e4-8cdc-c55e49241596" />
+  </EntityType>
+  <EntityType Name="MailParametre" ed:Guid="45d872e9-0e9b-477b-9e30-e88f351be4c3">
+    <Key>
+      <PropertyRef Name="IdMailParametre" />
+    </Key>
+    <Property Name="IdMailParametre" Type="Int64" Nullable="false" ed:ValidateRequired="true" ed:Guid="a5e45d1e-66cf-4f0b-9db8-e90eef3251bc" />
+    <Property Name="Code" Type="String" MaxLength="100" ed:ValidateMaxLength="100" ed:ValidateRequired="false" ed:Guid="8b15dc2b-a7f2-41cc-ba15-25890f081da1" />
+    <Property Name="Description" Type="String" MaxLength="250" ed:ValidateMaxLength="250" ed:ValidateRequired="false" ed:Guid="8b8e0992-ff2e-4632-8ebd-126f269ac386" />
+    <Property Name="Valeur" Type="String" ed:ValidateRequired="false" ed:Guid="9e9328de-e3bd-4828-a4d3-c644d1abfedf" />
+    <Property Name="Ordre" Type="Int32" DefaultValue="0" ed:ValidateRequired="false" ed:Guid="d08c41c8-95f2-4b68-83f8-b6f4af4aa6aa" />
+    <Property Name="DateCreation" Type="DateTime" ed:ValidateRequired="false" ed:Guid="ff9a8322-1173-4ddb-8a24-30f8274114da" />
+    <Property Name="DateMAJ" Type="DateTime" ed:ValidateRequired="false" ed:Guid="178d723c-f504-403d-9bd0-8f1bb4c9ff1e" />
+    <Property Name="DataKey" Type="String" MaxLength="50" ed:ValidateMaxLength="50" ed:ValidateRequired="false" ed:Guid="73f3cea6-5920-428c-95e0-48bada11b259" />
+  </EntityType>
+  <EntityType Name="MouvementTresorerie" ed:Guid="37d4a012-2e59-4d0f-ac18-d5da7aa75709">
+    <Key>
+      <PropertyRef Name="IdMouvement" />
+    </Key>
+    <Property Name="IdMouvement" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" ed:ValidateRequired="true" ed:Guid="fb923ef4-02ed-4536-8677-ad8e07e0f26f" />
+    <Property Name="IdStatutMouvement" Type="Int64" Nullable="false" ed:ValidateRequired="true" ed:Guid="e36cab36-1bcb-40d9-8bba-61a266ae3898" />
+    <Property Name="Entrant" Type="Boolean" ed:ValidateRequired="false" ed:Guid="fac372d8-0d50-457c-8001-45ff0fae8e7a" />
+    <Property Name="Libelle" Type="String" Nullable="false" MaxLength="255" ed:ValidateMaxLength="255" ed:ValidateRequired="true" ed:Guid="d1156356-8e57-4af2-9609-e0bf264e1715" />
+    <Property Name="Code" Type="String" Nullable="false" MaxLength="255" ed:ValidateMaxLength="255" ed:ValidateRequired="true" ed:Guid="7bf5b5f8-240b-41bf-9375-6e2b09a9bc03" />
+    <Property Name="IdProcessus" Type="Int64" Nullable="false" ed:ValidateRequired="true" ed:Guid="24633c12-bfab-4138-84a6-7d3208550f05" />
+    <Property Name="IsDeleted" Type="Boolean" Nullable="false" ed:ValidateRequired="true" ed:Guid="a358ae7e-691c-43df-998f-58d8ee76493a" />
+    <Property Name="DateCreation" Type="DateTime" ed:ValidateRequired="false" ed:Guid="eb1f16ae-f1b8-4c26-ac61-4286d4c80a24" />
+    <Property Name="DateMAJ" Type="DateTime" ed:ValidateRequired="false" ed:Guid="0e976cc2-5229-46df-ab30-9f14f32be8d5" />
+    <Property Name="DataKey" Type="String" MaxLength="50" ed:ValidateMaxLength="50" ed:ValidateRequired="false" ed:Guid="8c9cc972-39d2-450f-a371-2b90f7d495b8" />
+    <Property Name="CreatedBy" Type="Int64" Nullable="false" ed:ValidateRequired="true" ed:Guid="f64a41c1-7ede-4f9d-9d45-ca0e32b7d57b" />
+    <Property Name="ModifiedBy" Type="Int64" ed:ValidateRequired="false" ed:Guid="514c0c6c-c8b0-4129-87be-f982476fa831" />
+  </EntityType>
+  <EntityType Name="Pay" ed:Guid="2befcdb7-02ae-434e-bf4b-d763d896e01f">
+    <Key>
+      <PropertyRef Name="IdPays" />
+    </Key>
+    <Property Name="IdPays" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" ed:ValidateRequired="true" ed:Guid="962a1684-53fa-4ac8-8877-45c4f79ca5b1" />
+    <Property Name="Libelle" Type="String" Nullable="false" MaxLength="200" Unicode="true" ed:ValidateMaxLength="200" ed:ValidateRequired="true" ed:Guid="6021bb0c-6340-46ad-b628-2537f048fea0" />
+    <Property Name="LibelleNationnalite" Type="String" Nullable="false" MaxLength="200" Unicode="true" ed:ValidateMaxLength="200" ed:ValidateRequired="true" ed:Guid="6bfc712a-cfb2-47d8-825d-1de398135f59" />
+    <Property Name="DateCreation" Type="DateTime" ed:ValidateRequired="false" ed:Guid="22ce77ff-bc62-44f2-b42b-bbe8e941f5a8" />
+    <Property Name="DateMAJ" Type="DateTime" ed:ValidateRequired="false" ed:Guid="fcd0e6a4-214b-42ee-8d24-d54263c39533" />
+    <Property Name="DataKey" Type="String" MaxLength="50" ed:ValidateMaxLength="50" ed:ValidateRequired="false" ed:Guid="464c16a9-beda-4f9a-ba75-656458bbb016" />
+    <Property Name="ModifiedBy" Type="Int64" ed:ValidateRequired="false" ed:Guid="eca9bd8c-0e4d-448a-910a-a4268d7f34b5" />
+    <Property Name="IsDeleted" Type="Boolean" ed:ValidateRequired="false" ed:Guid="5307f18e-b656-4656-89b1-2d08a5e04a1c" />
+    <Property Name="CreatedBy" Type="Int64" ed:ValidateRequired="false" ed:Guid="d3494a4d-af48-4c20-b7c1-045fab6604f6" />
+    <NavigationProperty Name="Structures" Relationship="Inexa.Atlantis.Re.Dal.FK__Structure__idPay__76D69450" FromRole="Pay" ToRole="Structures" ed:Guid="6e4ffe45-71eb-49f6-bcdc-eef11c17a545" />
+  </EntityType>
+  <EntityType Name="Personne" ed:Guid="5a13addd-05e8-4d06-853d-d698c5e94dc2">
+    <Key>
+      <PropertyRef Name="IdPersonne" />
+    </Key>
+    <Property Name="IdPersonne" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" ed:ValidateRequired="true" ed:Guid="38cdab80-f902-452d-8ca0-91220f8d8a44" />
+    <Property Name="TypePersonne" Type="String" MaxLength="50" ed:ValidateMaxLength="50" ed:ValidateRequired="false" ed:Guid="82e338fc-9c8c-40c7-9c9a-f6aeb9e34ad4" />
+    <Property Name="IdCivilite" Type="String" MaxLength="10" Unicode="true" FixedLength="true" ed:ValidateMaxLength="10" ed:ValidateRequired="false" ed:Guid="c585c8a5-c2ab-45d7-8961-eee3afc0cd74" />
+    <Property Name="Nom" Type="String" MaxLength="350" ed:ValidateMaxLength="350" ed:ValidateRequired="false" ed:Guid="01b66255-90ad-4c7c-8f38-7ea01f95416d" />
+    <Property Name="Prenom" Type="String" MaxLength="350" ed:ValidateMaxLength="350" ed:ValidateRequired="false" ed:Guid="e28eb474-7039-44ba-938a-2be0468379fe" />
+    <Property Name="DateNaissance" Type="DateTime" ed:ValidateRequired="false" ed:Guid="18492cf7-a3ea-4874-9482-10364e12972e" />
+    <Property Name="LieuNaissance" Type="String" MaxLength="350" ed:ValidateMaxLength="350" ed:ValidateRequired="false" ed:Guid="0594fa07-74db-461f-8433-65930246ff86" />
+    <Property Name="IdTypePieceIdentite" Type="Int32" ed:ValidateRequired="false" ed:Guid="a940efb1-2126-4ca0-bf23-ce70199f16ce" />
+    <Property Name="NumeroPieceIdentite" Type="String" MaxLength="150" ed:ValidateMaxLength="150" ed:ValidateRequired="false" ed:Guid="8eac00e5-d099-4f4b-b23d-c941d6646f1e" />
+    <Property Name="IdPays" Type="Int32" ed:ValidateRequired="false" ed:Guid="8fa088f0-e799-4b3d-b4f5-eb7a11e55a71" />
+    <Property Name="DatePieceIdentite" Type="DateTime" ed:ValidateRequired="false" ed:Guid="fae0a8b3-ce8f-4d55-9482-3e1bb3eab8e9" />
+    <Property Name="DateValiditePieceIdentite" Type="DateTime" ed:ValidateRequired="false" ed:Guid="aa5abe65-6379-4000-9b22-3ba98a4374a9" />
+    <Property Name="IdFormeJuridique" Type="Int32" ed:ValidateRequired="false" ed:Guid="b3bfdc70-014c-476f-9b0b-2697136ab60c" />
+    <Property Name="Actif" Type="Boolean" ed:ValidateRequired="false" ed:Guid="fad9fa6a-e92f-40f6-b7b9-c7dd046e0ffd" />
+    <Property Name="IsDeleted" Type="Boolean" ed:ValidateRequired="false" ed:Guid="e071aa11-69f6-4081-a299-313f8c888dea" />
+    <Property Name="DateCreation" Type="DateTime" Nullable="false" ed:ValidateRequired="true" ed:Guid="6d397672-99a4-476a-bce2-27f4f2449b73" />
+    <Property Name="DateMaj" Type="DateTime" ed:ValidateRequired="false" ed:Guid="a8b2ebed-49a6-4660-8700-9c425821cbf5" />
+    <Property Name="CreatedBy" Type="Int64" Nullable="false" ed:ValidateRequired="true" ed:Guid="7b78e6eb-47e3-4b60-a29c-057e7a309f9b" />
+    <Property Name="DataKey" Type="String" MaxLength="50" ed:ValidateMaxLength="50" ed:ValidateRequired="false" ed:Guid="b5f1c641-317c-4f6a-abad-40dfed79741d" />
+    <Property Name="ModifiedBy" Type="Int64" ed:ValidateRequired="false" ed:Guid="1f46eb49-ab91-40da-b632-5bacce87d9f0" />
+  </EntityType>
+  <EntityType Name="Processu" ed:Guid="434de7c0-8fec-4e98-b191-92c2488ed68b">
+    <Key>
+      <PropertyRef Name="IdProcessus" />
+    </Key>
+    <Property Name="IdProcessus" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" ed:ValidateRequired="true" ed:Guid="b94c66c9-c7ec-4dae-8216-1c66647c6423" />
+    <Property Name="IdAffaire" Type="Int32" Nullable="false" ed:ValidateRequired="true" ed:Guid="8a1c0e23-3bd8-4f35-8e91-a5e43033c0bd" />
+    <Property Name="IdTypeProcessus" Type="Int32" Nullable="false" ed:ValidateRequired="true" ed:Guid="537e6d08-e691-4eeb-a196-9039dd9194f0" />
+    <Property Name="Categorie" Type="String" Nullable="false" ed:ValidateRequired="true" ed:Guid="7d8bef11-1c19-496a-b447-c1f5b914ada5" />
+    <Property Name="IsDeleted" Type="Boolean" Nullable="false" ed:ValidateRequired="true" ed:Guid="7e2030db-f33f-4bd8-b3a2-cd99072a9cf3" />
+    <Property Name="CreatedBy" Type="Int64" ed:ValidateRequired="false" ed:Guid="0d4db376-fda7-4323-9428-2d989f94afcd" />
+    <Property Name="DateCreation" Type="DateTime" ed:ValidateRequired="false" ed:Guid="c5e43529-2bd4-4d12-bba5-ed586ce54814" />
+    <Property Name="DateMAJ" Type="DateTime" ed:ValidateRequired="false" ed:Guid="584c2c47-7157-43ed-8a86-bab57f08adc6" />
+    <Property Name="DataKey" Type="String" MaxLength="50" ed:ValidateMaxLength="50" ed:ValidateRequired="false" ed:Guid="1ce4583a-9b64-4e2e-961e-ae442efdfe97" />
+    <Property Name="ModifiedBy" Type="Int64" ed:ValidateRequired="false" ed:Guid="1c3ebd07-b930-422e-b196-166c6ef16041" />
+  </EntityType>
+  <EntityType Name="Profession" ed:Guid="97192183-bc5f-44a9-94f8-48cb43a38ea2">
+    <Key>
+      <PropertyRef Name="IdProfession" />
+    </Key>
+    <Property Name="IdProfession" Type="Decimal" Nullable="false" Precision="18" Scale="0" annotation:StoreGeneratedPattern="Identity" ed:ValidateRequired="true" ed:Guid="7709025b-4fce-4205-9518-2913eade30f6" />
+    <Property Name="Libelle" Type="String" MaxLength="150" ed:ValidateMaxLength="150" ed:ValidateRequired="false" ed:Guid="1bc33e93-5e4e-4a65-a7c9-d204b1459a6e" />
+    <Property Name="IsDeleted" Type="Boolean" ed:ValidateRequired="false" ed:Guid="83b73d20-9aef-4d35-b44d-6f1d29629571" />
+    <Property Name="DateCreation" Type="DateTime" ed:ValidateRequired="false" ed:Guid="48c0a5b1-a008-4ec2-b297-f2b7755d29db" />
+    <Property Name="DateMAJ" Type="DateTime" ed:ValidateRequired="false" ed:Guid="5e19501d-8a77-419d-9e76-9cf834553ef7" />
+    <Property Name="DataKey" Type="String" MaxLength="50" ed:ValidateMaxLength="50" ed:ValidateRequired="false" ed:Guid="fce14d48-e504-4545-8954-ca699dc7d6ec" />
+    <Property Name="ModifiedBy" Type="Int64" ed:ValidateRequired="false" ed:Guid="e77fce3d-62e8-4b5a-a1bb-517a15033e1c" />
+    <Property Name="CreatedBy" Type="Int64" ed:ValidateRequired="false" ed:Guid="73133625-ae70-4728-bed0-411168d5dbec" />
+    <Property Name="Description" Type="String" MaxLength="250" ed:ValidateMaxLength="250" ed:ValidateRequired="false" ed:Guid="e08cba3a-4c95-40b0-9862-6ba79c8ce4e0" />
+  </EntityType>
+  <EntityType Name="Profil" ed:Guid="e1f9b093-388b-410a-ab81-dc7ec3459e8f">
+    <Key>
+      <PropertyRef Name="IdProfil" />
+    </Key>
+    <Property Name="IdProfil" Type="Int32" Nullable="false" ed:ValidateRequired="true" ed:Guid="5212fc71-f22b-48f6-b797-4e8f3379d635" />
+    <Property Name="CodeProfil" Type="String" MaxLength="50" ed:ValidateMaxLength="50" ed:ValidateRequired="false" ed:Guid="d182f9e1-7710-4e5f-85c1-374b03d1784d" />
+    <Property Name="Intitule" Type="String" Nullable="false" MaxLength="150" ed:ValidateMaxLength="150" ed:ValidateRequired="true" ed:Guid="9b9db8dd-5fad-4286-ac5f-c966bca59b64" />
+    <Property Name="Description" Type="String" MaxLength="250" ed:ValidateMaxLength="250" ed:ValidateRequired="false" ed:Guid="19c68bd4-df08-4ffc-91cd-e484193f3451" />
+    <Property Name="IsDeleted" Type="Boolean" ed:ValidateRequired="false" ed:Guid="eb289b47-c1d6-4149-86bb-0293ac539f43" />
+    <Property Name="CreatedBy" Type="Int64" Nullable="false" ed:ValidateRequired="true" ed:Guid="a58b8a39-564d-4089-8059-a882a0b2d9e6" />
+    <Property Name="ModifiedBy" Type="Int64" ed:ValidateRequired="false" ed:Guid="edd45c38-9bb4-443f-b333-5a1d8e6bcca3" />
+    <Property Name="DateCreation" Type="DateTime" Nullable="false" ed:ValidateRequired="true" ed:Guid="902aa3d2-9741-4124-b243-d52cb3341681" />
+    <Property Name="DateMaj" Type="DateTime" ed:ValidateRequired="false" ed:Guid="248429e8-1eb7-466a-940b-f23c93bce14b" />
+    <Property Name="DataKey" Type="String" MaxLength="50" ed:ValidateMaxLength="50" ed:ValidateRequired="false" ed:Guid="3187daa3-ef76-4f01-ad53-1dfea4fb083b" />
+  </EntityType>
+  <EntityType Name="ProfilFonctionnalite" ed:Guid="1adfcc12-71b6-4fdc-b6eb-a473c5efce4a">
+    <Key>
+      <PropertyRef Name="IdProfilFonctionnalite" />
+    </Key>
+    <Property Name="IdProfilFonctionnalite" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" ed:ValidateRequired="true" ed:Guid="9e58a745-e1ae-4b90-8743-c15ef3c823e5" />
+    <Property Name="IdProfil" Type="Int32" Nullable="false" ed:ValidateRequired="true" ed:Guid="2b6a887d-3f9b-428e-803c-439794ecea3e" />
+    <Property Name="CodeFonctionnalite" Type="String" Nullable="false" MaxLength="100" ed:ValidateMaxLength="100" ed:ValidateRequired="true" ed:Guid="b4ff6604-ef21-488f-b90c-a4ffbd92f52e" />
+    <Property Name="Autorise" Type="Boolean" Nullable="false" ed:ValidateRequired="true" ed:Guid="bebddb6b-3ba8-4a01-ab32-3979060ce7c8" />
+    <Property Name="DateCreation" Type="DateTime" ed:ValidateRequired="false" ed:Guid="ec9864e7-f413-4e76-a228-7733610a8de1" />
+    <Property Name="DateMAJ" Type="DateTime" ed:ValidateRequired="false" ed:Guid="a4c66c75-74ea-4814-a98d-5973a687a894" />
+    <Property Name="DataKey" Type="String" MaxLength="50" ed:ValidateMaxLength="50" ed:ValidateRequired="false" ed:Guid="037de208-a68b-474b-8cf9-27385860cb00" />
+  </EntityType>
+  <EntityType Name="ProfilFonctionnaliteHisto" ed:Guid="c8f657da-092a-471b-a9bc-39979b71b9fd">
+    <Key>
+      <PropertyRef Name="IdProfilFonctionnalite" />
+    </Key>
+    <Property Name="IdProfilFonctionnalite" Type="Int64" Nullable="false" ed:ValidateRequired="true" ed:Guid="28e2ede6-8445-41e9-87d8-4813bc95f11d" />
+    <Property Name="IdProfil" Type="Int32" Nullable="false" ed:ValidateRequired="true" ed:Guid="819d9f32-e9f5-4773-91f9-e862b0113463" />
+    <Property Name="CodeFonctionnalite" Type="String" Nullable="false" MaxLength="100" ed:ValidateMaxLength="100" ed:ValidateRequired="true" ed:Guid="bc7ef201-ac7d-429e-bf96-08f6b0bfa300" />
+    <Property Name="Autorise" Type="Boolean" Nullable="false" ed:ValidateRequired="true" ed:Guid="e0a07309-a0b9-4eee-954e-845574f8e903" />
+    <Property Name="DateCreation" Type="DateTime" ed:ValidateRequired="false" ed:Guid="3122bace-9910-41a8-9f6e-f520b5c6588f" />
+    <Property Name="DateMAJ" Type="DateTime" ed:ValidateRequired="false" ed:Guid="d60dc8dc-2558-4c07-b70b-e05f6f449c01" />
+    <Property Name="DataKey" Type="String" MaxLength="50" ed:ValidateMaxLength="50" ed:ValidateRequired="false" ed:Guid="697ec78c-087a-46f5-85f3-6423ef191703" />
+  </EntityType>
+  <EntityType Name="Reassureur" ed:Guid="9ed67e0b-1ae0-473e-8542-f56107e83c2c">
+    <Key>
+      <PropertyRef Name="IdReassureur" />
+    </Key>
+    <Property Name="IdReassureur" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" ed:ValidateRequired="true" ed:Guid="8575b1e1-f190-411c-b4e9-2b38ba6875ff" />
+    <Property Name="CodeReassureur" Type="String" MaxLength="50" ed:ValidateMaxLength="50" ed:ValidateRequired="false" ed:Guid="5a880c0d-e90f-46c8-98e8-74f112cae3e7" />
+    <Property Name="NomReassureur" Type="String" MaxLength="250" ed:ValidateMaxLength="250" ed:ValidateRequired="false" ed:Guid="0a76d581-0f7b-4f14-b425-abd7a34db068" />
+    <Property Name="IdPays" Type="Int64" ed:ValidateRequired="false" ed:Guid="94714f16-cddc-441a-b16a-cd3012471251" />
+    <Property Name="IsDeleted" Type="Boolean" Nullable="false" ed:ValidateRequired="true" ed:Guid="cf5285fe-70be-4580-af0e-d0595abfb3fc" />
+    <Property Name="DateCreation" Type="DateTime" ed:ValidateRequired="false" ed:Guid="26c2274f-ae32-439b-9fc8-f14ae9370e68" />
+    <Property Name="DateMAJ" Type="DateTime" ed:ValidateRequired="false" ed:Guid="072ed9f1-78ae-4c21-8f82-c5bf8d29933e" />
+    <Property Name="DataKey" Type="String" MaxLength="50" ed:ValidateMaxLength="50" ed:ValidateRequired="false" ed:Guid="abecad3f-1c8b-413e-8fe2-0bd64d92d703" />
+    <Property Name="CreatedBy" Type="Int64" ed:ValidateRequired="false" ed:Guid="19679ed9-7354-4fef-8949-1f4e0bfca6ed" />
+    <Property Name="ModifiedBy" Type="Int64" ed:ValidateRequired="false" ed:Guid="6d3883e9-f3b0-4f49-bc38-ee3d3da40189" />
+  </EntityType>
+  <EntityType Name="SchemasPlacement" ed:Guid="0f1cf8a4-dbf7-4744-95f8-774beae69b77">
+    <Key>
+      <PropertyRef Name="IdSchemaPlacement" />
+    </Key>
+    <Property Name="IdSchemaPlacement" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" ed:ValidateRequired="true" ed:Guid="dc3e28ab-99a8-4084-af6b-d30e07cc4387" />
+    <Property Name="Proposition" Type="Int32" Nullable="false" ed:ValidateRequired="true" ed:Guid="908ae0c8-f91b-4454-8a73-5b6fdc0c7940" />
+    <Property Name="NumeroFiche" Type="Int32" Nullable="false" ed:ValidateRequired="true" ed:Guid="2da64903-7ef8-4940-b196-bafa0d809b1a" />
+    <Property Name="IdProcessus" Type="Int64" Nullable="false" ed:ValidateRequired="true" ed:Guid="d9d446e8-422c-41f4-9d05-2b0c63507201" />
+    <Property Name="IsDeleted" Type="Boolean" Nullable="false" ed:ValidateRequired="true" ed:Guid="e3de1022-244d-4e7f-85aa-ddb9053b1222" />
+    <Property Name="DateCreation" Type="DateTime" ed:ValidateRequired="false" ed:Guid="488495bc-2405-45a1-9863-1e35e74855c1" />
+    <Property Name="DateMAJ" Type="DateTime" ed:ValidateRequired="false" ed:Guid="a0b0ae88-06fe-40d9-8c8e-30e896f1ad1a" />
+    <Property Name="DataKey" Type="String" MaxLength="50" ed:ValidateMaxLength="50" ed:ValidateRequired="false" ed:Guid="1517b815-6fb9-49cd-88f8-eed91f1864e4" />
+    <Property Name="CreatedBy" Type="Int64" ed:ValidateRequired="false" ed:Guid="0116196c-0f33-4234-9f44-3a90bdf40021" />
+    <Property Name="ModifiedBy" Type="Int64" ed:ValidateRequired="false" ed:Guid="fefc0b19-524a-4b77-8bec-f21228452d55" />
+  </EntityType>
+  <EntityType Name="SecteurActivite" ed:Guid="d7c6b210-1fed-47ad-b7a4-64d7ebc4c061">
+    <Key>
+      <PropertyRef Name="IdDomaineActivite" />
+    </Key>
+    <Property Name="IdDomaineActivite" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" ed:ValidateRequired="true" ed:Guid="cfe3b1af-d51c-4e32-9468-fce3090d65c9" />
+    <Property Name="Libelle" Type="String" MaxLength="100" ed:ValidateMaxLength="100" ed:ValidateRequired="false" ed:Guid="13170168-474e-4012-aab3-fa1d2985a23c" />
+    <Property Name="DateCreation" Type="DateTime" ed:ValidateRequired="false" ed:Guid="19cb4218-0b95-4690-bc29-9f3eaf1bcb7e" />
+    <Property Name="DateMAJ" Type="DateTime" ed:ValidateRequired="false" ed:Guid="fc31bc59-9735-4ce8-a0af-13f28385519b" />
+    <Property Name="DataKey" Type="String" MaxLength="50" ed:ValidateMaxLength="50" ed:ValidateRequired="false" ed:Guid="1525f027-37c8-4e35-afb3-08e484846228" />
+    <Property Name="ModifiedBy" Type="Int64" ed:ValidateRequired="false" ed:Guid="9a3d6ee8-7ba1-4d5d-b3d9-66fb1447846c" />
+    <Property Name="IsDeleted" Type="Boolean" ed:ValidateRequired="false" ed:Guid="b4469b57-9bc6-4048-8c30-dffdcf218d51" />
+    <Property Name="CreatedBy" Type="Int64" ed:ValidateRequired="false" ed:Guid="080e9e8f-e407-461a-9867-5eabdcfe5e9b" />
+  </EntityType>
+  <EntityType Name="SituationMatrimoniale" ed:Guid="da67cfc6-87b3-46b0-8a99-8aac67873c90">
+    <Key>
+      <PropertyRef Name="IdSituationMatrimoniale" />
+    </Key>
+    <Property Name="IdSituationMatrimoniale" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" ed:ValidateRequired="true" ed:Guid="31ffe81d-c2e9-4aac-8f80-c8d61dfaf23d" />
+    <Property Name="Libelle" Type="String" Nullable="false" MaxLength="200" ed:ValidateMaxLength="200" ed:ValidateRequired="true" ed:Guid="43d919f6-d1a4-4aa7-a76e-1d71e9c95ef4" />
+    <Property Name="ModifiedBy" Type="Int64" ed:ValidateRequired="false" ed:Guid="99a67308-8b20-4a96-90b9-6def60b8c104" />
+    <Property Name="DateCreation" Type="DateTime" ed:ValidateRequired="false" ed:Guid="2f934139-c889-420e-8ca9-321bdc1e83f4" />
+    <Property Name="DateMAJ" Type="DateTime" ed:ValidateRequired="false" ed:Guid="6fcf771e-7203-450b-9348-a94f44e4953a" />
+    <Property Name="DataKey" Type="String" MaxLength="50" ed:ValidateMaxLength="50" ed:ValidateRequired="false" ed:Guid="4e7f9f37-c299-4986-9d9f-6dd98cb613fc" />
+    <Property Name="IsDeleted" Type="Boolean" ed:ValidateRequired="false" ed:Guid="43b34414-8c42-4c73-a139-01c5c9bc9894" />
+    <Property Name="CreatedBy" Type="Int64" ed:ValidateRequired="false" ed:Guid="1ff7563a-112d-42b9-9e45-0a5e26dab341" />
+  </EntityType>
+  <EntityType Name="StatutAffaire" ed:Guid="1d9aa3b1-4a41-42ab-bc65-23f85f7cdd38">
+    <Key>
+      <PropertyRef Name="IdStatutAffaire" />
+    </Key>
+    <Property Name="IdStatutAffaire" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" ed:ValidateRequired="true" ed:Guid="239a4ff6-f9d5-4a61-a4c8-8b15707a1685" />
+    <Property Name="Description" Type="String" MaxLength="250" ed:ValidateMaxLength="250" ed:ValidateRequired="false" ed:Guid="fc977476-c4da-48af-96ec-0cff5bffe6d5" />
+    <Property Name="Libelle" Type="String" MaxLength="250" ed:ValidateMaxLength="250" ed:ValidateRequired="false" ed:Guid="3686f62b-58ff-43d8-b2eb-de9951b03404" />
+    <Property Name="IsDeleted" Type="Boolean" Nullable="false" ed:ValidateRequired="true" ed:Guid="745cdd46-1cfe-479c-bac8-0533900f8229" />
+    <Property Name="DateCreation" Type="DateTime" ed:ValidateRequired="false" ed:Guid="0112d9f4-bbcb-47d4-9ee3-b0500743d091" />
+    <Property Name="DateMAJ" Type="DateTime" ed:ValidateRequired="false" ed:Guid="3b306d4a-bfdc-4c6e-8f3e-799dba8211d9" />
+    <Property Name="DataKey" Type="String" MaxLength="50" ed:ValidateMaxLength="50" ed:ValidateRequired="false" ed:Guid="d9f86a70-8cbf-429a-ad16-3e85a64f6b33" />
+    <Property Name="CreatedBy" Type="Int64" ed:ValidateRequired="false" ed:Guid="17d4d463-2790-4726-adef-1e1f7ec52e10" />
+    <Property Name="ModifiedBy" Type="Int64" ed:ValidateRequired="false" ed:Guid="7ff52ce3-6396-45ac-b0b0-33bf31a63fbb" />
+  </EntityType>
+  <EntityType Name="StatutMouvement" ed:Guid="4921365a-c3a8-4f5b-8a3d-8f080e7fc1ae">
+    <Key>
+      <PropertyRef Name="IdStatutMouvement" />
+    </Key>
+    <Property Name="IdStatutMouvement" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" ed:ValidateRequired="true" ed:Guid="7d943f75-58af-4849-9be5-564df0a76e61" />
+    <Property Name="Libelle" Type="String" Nullable="false" MaxLength="255" ed:ValidateMaxLength="255" ed:ValidateRequired="true" ed:Guid="1bfb29ce-c2b4-446e-bf73-d9b231666596" />
+    <Property Name="IsDeleted" Type="Boolean" Nullable="false" ed:ValidateRequired="true" ed:Guid="c167485f-800b-4941-ad6b-642f6302c0b2" />
+    <Property Name="CreatedBy" Type="Int64" ed:ValidateRequired="false" ed:Guid="b0a4c772-46a7-4f20-8205-2b29cff57a6a" />
+    <Property Name="DateCreation" Type="DateTime" ed:ValidateRequired="false" ed:Guid="d14f2569-ede0-4aba-8b35-af454b443611" />
+    <Property Name="DateMAJ" Type="DateTime" ed:ValidateRequired="false" ed:Guid="c26b11c5-df5f-4f24-8b7a-ec302f963395" />
+    <Property Name="DataKey" Type="String" MaxLength="50" ed:ValidateMaxLength="50" ed:ValidateRequired="false" ed:Guid="c0208e52-24c4-4827-8777-f40a1c59bdbb" />
+    <Property Name="ModifiedBy" Type="Int64" ed:ValidateRequired="false" ed:Guid="045f0dcd-7f7e-4d80-aacb-424f7e248746" />
+  </EntityType>
+  <EntityType Name="SuiviProcessu" ed:Guid="b7f7263b-fa4b-413e-a209-4f7d51514d3c">
+    <Key>
+      <PropertyRef Name="IdTypeEchange" />
+    </Key>
+    <Property Name="IdTypeEchange" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" ed:ValidateRequired="true" ed:Guid="ecb845d0-bb8f-4423-8710-4082f5ff7199" />
+    <Property Name="IdEtapeProcessus" Type="Int64" Nullable="false" ed:ValidateRequired="true" ed:Guid="12d2f1b5-b1ab-4aa9-85b5-ecbeea50af91" />
+    <Property Name="IsDeleted" Type="Boolean" Nullable="false" ed:ValidateRequired="true" ed:Guid="732dcd70-f8ac-4d6c-a933-dea3fc3f9577" />
+    <Property Name="CreatedBy" Type="Int64" ed:ValidateRequired="false" ed:Guid="c8d97295-e960-4fd6-bddf-85d170be5b21" />
+    <Property Name="DateCreation" Type="DateTime" ed:ValidateRequired="false" ed:Guid="2e966391-fc6c-4d44-9ca0-b7763f943971" />
+    <Property Name="DateMAJ" Type="DateTime" ed:ValidateRequired="false" ed:Guid="5ba95cb2-9858-46b9-9bb8-9d004daff4b9" />
+    <Property Name="DataKey" Type="String" MaxLength="50" ed:ValidateMaxLength="50" ed:ValidateRequired="false" ed:Guid="3bb12792-5780-4af1-bd60-b3cd27d04969" />
+    <Property Name="ModifiedBy" Type="Int64" ed:ValidateRequired="false" ed:Guid="7b75b44d-bca2-45ad-9868-04704a1722f6" />
+  </EntityType>
+  <EntityType Name="SysComplexiteMotDePasse" ed:Guid="38d69cf2-f1ed-4e92-a191-1c38042ffb1e">
+    <Key>
+      <PropertyRef Name="IdSysComplexiteMotDePasse" />
+    </Key>
+    <Property Name="IdSysComplexiteMotDePasse" Type="Int32" Nullable="false" ed:ValidateRequired="true" ed:Guid="ceef37ce-0404-4a78-b497-76bca92e3278" />
+    <Property Name="Code" Type="String" MaxLength="30" ed:ValidateMaxLength="30" ed:ValidateRequired="false" ed:Guid="06d5b03a-57a3-42df-80d2-dbc0b9b6e12e" />
+    <Property Name="Libelle" Type="String" Nullable="false" MaxLength="150" ed:ValidateMaxLength="150" ed:ValidateRequired="true" ed:Guid="8b99ed16-3caa-4b7b-a280-60eca1a02537" />
+    <Property Name="DateCreation" Type="DateTime" ed:ValidateRequired="false" ed:Guid="6fc13fa4-5fba-4f83-811f-939988a16780" />
+    <Property Name="DateMAJ" Type="DateTime" ed:ValidateRequired="false" ed:Guid="8745074f-d44a-40ae-9461-cea408af7608" />
+    <Property Name="DataKey" Type="String" MaxLength="50" ed:ValidateMaxLength="50" ed:ValidateRequired="false" ed:Guid="1831e3ff-a02b-45b5-a994-237a8f086e76" />
+  </EntityType>
+  <EntityType Name="SysLog" ed:Guid="9e07e054-6d57-4cf9-8baa-3910af0e417c">
+    <Key>
+      <PropertyRef Name="IdSysLog" />
+    </Key>
+    <Property Name="IdSysLog" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" ed:ValidateRequired="true" ed:Guid="30bb22b1-f53e-47ab-98df-fd324dbde79d" />
+    <Property Name="Entite" Type="String" MaxLength="50" ed:ValidateMaxLength="50" ed:ValidateRequired="false" ed:Guid="fbfaa243-5148-495a-aeb7-c1007f441bc9" />
+    <Property Name="IdEntite" Type="Int64" ed:ValidateRequired="false" ed:Guid="f6932e2d-9e5b-450d-81a4-174d5b6a6547" />
+    <Property Name="AppMessage" Type="String" ed:ValidateRequired="false" ed:Guid="1698e84a-f2ae-4de3-a33d-0f008b21bcc4" />
+    <Property Name="SysMessage" Type="String" ed:ValidateRequired="false" ed:Guid="3bf2927c-df8e-4796-bcac-c0a39618fb2c" />
+    <Property Name="CreatedBy" Type="Int64" ed:ValidateRequired="false" ed:Guid="b2f787cc-2e90-45d8-a3cf-1f28c6f43b31" />
+    <Property Name="DateCreation" Type="DateTime" ed:ValidateRequired="false" ed:Guid="0d10b205-df72-4d0a-9e28-9641de9757ff" />
+    <Property Name="DateMAJ" Type="DateTime" ed:ValidateRequired="false" ed:Guid="c209b2ca-3130-4f2f-b6eb-69ae3adc02da" />
+    <Property Name="DataKey" Type="String" MaxLength="50" ed:ValidateMaxLength="50" ed:ValidateRequired="false" ed:Guid="5097e6b8-5e61-45ca-8279-763a29fbfce7" />
+  </EntityType>
+  <EntityType Name="SysMailBox" ed:Guid="e1639e2b-c57f-4223-a3c1-3c24fce26022">
+    <Key>
+      <PropertyRef Name="IdSysMailBox" />
+    </Key>
+    <Property Name="IdSysMailBox" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" ed:ValidateRequired="true" ed:Guid="19aa4af0-ecb0-45d8-bfff-2d0a56dd007b" />
+    <Property Name="Entite" Type="String" MaxLength="50" ed:ValidateMaxLength="50" ed:ValidateRequired="false" ed:Guid="94ee5865-0d8a-4db0-b3a9-0fa3829dd0e7" />
+    <Property Name="IdEntite" Type="Int64" ed:ValidateRequired="false" ed:Guid="8831855c-8fc6-481b-8494-baaa04a7e4e9" />
+    <Property Name="IdMailitem" Type="Int32" ed:ValidateRequired="false" ed:Guid="397ed2ca-afab-4b0e-8b9b-fa7b9d2ef5e7" />
+    <Property Name="Statut" Type="String" MaxLength="50" ed:ValidateMaxLength="50" ed:ValidateRequired="false" ed:Guid="10c06ee8-cbf0-4fe4-acea-bd95ec4da4de" />
+    <Property Name="DateCreation" Type="DateTime" ed:ValidateRequired="false" ed:Guid="0074721c-b1ec-4979-8a9d-5d77f529bda7" />
+    <Property Name="MailMessage" Type="String" ed:ValidateRequired="false" ed:Guid="5122cdad-cd97-4ccb-b351-ca1518efb41c" />
+    <Property Name="DateMAJ" Type="DateTime" ed:ValidateRequired="false" ed:Guid="85a26696-44af-481b-993d-c293424a0a61" />
+    <Property Name="DataKey" Type="String" MaxLength="50" ed:ValidateMaxLength="50" ed:ValidateRequired="false" ed:Guid="986b22ab-46e4-4a6d-b75a-cc4d81047fd1" />
+  </EntityType>
+  <EntityType Name="SysNotification" ed:Guid="744a03a9-16af-49cc-8815-cdeaff4fed8a">
+    <Key>
+      <PropertyRef Name="IdNotification" />
+    </Key>
+    <Property Name="IdNotification" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" ed:ValidateRequired="true" ed:Guid="5273bb2e-e895-48aa-8c17-e70f4d32d304" />
+    <Property Name="Titre" Type="String" Nullable="false" MaxLength="150" ed:ValidateMaxLength="150" ed:ValidateRequired="true" ed:Guid="6615154e-ea15-4d97-9aa6-82a3736a55cf" />
+    <Property Name="Message" Type="String" Unicode="true" ed:ValidateRequired="false" ed:Guid="a0c82534-39c4-4068-9eec-f3ce80cda4d9" />
+    <Property Name="Url" Type="String" MaxLength="150" ed:ValidateMaxLength="150" ed:ValidateRequired="false" ed:Guid="adcce3ac-615a-4a8b-8eb2-4c7d197980e5" />
+    <Property Name="IdUtilisateur" Type="Int64" Nullable="false" DefaultValue="0" ed:ValidateRequired="true" ed:Guid="06c87190-1784-43a4-aa9d-45bff594a1e6" />
+    <Property Name="DateCreation" Type="DateTime" ed:ValidateRequired="false" ed:Guid="9478dbd0-b1ed-4ad1-9378-45c7da96bad9" />
+    <Property Name="IsClicked" Type="Boolean" ed:ValidateRequired="false" ed:Guid="6dddcdfe-9db0-4778-871c-068cb55ff54b" />
+    <Property Name="IsDeleted" Type="Boolean" ed:ValidateRequired="false" ed:Guid="07789573-ac26-49d2-a670-74da709a8beb" />
+    <Property Name="CreatedBy" Type="Int64" Nullable="false" DefaultValue="1" ed:ValidateRequired="true" ed:Guid="ee5e23fc-a30a-49d9-96a1-e98f824738b7" />
+    <Property Name="DateMAJ" Type="DateTime" ed:ValidateRequired="false" ed:Guid="e95b9307-7fd8-45a3-b96b-cd12550b29d6" />
+    <Property Name="DataKey" Type="String" MaxLength="50" ed:ValidateMaxLength="50" ed:ValidateRequired="false" ed:Guid="48c9ce79-a532-4361-b76f-0e344c059f5e" />
+  </EntityType>
+  <EntityType Name="SysObjet" ed:Guid="f43c6af3-8618-4a2a-a0e7-35f80d028807">
+    <Key>
+      <PropertyRef Name="IdSysObjet" />
+    </Key>
+    <Property Name="IdSysObjet" Type="Int32" Nullable="false" ed:ValidateRequired="true" ed:Guid="ccefbc90-e68a-4668-9c1c-4f5337920fab" />
+    <Property Name="TypeObjet" Type="String" MaxLength="100" ed:ValidateMaxLength="100" ed:ValidateRequired="false" ed:Guid="32fb9e5d-01f0-43a5-add9-08a632be1e27" />
+    <Property Name="Code" Type="String" MaxLength="100" ed:ValidateMaxLength="100" ed:ValidateRequired="false" ed:Guid="1850a7cb-22ed-4730-8a41-008cd56cf91b" />
+    <Property Name="Libelle" Type="String" MaxLength="250" ed:ValidateMaxLength="250" ed:ValidateRequired="false" ed:Guid="de74a123-4bce-4cf1-8b20-b69506018d66" />
+    <Property Name="Description" Type="String" MaxLength="500" ed:ValidateMaxLength="500" ed:ValidateRequired="false" ed:Guid="29c26415-2d36-468d-8742-34cb47ed2397" />
+    <Property Name="DateCreation" Type="DateTime" ed:ValidateRequired="false" ed:Guid="7c24cd82-f044-4fd7-92a3-6c97dd8f8be5" />
+    <Property Name="DateMAJ" Type="DateTime" ed:ValidateRequired="false" ed:Guid="0d79de2b-9db0-49b8-8f66-e78d558e7f19" />
+    <Property Name="DataKey" Type="String" MaxLength="50" ed:ValidateMaxLength="50" ed:ValidateRequired="false" ed:Guid="d3f6fddf-f5b5-4992-9d68-9b4eecbf49a7" />
+  </EntityType>
+  <EntityType Name="SysStrategieMotDePasse" ed:Guid="a6ea1c59-c2af-454e-8fdb-96a9d564140e">
+    <Key>
+      <PropertyRef Name="IdSysStrategieMotDePasse" />
+    </Key>
+    <Property Name="IdSysStrategieMotDePasse" Type="Int32" Nullable="false" ed:ValidateRequired="true" ed:Guid="1927d72c-0f61-46b0-922d-13c4912195b8" />
+    <Property Name="Libelle" Type="String" MaxLength="150" ed:ValidateMaxLength="150" ed:ValidateRequired="false" ed:Guid="527a270b-1319-4ed2-bd8c-84597f061611" />
+    <Property Name="LongeurMinimum" Type="Int32" ed:ValidateRequired="false" ed:Guid="4e924d72-ddfd-429b-9f20-df7bdc4cf9c4" />
+    <Property Name="DureeDeVie" Type="Int32" ed:ValidateRequired="false" ed:Guid="b056240d-367e-4b02-b8d5-4409fedb4309" />
+    <Property Name="NombreTentativeAvantVerrouillage" Type="Int32" ed:ValidateRequired="false" ed:Guid="163751fa-462b-492c-9de7-cefb36a8ed13" />
+    <Property Name="IdSysComplexiteMotDePasse" Type="Int32" Nullable="false" ed:ValidateRequired="true" ed:Guid="b75747eb-0709-45ea-9648-c004fe4e8a13" />
+    <Property Name="UtiliserAncienMotDePasse" Type="String" MaxLength="3" ed:ValidateMaxLength="3" ed:ValidateRequired="false" ed:Guid="39400630-e250-45f7-99f6-d1899b9aefee" />
+    <Property Name="ChangerMotDePasseApresAttribution" Type="String" MaxLength="3" ed:ValidateMaxLength="3" ed:ValidateRequired="false" ed:Guid="e2848b6d-86af-4bc7-ace1-21ff659731fd" />
+    <Property Name="Actif" Type="Boolean" Nullable="false" ed:ValidateRequired="true" ed:Guid="8c12b840-84f9-432c-b505-7f1777f74530" />
+    <Property Name="IsDeleted" Type="Boolean" Nullable="false" ed:ValidateRequired="true" ed:Guid="f5080357-e438-43cd-9bfe-7a2cbfa2e500" />
+    <Property Name="DateCreation" Type="DateTime" Nullable="false" ed:ValidateRequired="true" ed:Guid="29183b14-2d9e-40f0-ae7b-0de5a89c40ad" />
+    <Property Name="DateMaj" Type="DateTime" Nullable="false" ed:ValidateRequired="true" ed:Guid="f9f30749-b98b-487c-854f-c4b3dfb609fd" />
+    <Property Name="CreatedBy" Type="Int64" Nullable="false" ed:ValidateRequired="true" ed:Guid="21ee4a34-3d42-4705-a8fb-e7b79efc9d96" />
+    <Property Name="ModifiedBy" Type="Int64" Nullable="false" ed:ValidateRequired="true" ed:Guid="e2d99ab6-f49f-4ab7-a203-4e8d596be555" />
+    <Property Name="DataKey" Type="String" MaxLength="50" ed:ValidateMaxLength="50" ed:ValidateRequired="false" ed:Guid="f269d4ff-5378-4356-97b4-1031676f982d" />
+  </EntityType>
+  <EntityType Name="SysStrategieMotDePasseHisto" ed:Guid="199aa437-8e66-48d9-b7d9-5c904a18363f">
+    <Key>
+      <PropertyRef Name="IdSysStrategieMotDePasseHisto" />
+    </Key>
+    <Property Name="IdSysStrategieMotDePasseHisto" Type="Int64" Nullable="false" ed:ValidateRequired="true" ed:Guid="0f729100-5965-4883-9047-a9c0e4196f6c" />
+    <Property Name="IdSysStrategieMotDePasse" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" ed:ValidateRequired="true" ed:Guid="4d2b00d0-380b-4928-ad3e-ece6a46a0ecb" />
+    <Property Name="Libelle" Type="String" MaxLength="150" ed:ValidateMaxLength="150" ed:ValidateRequired="false" ed:Guid="491303da-65b6-4d1b-9a31-d72240571457" />
+    <Property Name="LongeurMinimum" Type="Int32" ed:ValidateRequired="false" ed:Guid="725d4d0f-b295-4869-985c-8ad59a1cd7dc" />
+    <Property Name="DureeDeVie" Type="Int32" ed:ValidateRequired="false" ed:Guid="d001a07c-edba-4146-864d-f1bbab0545db" />
+    <Property Name="NombreTentativeAvantVerrouillage" Type="Int32" ed:ValidateRequired="false" ed:Guid="ec1d3b46-862d-43c3-8fc0-e63c6c3775be" />
+    <Property Name="IdSysComplexiteMotDePasse" Type="Int32" Nullable="false" ed:ValidateRequired="true" ed:Guid="b76efa71-e359-40b8-82b9-0aa447d53082" />
+    <Property Name="UtiliserAncienMotDePasse" Type="String" MaxLength="3" ed:ValidateMaxLength="3" ed:ValidateRequired="false" ed:Guid="45ea1c05-3bbb-4e01-852a-a7140097b081" />
+    <Property Name="ChangerMotDePasseApresAttribution" Type="String" MaxLength="3" ed:ValidateMaxLength="3" ed:ValidateRequired="false" ed:Guid="7463a48f-2253-4dc0-abd6-5a6514e49a1b" />
+    <Property Name="Actif" Type="Boolean" Nullable="false" ed:ValidateRequired="true" ed:Guid="6c75aa83-ec86-4ec2-b3e2-a1efb62eb09b" />
+    <Property Name="IsDeleted" Type="Boolean" Nullable="false" ed:ValidateRequired="true" ed:Guid="563aaf16-c393-458d-b4b7-5795755d1d8c" />
+    <Property Name="DateCreation" Type="DateTime" Nullable="false" ed:ValidateRequired="true" ed:Guid="61f82b98-095c-43ef-966f-1ea3d6fe28f5" />
+    <Property Name="DateMaj" Type="DateTime" Nullable="false" ed:ValidateRequired="true" ed:Guid="0846a255-15cf-496f-857c-6e5159cd5b1d" />
+    <Property Name="CreatedBy" Type="Int64" Nullable="false" ed:ValidateRequired="true" ed:Guid="faa76002-9133-435d-8867-fdb24c6f7627" />
+    <Property Name="ModifiedBy" Type="Int64" Nullable="false" ed:ValidateRequired="true" ed:Guid="49fa7f33-2c04-4951-b91e-c437f0d3eacf" />
+    <Property Name="Temps" Type="String" MaxLength="2" ed:ValidateMaxLength="2" ed:ValidateRequired="false" ed:Guid="b1702926-8aab-4d82-832b-099ef3b355c7" />
+    <Property Name="DataKey" Type="String" MaxLength="50" ed:ValidateMaxLength="50" ed:ValidateRequired="false" ed:Guid="ad2f1410-977c-4e0e-9343-3ebf536c95c8" />
+  </EntityType>
+  <EntityType Name="TableauRepartitionCharge" ed:Guid="ccabe032-d98b-48ec-8d77-c7e5d39975aa">
+    <Key>
+      <PropertyRef Name="IdTableauRepartitionCharge" />
+    </Key>
+    <Property Name="IdTableauRepartitionCharge" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" ed:ValidateRequired="true" ed:Guid="81d830e4-5c7a-49d0-95c7-248924167c4d" />
+    <Property Name="NumeroFiche" Type="String" MaxLength="50" ed:ValidateMaxLength="50" ed:ValidateRequired="false" ed:Guid="d38067d7-2b3c-4b7d-b536-0385e7635129" />
+    <Property Name="Proposition" Type="Int32" ed:ValidateRequired="false" ed:Guid="66448ae4-c823-45ef-87dc-d3adce75f22f" />
+    <Property Name="IdProcessus" Type="Int64" ed:ValidateRequired="false" ed:Guid="208978de-533e-49cd-9c73-59a9b29b7159" />
+    <Property Name="IsDeleted" Type="Boolean" Nullable="false" ed:ValidateRequired="true" ed:Guid="2ed44051-652c-408c-b08a-db4a94153761" />
+    <Property Name="DateCreation" Type="DateTime" ed:ValidateRequired="false" ed:Guid="a1cac4d9-4eaf-4c34-aafe-9d6deefd7fa8" />
+    <Property Name="DateMAJ" Type="DateTime" ed:ValidateRequired="false" ed:Guid="d5c74d44-43c0-43c9-a785-7ed1a7e8b345" />
+    <Property Name="DataKey" Type="String" MaxLength="50" ed:ValidateMaxLength="50" ed:ValidateRequired="false" ed:Guid="1009b8e9-966a-40cf-a765-9e4bb7c05bbc" />
+    <Property Name="CreatedBy" Type="Int64" ed:ValidateRequired="false" ed:Guid="d744e4cd-3fb4-497d-a8e1-aa6e7d4d6324" />
+    <Property Name="ModifiedBy" Type="Int64" ed:ValidateRequired="false" ed:Guid="231e2deb-cb7a-440f-bad6-c0fdfb93cd77" />
+  </EntityType>
+  <EntityType Name="Terme" ed:Guid="2b535609-a643-44b3-b9a4-8a225a08dd8d">
+    <Key>
+      <PropertyRef Name="IdTerme" />
+    </Key>
+    <Property Name="IdTerme" Type="Int64" Nullable="false" ed:ValidateRequired="true" ed:Guid="386bd6d0-0491-4036-ba02-f87e9fb2ac4e" />
+    <Property Name="LimiteSouscription" Type="Binary" MaxLength="250" ed:ValidateRequired="false" ed:Guid="15a70ff5-8c49-4742-8a2f-e89777107b24" />
+    <Property Name="Exclusion" Type="String" MaxLength="250" ed:ValidateMaxLength="250" ed:ValidateRequired="false" ed:Guid="4a2ede36-6cfd-4c82-96ea-b01b43fd70dd" />
+    <Property Name="Taux" Type="Double" ed:ValidateRequired="false" ed:Guid="aeb017e0-c477-4e94-becb-9978fdb322b0" />
+    <Property Name="IsDeleted" Type="Boolean" Nullable="false" ed:ValidateRequired="true" ed:Guid="234d873e-61db-4eb1-81b5-446690d0a431" />
+    <Property Name="DateCreation" Type="DateTime" ed:ValidateRequired="false" ed:Guid="b3536da3-2a7b-4c9d-8f88-8c7128da0d74" />
+    <Property Name="DateMAJ" Type="DateTime" ed:ValidateRequired="false" ed:Guid="341a0559-538d-4a9b-9be5-0dca5be3da8a" />
+    <Property Name="DataKey" Type="String" MaxLength="50" ed:ValidateMaxLength="50" ed:ValidateRequired="false" ed:Guid="e12cc43d-5388-46dd-9f34-2549572113b0" />
+    <Property Name="CreatedBy" Type="Int64" ed:ValidateRequired="false" ed:Guid="4c96feb0-f588-4253-8b5e-3e26711abaf8" />
+    <Property Name="ModifiedBy" Type="Int64" ed:ValidateRequired="false" ed:Guid="7ac559a3-8131-4d32-8570-a8b8b91b28b3" />
+  </EntityType>
+  <EntityType Name="TermeTraite" ed:Guid="4979f0fc-223c-4380-bb37-e437920f6878">
+    <Key>
+      <PropertyRef Name="IdTermeTraite" />
+    </Key>
+    <Property Name="IdTermeTraite" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" ed:ValidateRequired="true" ed:Guid="dfec33a2-9b8e-496a-8d1e-3f8258603814" />
+    <Property Name="IdTraite" Type="Int64" Nullable="false" ed:ValidateRequired="true" ed:Guid="1eccfc8b-a629-41e1-8cb8-f9194ae06e0b" />
+    <Property Name="IdTerme" Type="Int64" Nullable="false" ed:ValidateRequired="true" ed:Guid="c8864eed-b759-4037-9347-f34aaef65393" />
+    <Property Name="IsDeleted" Type="Boolean" Nullable="false" ed:ValidateRequired="true" ed:Guid="59b9be55-50da-45eb-b136-c69c12bd5a03" />
+    <Property Name="DateCreation" Type="DateTime" ed:ValidateRequired="false" ed:Guid="d4efa341-3b77-48be-a44c-4b036a17fdef" />
+    <Property Name="DateMAJ" Type="DateTime" ed:ValidateRequired="false" ed:Guid="69265573-2472-4207-8ebb-9ea57b719a72" />
+    <Property Name="DataKey" Type="String" MaxLength="50" ed:ValidateMaxLength="50" ed:ValidateRequired="false" ed:Guid="8806257c-3054-470b-8296-98f58b7ddfce" />
+    <Property Name="CreatedBy" Type="Int64" ed:ValidateRequired="false" ed:Guid="07856028-aa71-4e31-a1e4-88255d3373e4" />
+    <Property Name="ModifiedBy" Type="Int64" ed:ValidateRequired="false" ed:Guid="35e1d426-4be9-4915-830d-af137c3b6ba8" />
+  </EntityType>
+  <EntityType Name="Trace" ed:Guid="fdaa49c4-b6aa-4701-bcd2-6835e6539003">
+    <Key>
+      <PropertyRef Name="IdTrace" />
+    </Key>
+    <Property Name="IdTrace" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" ed:ValidateRequired="true" ed:Guid="440a9349-a9f3-47c1-a46d-aa14c91cfd08" />
+    <Property Name="IdStructure" Type="Int64" ed:ValidateRequired="false" ed:Guid="9ec96edb-ea85-462a-9b6b-1c4251a24cea" />
+    <Property Name="IdUtilisateur" Type="Int64" Nullable="false" ed:ValidateRequired="true" ed:Guid="4a74e146-f231-45a8-9098-2c1895d672b6" />
+    <Property Name="DateOperation" Type="DateTime" ed:ValidateRequired="false" ed:Guid="91e3d541-6b1d-430e-b6ff-f88fcd65bc64" />
+    <Property Name="HeureOperation" Type="Time" ed:ValidateRequired="false" ed:Guid="8188ff97-cf43-4742-99bb-0d8b373e11a0" />
+    <Property Name="DateSysteme" Type="DateTime" ed:ValidateRequired="false" ed:Guid="f9b2d9e1-4767-42a9-ac9e-a6c2c5be9057" />
+    <Property Name="HeureSysteme" Type="Time" ed:ValidateRequired="false" ed:Guid="ed4d0f90-8ba1-43e4-81e5-6f671205da4b" />
+    <Property Name="IdTypeOperation" Type="Int32" ed:ValidateRequired="false" ed:Guid="f2810f7a-cbd4-420d-85af-67c69235b1f4" />
+    <Property Name="CodeOperation" Type="String" DefaultValue="''" MaxLength="50" ed:ValidateMaxLength="50" ed:ValidateRequired="false" ed:Guid="c1e9af00-da65-41c7-94da-bc7891885f25" />
+    <Property Name="Origine" Type="String" DefaultValue="''" MaxLength="100" ed:ValidateMaxLength="100" ed:ValidateRequired="false" ed:Guid="147193b8-a230-4da8-bcc7-e0bb87096a40" />
+    <Property Name="IdOrigine" Type="Int64" DefaultValue="0" ed:ValidateRequired="false" ed:Guid="819f30f3-49d1-40ff-aa52-c386ae526bd5" />
+    <Property Name="IdFormulaire" Type="Int32" ed:ValidateRequired="false" ed:Guid="296b4094-b485-4b59-ae12-23387aef2482" />
+    <Property Name="CodeFormulaire" Type="String" DefaultValue="''" MaxLength="150" ed:ValidateMaxLength="150" ed:ValidateRequired="false" ed:Guid="1217134b-8e40-47db-bc9c-1592151b5c99" />
+    <Property Name="LibelleOperation" Type="String" ed:ValidateRequired="false" ed:Guid="0903d1a8-77d5-4f10-b0fd-b405a72a4b94" />
+    <Property Name="DateCreation" Type="DateTime" ed:ValidateRequired="false" ed:Guid="89d11d9b-89df-4ca3-b7fd-c5a8f29da978" />
+    <Property Name="DateMAJ" Type="DateTime" ed:ValidateRequired="false" ed:Guid="be32ea24-0480-46a9-b157-229bf275407b" />
+    <Property Name="DataKey" Type="String" MaxLength="50" ed:ValidateMaxLength="50" ed:ValidateRequired="false" ed:Guid="446536b4-4139-4b30-8bf2-18da39c32f8b" />
+  </EntityType>
+  <EntityType Name="Traite" ed:Guid="9679a09a-38ed-4b9c-934b-69205b3ff0f6">
+    <Key>
+      <PropertyRef Name="IdTraite" />
+    </Key>
+    <Property Name="IdTraite" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" ed:ValidateRequired="true" ed:Guid="53c89504-6676-4448-b0aa-1d1a8a142f12" />
+    <Property Name="Libelle" Type="String" MaxLength="250" ed:ValidateMaxLength="250" ed:ValidateRequired="false" ed:Guid="b3ec1416-91b0-49f5-b643-759a7b52cc7f" />
+    <Property Name="Description" Type="String" MaxLength="250" ed:ValidateMaxLength="250" ed:ValidateRequired="false" ed:Guid="a4c3b59b-1177-498c-aa33-b3f04351c8cc" />
+    <Property Name="NatureActivite" Type="String" MaxLength="50" ed:ValidateMaxLength="50" ed:ValidateRequired="false" ed:Guid="a0b037f8-7829-403a-b807-2793261c6767" />
+    <Property Name="IdBranche" Type="Int64" ed:ValidateRequired="false" ed:Guid="f13d503a-16dc-4e22-a161-ad01cf0394e8" />
+    <Property Name="IdReassureur" Type="Int32" ed:ValidateRequired="false" ed:Guid="63b472b1-0c83-4dfd-bdee-215cdf19c1ba" />
+    <Property Name="IdStructure" Type="Int32" ed:ValidateRequired="false" ed:Guid="e08ee5ec-32a3-4f96-b683-5dbb005ec1a4" />
+    <Property Name="IsDeleted" Type="Boolean" Nullable="false" ed:ValidateRequired="true" ed:Guid="8f5fcebd-51c0-43ae-aa85-29bff1a46b93" />
+    <Property Name="DateCreation" Type="DateTime" ed:ValidateRequired="false" ed:Guid="95e6acaf-f8e6-493c-a762-639004056f9e" />
+    <Property Name="DateMAJ" Type="DateTime" ed:ValidateRequired="false" ed:Guid="49291ac7-fb0d-4d6a-aa59-83bdd9f71ae2" />
+    <Property Name="DataKey" Type="String" MaxLength="50" ed:ValidateMaxLength="50" ed:ValidateRequired="false" ed:Guid="b0bf12db-1db8-49c3-b64a-f5633d4f0bc9" />
+    <Property Name="CreatedBy" Type="Int64" ed:ValidateRequired="false" ed:Guid="b38be171-61ba-42a2-92be-49515e82fc1a" />
+    <Property Name="ModifiedBy" Type="Int64" ed:ValidateRequired="false" ed:Guid="08f16ef4-9f91-4746-bc63-dec957208727" />
+  </EntityType>
+  <EntityType Name="TypeEchange" ed:Guid="fc105cb9-3f46-455a-8760-0617a1d45dea">
+    <Key>
+      <PropertyRef Name="IdTypeEchange" />
+    </Key>
+    <Property Name="IdTypeEchange" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" ed:ValidateRequired="true" ed:Guid="e25eff95-10a6-4cab-bafb-54b5adde61b1" />
+    <Property Name="Libelle" Type="String" Nullable="false" MaxLength="255" ed:ValidateMaxLength="255" ed:ValidateRequired="true" ed:Guid="c3e57cbf-b39e-42d7-bc48-f64bf4cc44dc" />
+    <Property Name="Description" Type="String" Nullable="false" MaxLength="255" ed:ValidateMaxLength="255" ed:ValidateRequired="true" ed:Guid="edba214f-48e3-4762-ad91-47c5e42a98ca" />
+    <Property Name="IsDeleted" Type="Boolean" Nullable="false" ed:ValidateRequired="true" ed:Guid="99cb5a60-b475-47bf-8bf5-b596e6307278" />
+    <Property Name="CreatedBy" Type="Int64" ed:ValidateRequired="false" ed:Guid="5483ed4a-365a-48c3-8cee-79113fe7458b" />
+    <Property Name="DateCreation" Type="DateTime" ed:ValidateRequired="false" ed:Guid="78677f98-0f5a-4695-809b-19a2bbe70731" />
+    <Property Name="DateMAJ" Type="DateTime" ed:ValidateRequired="false" ed:Guid="20361f46-5189-4fb2-9763-f0de94b3e295" />
+    <Property Name="DataKey" Type="String" MaxLength="50" ed:ValidateMaxLength="50" ed:ValidateRequired="false" ed:Guid="51ffe599-3861-4c5d-999c-7e515fb16090" />
+    <Property Name="ModifiedBy" Type="Int64" ed:ValidateRequired="false" ed:Guid="97b60354-000b-45c5-8778-a68347f5c030" />
+  </EntityType>
+  <EntityType Name="TypePersonne" ed:Guid="085dcada-32c8-403f-b807-f71872da7fd4">
+    <Key>
+      <PropertyRef Name="IdTypePersonne" />
+    </Key>
+    <Property Name="IdTypePersonne" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" ed:ValidateRequired="true" ed:Guid="3f42d2fc-01f1-4a3e-bd87-6c954230698f" />
+    <Property Name="LibelleTypePersonne" Type="String" MaxLength="250" ed:ValidateMaxLength="250" ed:ValidateRequired="false" ed:Guid="0e173337-576f-4a73-be63-96bd10e1e376" />
+    <Property Name="IsDeleted" Type="Boolean" Nullable="false" ed:ValidateRequired="true" ed:Guid="a0ba3287-75fd-4cf2-93db-37620b367598" />
+    <Property Name="DateCreation" Type="DateTime" ed:ValidateRequired="false" ed:Guid="ebae7d77-e34f-432e-8bf8-2fe793c5e4ef" />
+    <Property Name="DateMAJ" Type="DateTime" ed:ValidateRequired="false" ed:Guid="7f91ecea-56b7-49ea-9148-c6f61c3f88f5" />
+    <Property Name="DataKey" Type="String" MaxLength="50" ed:ValidateMaxLength="50" ed:ValidateRequired="false" ed:Guid="13e458e7-751e-443b-8087-3540d582d272" />
+    <Property Name="CreatedBy" Type="Int64" ed:ValidateRequired="false" ed:Guid="6952e710-1c73-470a-ba59-2edb06bcff7f" />
+    <Property Name="ModifiedBy" Type="Int64" ed:ValidateRequired="false" ed:Guid="2a6e3699-2c8b-4c0c-ae29-d623b34fb420" />
+  </EntityType>
+  <EntityType Name="TypeProcessu" ed:Guid="181ee228-0ce5-4646-bb10-e19aa048b551">
+    <Key>
+      <PropertyRef Name="IdTypeProcessus" />
+    </Key>
+    <Property Name="IdTypeProcessus" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" ed:ValidateRequired="true" ed:Guid="6808dcee-c55f-4831-9294-57bd346d1893" />
+    <Property Name="Libelle" Type="String" Nullable="false" MaxLength="255" ed:ValidateMaxLength="255" ed:ValidateRequired="true" ed:Guid="336498cb-32e2-4091-8d50-b7efe3fd2f8b" />
+    <Property Name="IsDeleted" Type="Boolean" Nullable="false" ed:ValidateRequired="true" ed:Guid="f0b75d28-e250-418c-ab7a-01afd43f0668" />
+    <Property Name="CreatedBy" Type="Int64" ed:ValidateRequired="false" ed:Guid="3da39e08-78cb-4669-9c55-5c79ea11e8a4" />
+    <Property Name="DateCreation" Type="DateTime" ed:ValidateRequired="false" ed:Guid="d4fb8962-880e-40b4-b287-d7b85320b439" />
+    <Property Name="DateMAJ" Type="DateTime" ed:ValidateRequired="false" ed:Guid="fe76a96e-99c7-482f-8c99-fbcc4547a2a7" />
+    <Property Name="DataKey" Type="String" MaxLength="50" ed:ValidateMaxLength="50" ed:ValidateRequired="false" ed:Guid="8b0e6e9a-114a-4123-a1c6-7ef163c211e6" />
+    <Property Name="ModifiedBy" Type="Int64" ed:ValidateRequired="false" ed:Guid="5f0163f4-47fb-4e6f-bb67-60a778af6a1b" />
+  </EntityType>
+  <EntityType Name="Utilisateur" ed:Guid="f967f01f-5ef3-400b-9b95-72197b8c731e">
+    <Key>
+      <PropertyRef Name="IdUtilisateur" />
+    </Key>
+    <Property Name="IdUtilisateur" Type="Int64" Nullable="false" ed:ValidateRequired="true" ed:Guid="a6b35c1b-0112-4aa8-8c57-a5f068094468" />
+    <Property Name="Login" Type="String" Nullable="false" MaxLength="50" ed:ValidateMaxLength="50" ed:ValidateRequired="true" ed:Guid="3c999e9b-50f8-4657-90cf-ba020f412660" />
+    <Property Name="Password" Type="String" Nullable="false" ed:ValidateRequired="true" ed:Guid="1d92718f-2740-43b8-8869-0d4255d58ce2" />
+    <Property Name="Nom" Type="String" MaxLength="150" ed:ValidateMaxLength="150" ed:ValidateRequired="false" ed:Guid="6a1d186b-b515-4c2c-88b0-3f3a0389271d" />
+    <Property Name="Prenom" Type="String" MaxLength="150" ed:ValidateMaxLength="150" ed:ValidateRequired="false" ed:Guid="087c60c7-8724-499d-aea9-fca9853db475" />
+    <Property Name="Email" Type="String" MaxLength="250" ed:ValidateMaxLength="250" ed:ValidateRequired="false" ed:Guid="04ec9050-a0a2-415a-a741-43fb40a114ad" />
+    <Property Name="Telephone" Type="String" MaxLength="250" ed:ValidateMaxLength="250" ed:ValidateRequired="false" ed:Guid="d767b5c0-9fc5-4e89-8576-3522aa30b25b" />
+    <Property Name="Adresse" Type="String" MaxLength="250" ed:ValidateMaxLength="250" ed:ValidateRequired="false" ed:Guid="01c4de8a-759f-4d01-8a71-231320f2f830" />
+    <Property Name="Photo" Type="String" ed:ValidateRequired="false" ed:Guid="bf674531-070c-4af8-a8da-4f1edd5eca71" />
+    <Property Name="VoirCompteSensible" Type="Boolean" ed:ValidateRequired="false" ed:Guid="82e62d81-6d6a-443e-88b0-cdd116270f58" />
+    <Property Name="ChangeLogin" Type="Boolean" ed:ValidateRequired="false" ed:Guid="56f40740-f440-42a4-8223-4af7d23c1215" />
+    <Property Name="ChangePassword" Type="Boolean" ed:ValidateRequired="false" ed:Guid="30dac619-2bc5-4430-9fcf-0703aad21596" />
+    <Property Name="TimeSession" Type="Int32" DefaultValue="25" ed:ValidateRequired="false" ed:Guid="3a6041bd-b014-492d-9392-52ae7054b003" />
+    <Property Name="Actif" Type="String" DefaultValue="'Oui'" MaxLength="3" ed:ValidateMaxLength="3" ed:ValidateRequired="false" ed:Guid="dc4fda2c-02bf-4fa6-a0cf-e54dc6985d42" />
+    <Property Name="IsConnected" Type="String" DefaultValue="'Non'" MaxLength="3" ed:ValidateMaxLength="3" ed:ValidateRequired="false" ed:Guid="89eb08fc-5ae4-4a89-83af-79eb10097004" />
+    <Property Name="ComptePermanent" Type="String" DefaultValue="'Oui'" MaxLength="3" ed:ValidateMaxLength="3" ed:ValidateRequired="false" ed:Guid="fd3522fc-ba94-4c16-b916-8c4291714748" />
+    <Property Name="DateDebutValidite" Type="DateTime" ed:ValidateRequired="false" ed:Guid="3d51da22-8249-4977-b9d8-0fc797adae82" />
+    <Property Name="DateFinValidite" Type="DateTime" ed:ValidateRequired="false" ed:Guid="42e0088c-744b-4e66-9ac3-5ba537666c45" />
+    <Property Name="RecevoirMail" Type="String" DefaultValue="'Non'" MaxLength="3" ed:ValidateMaxLength="3" ed:ValidateRequired="false" ed:Guid="c3840b12-3eaf-48fe-a2d9-6b9cc47a22e6" />
+    <Property Name="RecevoirMailSysteme" Type="String" DefaultValue="'Non'" MaxLength="3" ed:ValidateMaxLength="3" ed:ValidateRequired="false" ed:Guid="47d66918-1af7-46a5-ab42-4b9654a9b851" />
+    <Property Name="IdProfil" Type="Int64" ed:ValidateRequired="false" ed:Guid="410f7305-5f05-454a-b89e-81c30f6da14d" />
+    <Property Name="CanApplySingleSession" Type="Boolean" ed:ValidateRequired="false" ed:Guid="f733419c-74cd-4586-aa95-d7218ac7b4c3" />
+    <Property Name="IsOldUser" Type="Boolean" ed:ValidateRequired="false" ed:Guid="d500aacf-5398-4f1e-8108-2e6e3af50bc6" />
+    <Property Name="IsWindowAccount" Type="Boolean" ed:ValidateRequired="false" ed:Guid="f555f537-e9df-4c3e-9cc0-4e150a79e390" />
+    <Property Name="IsDeleted" Type="Boolean" Nullable="false" ed:ValidateRequired="true" ed:Guid="3cc66d1b-5164-44e7-a7fc-ae3cc3e4f9c5" />
+    <Property Name="DateCreation" Type="DateTime" Nullable="false" ed:ValidateRequired="true" ed:Guid="b15322f1-64dc-4a58-b866-7a90769fa6b8" />
+    <Property Name="DateMaj" Type="DateTime" ed:ValidateRequired="false" ed:Guid="19d09b81-466a-441d-a140-8eac96f9188e" />
+    <Property Name="CreatedBy" Type="Int64" Nullable="false" ed:ValidateRequired="true" ed:Guid="c2e12ac4-f278-40a7-81eb-160788330a5e" />
+    <Property Name="ModifiedBy" Type="Int64" ed:ValidateRequired="false" ed:Guid="8ff0f75e-04e5-4da4-a25a-81f19a55f0b9" />
+    <Property Name="IdStructure" Type="Int64" DefaultValue="1" ed:ValidateRequired="false" ed:Guid="a41cea7c-478d-430e-b774-8264008256e2" />
+    <Property Name="TentativeConnexion" Type="Int32" DefaultValue="0" ed:ValidateRequired="false" ed:Guid="afa4d4d2-778c-4529-933d-23c75abb8df0" />
+    <Property Name="DateDebutValiditePassword" Type="DateTime" ed:ValidateRequired="false" ed:Guid="9709f0dd-007b-4a99-b61a-2809575b8a62" />
+    <Property Name="DateFinValiditePassword" Type="DateTime" ed:ValidateRequired="false" ed:Guid="011e8f0b-e32a-4d43-837d-7d7cc8eae63c" />
+    <Property Name="UserSageCode" Type="String" DefaultValue="''" MaxLength="50" ed:ValidateMaxLength="50" ed:ValidateRequired="false" ed:Guid="c404acc7-701d-4629-a694-049fc2cef1a6" />
+    <Property Name="DataKey" Type="String" MaxLength="50" ed:ValidateMaxLength="50" ed:ValidateRequired="false" ed:Guid="aced8e18-82c3-43fb-8202-f0e3a7eb5951" />
+  </EntityType>
+  <EntityType Name="UtilisateurFonctionnalite" ed:Guid="4796be1c-6976-4f29-b31e-148e1571edca">
+    <Key>
+      <PropertyRef Name="IdUtilisateurFonctionnalite" />
+    </Key>
+    <Property Name="IdUtilisateurFonctionnalite" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" ed:ValidateRequired="true" ed:Guid="b901b060-05bc-4fb5-bd19-1012960c59bb" />
+    <Property Name="IdUtilisateur" Type="Int64" ed:ValidateRequired="false" ed:Guid="95aee41b-6486-4d68-bd14-60c53a64a209" />
+    <Property Name="CodeFonctionnalite" Type="String" MaxLength="150" ed:ValidateMaxLength="150" ed:ValidateRequired="false" ed:Guid="9e477ea6-4c4a-4a33-b906-5f2c243f9b90" />
+    <Property Name="Autorise" Type="Boolean" ed:ValidateRequired="false" ed:Guid="1eee3128-d4ef-4716-9cbe-f0cd32c3d926" />
+    <Property Name="DateCreation" Type="DateTime" Nullable="false" ed:ValidateRequired="true" ed:Guid="90e55975-a709-4fca-aaa4-639dc7bcac20" />
+    <Property Name="CreatedBy" Type="Int64" Nullable="false" ed:ValidateRequired="true" ed:Guid="474e232d-f4df-4030-9c96-404b096ade41" />
+    <Property Name="DateMAJ" Type="DateTime" ed:ValidateRequired="false" ed:Guid="f463e65c-d51e-4c79-b18e-78dc1612a35d" />
+    <Property Name="DataKey" Type="String" MaxLength="50" ed:ValidateMaxLength="50" ed:ValidateRequired="false" ed:Guid="3e5de3e5-d5d4-4035-9ef8-3a78b1ddfbf3" />
+  </EntityType>
+  <EntityType Name="UtilisateurFonctionnaliteHisto" ed:Guid="910cfcb4-3aa8-4395-addd-079a8a50614a">
+    <Key>
+      <PropertyRef Name="IdUtilisateurFonctionnalite" />
+    </Key>
+    <Property Name="IdUtilisateurFonctionnalite" Type="Int64" Nullable="false" ed:ValidateRequired="true" ed:Guid="5a9fa62c-eb05-4fea-9a0d-6e611f86ae27" />
+    <Property Name="IdUtilisateur" Type="Int64" Nullable="false" ed:ValidateRequired="true" ed:Guid="7e47cc4b-4a2e-4daf-85c1-b8d1c06c1976" />
+    <Property Name="CodeFonctionnalite" Type="String" Nullable="false" MaxLength="150" ed:ValidateMaxLength="150" ed:ValidateRequired="true" ed:Guid="92c63526-e9f9-4c2f-9b8a-5b735d83885b" />
+    <Property Name="Autorise" Type="Boolean" Nullable="false" ed:ValidateRequired="true" ed:Guid="ebfc12f1-abd7-4010-937d-41dd7adeb654" />
+    <Property Name="DateCreation" Type="DateTime" ed:ValidateRequired="false" ed:Guid="0ebd4666-bfb4-4dce-88b0-cb34c1686e2f" />
+    <Property Name="CreatedBy" Type="Int64" Nullable="false" ed:ValidateRequired="true" ed:Guid="512fd5a6-ddaf-4385-b6d2-b02104c72a00" />
+    <Property Name="DateMAJ" Type="DateTime" ed:ValidateRequired="false" ed:Guid="c325bf3b-967a-43fc-a3ed-e6c45fce994c" />
+    <Property Name="DataKey" Type="String" MaxLength="50" ed:ValidateMaxLength="50" ed:ValidateRequired="false" ed:Guid="1c7af7c1-7a49-49c4-b597-836c8d8d798e" />
+  </EntityType>
+  <EntityType Name="UtilisateurFonctionnalitePrive" ed:Guid="6de6183d-70a4-4ccb-813e-a824ac35a1d5">
+    <Key>
+      <PropertyRef Name="IdUtilisateurFonctionnalitePrive" />
+    </Key>
+    <Property Name="IdUtilisateurFonctionnalitePrive" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" ed:ValidateRequired="true" ed:Guid="e30b0ec6-0c0b-4c07-80c0-d16e5f88d7ff" />
+    <Property Name="IdUtilisateur" Type="Int64" ed:ValidateRequired="false" ed:Guid="44509b5c-31b4-429e-81e7-35e003a73689" />
+    <Property Name="CodeFonctionnalite" Type="String" MaxLength="150" ed:ValidateMaxLength="150" ed:ValidateRequired="false" ed:Guid="8a0e367a-e583-4caa-881f-7c4654fb287e" />
+    <Property Name="Autorise" Type="Boolean" ed:ValidateRequired="false" ed:Guid="80e9ff6b-aecb-4a0a-8e6d-f862d00f49a5" />
+    <Property Name="DateCreation" Type="DateTime" Nullable="false" ed:ValidateRequired="true" ed:Guid="379af1e7-72a8-486d-80dd-98760dc56fea" />
+    <Property Name="CreatedBy" Type="Int64" Nullable="false" ed:ValidateRequired="true" ed:Guid="3d6a4571-34d5-42a6-b06a-fc04a26026c4" />
+    <Property Name="DateMAJ" Type="DateTime" ed:ValidateRequired="false" ed:Guid="8b00ffc7-f164-40c1-80a4-04e716993b91" />
+    <Property Name="DataKey" Type="String" MaxLength="50" ed:ValidateMaxLength="50" ed:ValidateRequired="false" ed:Guid="7be0f36a-93cc-42e2-8a27-be10da311b56" />
+  </EntityType>
+  <EntityType Name="UtilisateurFonctionnalitePriveHisto" ed:Guid="55e0779f-da9f-446f-9f34-12e41e7bf52f">
+    <Key>
+      <PropertyRef Name="IdUtilisateurFonctionnalitePrive" />
+    </Key>
+    <Property Name="IdUtilisateurFonctionnalitePrive" Type="Int64" Nullable="false" ed:ValidateRequired="true" ed:Guid="d9087e7f-2c24-4ff1-8dd9-dba4b596760d" />
+    <Property Name="IdUtilisateur" Type="Int64" ed:ValidateRequired="false" ed:Guid="1aed9192-f323-4847-b5be-969e262f99d4" />
+    <Property Name="CodeFonctionnalite" Type="String" MaxLength="150" ed:ValidateMaxLength="150" ed:ValidateRequired="false" ed:Guid="b08eac2d-212b-481b-aff6-fe7c7f2dbf89" />
+    <Property Name="Autorise" Type="Boolean" ed:ValidateRequired="false" ed:Guid="b5a5f292-5bdb-4164-aab4-5358f2ddfdf7" />
+    <Property Name="DateCreation" Type="DateTime" Nullable="false" ed:ValidateRequired="true" ed:Guid="25cee455-7534-42b8-ae18-7657c779cc11" />
+    <Property Name="CreatedBy" Type="Int64" Nullable="false" ed:ValidateRequired="true" ed:Guid="fc65478b-5fd5-4853-9b1b-e8305ff7fb81" />
+    <Property Name="DateMAJ" Type="DateTime" ed:ValidateRequired="false" ed:Guid="47ca1a0b-5912-4fa1-ad4f-ebe599931de6" />
+    <Property Name="DataKey" Type="String" MaxLength="50" ed:ValidateMaxLength="50" ed:ValidateRequired="false" ed:Guid="020aeb21-09d9-4ee9-b2c7-02f0a61e6b51" />
+  </EntityType>
+  <EntityType Name="UtilisateurHisto" ed:Guid="05e40b5d-310c-469b-a296-981581f0f502">
+    <Key>
+      <PropertyRef Name="IdUtilisateurHisto" />
+    </Key>
+    <Property Name="IdUtilisateurHisto" Type="Int64" Nullable="false" ed:ValidateRequired="true" ed:Guid="b3b6cd6c-ce22-438c-9b90-aadbbe5b9a73" />
+    <Property Name="IdUtilisateur" Type="Int64" Nullable="false" ed:ValidateRequired="true" ed:Guid="3243816e-4b4f-4975-bbea-300456b788c5" />
+    <Property Name="Login" Type="String" Nullable="false" MaxLength="50" ed:ValidateMaxLength="50" ed:ValidateRequired="true" ed:Guid="0010d004-efe7-4394-b14b-eb43fd581160" />
+    <Property Name="Password" Type="String" Nullable="false" MaxLength="250" ed:ValidateMaxLength="250" ed:ValidateRequired="true" ed:Guid="ce7977bd-0de9-4917-ac21-d71044f7aa1d" />
+    <Property Name="Nom" Type="String" MaxLength="150" ed:ValidateMaxLength="150" ed:ValidateRequired="false" ed:Guid="9ee27e0f-ae38-4670-920e-f1bbd3904f71" />
+    <Property Name="Prenom" Type="String" MaxLength="150" ed:ValidateMaxLength="150" ed:ValidateRequired="false" ed:Guid="9856267b-f9a4-4922-9e90-338120ed67bf" />
+    <Property Name="Email" Type="String" MaxLength="250" ed:ValidateMaxLength="250" ed:ValidateRequired="false" ed:Guid="c98bab0d-1fc3-4fa9-92b8-bb1505d11c9f" />
+    <Property Name="Telephone" Type="String" MaxLength="250" ed:ValidateMaxLength="250" ed:ValidateRequired="false" ed:Guid="9c3af7a7-8f63-4210-860d-99280c10ee47" />
+    <Property Name="Adresse" Type="String" MaxLength="250" ed:ValidateMaxLength="250" ed:ValidateRequired="false" ed:Guid="d0a27770-f341-4b9a-bddd-e01dab88bb9f" />
+    <Property Name="Photo" Type="String" ed:ValidateRequired="false" ed:Guid="63e7fec4-3737-471c-ad3d-368fc2648d22" />
+    <Property Name="VoirCompteSensible" Type="Boolean" ed:ValidateRequired="false" ed:Guid="9324c466-8233-4b5e-aad2-80803dd501d6" />
+    <Property Name="ChangeLogin" Type="Boolean" ed:ValidateRequired="false" ed:Guid="b3531e45-4da7-4b93-ae9f-334059abf5f0" />
+    <Property Name="ChangePassword" Type="Boolean" ed:ValidateRequired="false" ed:Guid="47af608c-dfd5-4043-9328-16f11cba0bc1" />
+    <Property Name="TimeSession" Type="Int32" ed:ValidateRequired="false" ed:Guid="63c27339-7d9d-431d-8223-218fad37e962" />
+    <Property Name="Actif" Type="String" DefaultValue="'Oui'" MaxLength="3" ed:ValidateMaxLength="3" ed:ValidateRequired="false" ed:Guid="1d4b2f67-e239-4cd8-8f2e-1ba6a9cf89cb" />
+    <Property Name="IsConnected" Type="String" DefaultValue="'Non'" MaxLength="3" ed:ValidateMaxLength="3" ed:ValidateRequired="false" ed:Guid="fcfe1cc0-35c2-4dbb-8fa3-cf1100d5d0e8" />
+    <Property Name="ComptePermanent" Type="String" DefaultValue="'Oui'" MaxLength="3" ed:ValidateMaxLength="3" ed:ValidateRequired="false" ed:Guid="c86c2d45-5e9c-4f37-b25b-f2e70c0f556d" />
+    <Property Name="DateDebutValidite" Type="DateTime" ed:ValidateRequired="false" ed:Guid="128bbf49-5fe1-4ee7-b254-c994bb056aef" />
+    <Property Name="DateFinValidite" Type="DateTime" ed:ValidateRequired="false" ed:Guid="00a9a5cf-2fde-4826-bce8-0508e755b4d0" />
+    <Property Name="RecevoirMail" Type="String" DefaultValue="'Non'" MaxLength="3" ed:ValidateMaxLength="3" ed:ValidateRequired="false" ed:Guid="1b5bf8cd-abdc-48c8-b30e-a2099451e071" />
+    <Property Name="RecevoirMailSysteme" Type="String" DefaultValue="'Non'" MaxLength="3" ed:ValidateMaxLength="3" ed:ValidateRequired="false" ed:Guid="54014bc5-a5cd-4b31-8af0-540dddead4db" />
+    <Property Name="IdProfil" Type="Int64" ed:ValidateRequired="false" ed:Guid="9ca9ce51-b176-4767-90cb-47d3b7e345ec" />
+    <Property Name="CanApplySingleSession" Type="Boolean" ed:ValidateRequired="false" ed:Guid="ccc9b88f-1b6c-4017-a365-33da7ca06507" />
+    <Property Name="IsOldUser" Type="Boolean" ed:ValidateRequired="false" ed:Guid="0e5cc402-fc1e-4969-b92f-bb5dbaeeda73" />
+    <Property Name="IsWindowAccount" Type="Boolean" ed:ValidateRequired="false" ed:Guid="b302e36d-eb78-49e0-badb-cb2014acce51" />
+    <Property Name="IsDeleted" Type="Boolean" Nullable="false" ed:ValidateRequired="true" ed:Guid="eb2f8003-a707-4148-b496-af0342015036" />
+    <Property Name="DateCreation" Type="DateTime" Nullable="false" ed:ValidateRequired="true" ed:Guid="79da7d5e-5e34-4fcd-9630-891aa2d3fa92" />
+    <Property Name="DateMaj" Type="DateTime" ed:ValidateRequired="false" ed:Guid="7235704d-cd9b-428a-980e-9c722a59d447" />
+    <Property Name="CreatedBy" Type="Int64" Nullable="false" ed:ValidateRequired="true" ed:Guid="d5dc88fc-2496-43b1-ae75-875442af9e95" />
+    <Property Name="ModifiedBy" Type="Int64" ed:ValidateRequired="false" ed:Guid="a45add94-dcc2-4ff0-ace8-71e677a4f6b6" />
+    <Property Name="IdStructure" Type="Int64" ed:ValidateRequired="false" ed:Guid="9538109a-34b8-4fdd-bb7a-328fedf55ead" />
+    <Property Name="TentativeConnexion" Type="Int32" DefaultValue="0" ed:ValidateRequired="false" ed:Guid="e999a762-eea2-49ae-8ece-897bd4b53e24" />
+    <Property Name="DateDebutValiditePassword" Type="DateTime" ed:ValidateRequired="false" ed:Guid="96a0f32c-1d40-4ccc-a7e6-3309a2b679ec" />
+    <Property Name="DateFinValiditePassword" Type="DateTime" ed:ValidateRequired="false" ed:Guid="c73abdc8-c35b-41e9-b6fe-1ca723aa6364" />
+    <Property Name="UserSageCode" Type="String" DefaultValue="''" MaxLength="50" ed:ValidateMaxLength="50" ed:ValidateRequired="false" ed:Guid="a92b9fcf-c6e3-45e6-8e87-82c2877c8e10" />
+    <Property Name="DataKey" Type="String" MaxLength="50" ed:ValidateMaxLength="50" ed:ValidateRequired="false" ed:Guid="317720fa-90a5-459e-adad-00cf02afe267" />
+  </EntityType>
+  <EntityType Name="UtilisateurProfil" ed:Guid="0448b0ed-0944-4aad-906f-da1ca4a13acf">
+    <Key>
+      <PropertyRef Name="IdUtilisateurProfil" />
+    </Key>
+    <Property Name="IdUtilisateurProfil" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" ed:ValidateRequired="true" ed:Guid="0836caec-3ebb-41b4-a9b4-db3462fa536a" />
+    <Property Name="IdUtilisateur" Type="Int64" Nullable="false" ed:ValidateRequired="true" ed:Guid="1ccac534-a996-4f08-97fe-a85442f516e6" />
+    <Property Name="IdProfil" Type="Int32" Nullable="false" ed:ValidateRequired="true" ed:Guid="ace7856a-275e-4267-ba8b-ee357a35f9da" />
+    <Property Name="DateValiditeDebut" Type="DateTime" ed:ValidateRequired="false" ed:Guid="0b7d5b9a-fde3-435c-a02c-0724e4697732" />
+    <Property Name="DateValiditeFin" Type="DateTime" ed:ValidateRequired="false" ed:Guid="91e641e6-e833-4f9a-ba07-a9ae7ac497a5" />
+    <Property Name="DateFinIndeterminer" Type="Boolean" ed:ValidateRequired="false" ed:Guid="00582e3d-e1e4-499e-84c0-4ca4fbb7ec97" />
+    <Property Name="Autorise" Type="Boolean" ed:ValidateRequired="false" ed:Guid="3c8d57da-ca3f-47a2-8da6-8d995ef8141f" />
+    <Property Name="IsDeleted" Type="Boolean" Nullable="false" ed:ValidateRequired="true" ed:Guid="7907bb4f-5aa0-431f-8921-8e181d684ce8" />
+    <Property Name="CreatedBy" Type="Int64" Nullable="false" ed:ValidateRequired="true" ed:Guid="fd8e8dfb-e3ba-468f-a6d9-b2d1e36461c9" />
+    <Property Name="ModifiedBy" Type="Int64" Nullable="false" ed:ValidateRequired="true" ed:Guid="25d79e36-d36f-4197-b30a-388a5216b683" />
+    <Property Name="DateCreation" Type="DateTime" Nullable="false" ed:ValidateRequired="true" ed:Guid="e92464ad-b427-4b3b-9702-95b1200d72c8" />
+    <Property Name="DateMaj" Type="DateTime" Nullable="false" ed:ValidateRequired="true" ed:Guid="4eaa1094-0874-45fb-b877-cfc3264cdd98" />
+    <Property Name="DataKey" Type="String" MaxLength="50" ed:ValidateMaxLength="50" ed:ValidateRequired="false" ed:Guid="63563623-1bde-49fc-a211-88942d319272" />
+  </EntityType>
+  <EntityType Name="UtilisateurProfilHisto" ed:Guid="81e7d027-aa7f-4186-ad0a-18ddaf5d176e">
+    <Key>
+      <PropertyRef Name="IdUtilisateurProfil" />
+    </Key>
+    <Property Name="IdUtilisateurProfil" Type="Int64" Nullable="false" ed:ValidateRequired="true" ed:Guid="490cf287-8c46-4e70-9f3a-7bf241d2b41e" />
+    <Property Name="IdUtilisateur" Type="Int64" Nullable="false" ed:ValidateRequired="true" ed:Guid="c3701b73-f950-4a21-a2d2-8d745dc853f0" />
+    <Property Name="IdProfil" Type="Int32" Nullable="false" ed:ValidateRequired="true" ed:Guid="3c3fbee0-5e2a-48bb-98e5-bd3bbbd219a8" />
+    <Property Name="DateValiditeDebut" Type="DateTime" ed:ValidateRequired="false" ed:Guid="68710d0c-ed38-4e3a-a142-7bd2eb6c08c4" />
+    <Property Name="DateValiditeFin" Type="DateTime" ed:ValidateRequired="false" ed:Guid="f292439c-7384-417c-9b4e-6872ecfa0850" />
+    <Property Name="DateFinIndeterminer" Type="Boolean" ed:ValidateRequired="false" ed:Guid="415440dd-6156-4c79-a5e4-59345b320dce" />
+    <Property Name="Autorise" Type="Boolean" ed:ValidateRequired="false" ed:Guid="2fc24be2-e765-4c8d-a0fe-05c0cf12a910" />
+    <Property Name="IsDeleted" Type="Boolean" Nullable="false" ed:ValidateRequired="true" ed:Guid="e07dda41-cf12-487d-8c79-0cc3076c6b6a" />
+    <Property Name="CreatedBy" Type="Int64" Nullable="false" ed:ValidateRequired="true" ed:Guid="fb11e522-71ed-4656-b4e8-e729312620d5" />
+    <Property Name="ModifiedBy" Type="Int64" Nullable="false" ed:ValidateRequired="true" ed:Guid="a5f587f0-6266-4ff1-9d23-bac71d508278" />
+    <Property Name="DateCreation" Type="DateTime" Nullable="false" ed:ValidateRequired="true" ed:Guid="8a3b6ecc-957b-4f7d-8a2e-36f26c974b76" />
+    <Property Name="DateMaj" Type="DateTime" Nullable="false" ed:ValidateRequired="true" ed:Guid="e62e971f-460c-4665-84bc-24b5736c4d13" />
+    <Property Name="DataKey" Type="String" MaxLength="50" ed:ValidateMaxLength="50" ed:ValidateRequired="false" ed:Guid="db723b73-885d-461d-b7a7-cf5025254b7d" />
+  </EntityType>
+  <EntityType Name="UtilisateurRestriction" ed:Guid="403c00a6-c0c2-494f-8955-b329223628de">
+    <Key>
+      <PropertyRef Name="IdUtilisateurRestriction" />
+    </Key>
+    <Property Name="IdUtilisateurRestriction" Type="Int32" Nullable="false" ed:ValidateRequired="true" ed:Guid="9f65b5a1-20c6-493b-859c-043dc39c6770" />
+    <Property Name="IdUtilisateur" Type="Int64" Nullable="false" ed:ValidateRequired="true" ed:Guid="0306364b-848c-4124-8d59-26767dd29a73" />
+    <Property Name="IdSysObjet" Type="Int32" Nullable="false" ed:ValidateRequired="true" ed:Guid="7999a151-5c65-4f05-b4e5-946a20ed7466" />
+    <Property Name="DateCreation" Type="DateTime" Nullable="false" ed:ValidateRequired="true" ed:Guid="21e0d680-3f6f-47fa-a751-de8941ee8c5a" />
+    <Property Name="CreatedBy" Type="Int64" Nullable="false" ed:ValidateRequired="true" ed:Guid="5d63c938-2ff5-49a1-b875-d271d2cec8e1" />
+    <Property Name="DateMAJ" Type="DateTime" ed:ValidateRequired="false" ed:Guid="d11e04bd-cfeb-4d15-bb18-16b72b709ce6" />
+    <Property Name="DataKey" Type="String" MaxLength="50" ed:ValidateMaxLength="50" ed:ValidateRequired="false" ed:Guid="f57ff127-3f13-4051-934e-a1d91f0b5924" />
+  </EntityType>
+  <EntityType Name="UtilisateurRestrictionHisto" ed:Guid="321f4960-de42-4665-95f0-d96004310841">
+    <Key>
+      <PropertyRef Name="IdUtilisateurRestrictionHisto" />
+    </Key>
+    <Property Name="IdUtilisateurRestrictionHisto" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" ed:ValidateRequired="true" ed:Guid="c7059049-d3ff-4145-933f-d479a6feaf4a" />
+    <Property Name="IdUtilisateurRestriction" Type="Int32" Nullable="false" ed:ValidateRequired="true" ed:Guid="169693a9-b430-4446-9c9b-8ecbd164eb24" />
+    <Property Name="IdUtilisateur" Type="Int64" Nullable="false" ed:ValidateRequired="true" ed:Guid="7ddd8014-7985-4f40-9d43-7e77a1bf636e" />
+    <Property Name="IdSysObjet" Type="Int32" Nullable="false" ed:ValidateRequired="true" ed:Guid="60a1d4cb-e115-4af4-b381-2238dd666f84" />
+    <Property Name="DateCreation" Type="DateTime" Nullable="false" ed:ValidateRequired="true" ed:Guid="e08a4a37-6ef2-4f57-8811-a67199bbae23" />
+    <Property Name="CreatedBy" Type="Int64" Nullable="false" ed:ValidateRequired="true" ed:Guid="b9844a58-fb2f-4c35-9d54-2403d53aea8c" />
+    <Property Name="DateMAJ" Type="DateTime" ed:ValidateRequired="false" ed:Guid="6ae0c999-cc42-4b57-860a-963710bb67cb" />
+    <Property Name="DataKey" Type="String" MaxLength="50" ed:ValidateMaxLength="50" ed:ValidateRequired="false" ed:Guid="b953cd89-bdb2-40ff-ab68-c493b45c39b3" />
+  </EntityType>
+  <EntityType Name="UtilisateurSession" ed:Guid="f0431922-6b72-4317-abd4-0e550aa4907c">
+    <Key>
+      <PropertyRef Name="IdUtilisateurSession" />
+    </Key>
+    <Property Name="IdUtilisateurSession" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" ed:ValidateRequired="true" ed:Guid="71ef4643-03c8-4961-aacc-9fe7766026da" />
+    <Property Name="IdUtilisateur" Type="Int64" Nullable="false" ed:ValidateRequired="true" ed:Guid="0d26f7b5-05a9-48e7-9826-4af1e516b420" />
+    <Property Name="TimeSession" Type="Int32" ed:ValidateRequired="false" ed:Guid="ddcea55f-91bb-45ae-8a47-bd24e9df646d" />
+    <Property Name="IsConnected" Type="Boolean" Nullable="false" ed:ValidateRequired="true" ed:Guid="3ef2d476-cdf4-40af-93c2-7bdd4bff7a87" />
+    <Property Name="DateLastConnection" Type="DateTime" ed:ValidateRequired="false" ed:Guid="ad52c35a-8945-4459-8602-e3563dc5498e" />
+    <Property Name="DateLastActivity" Type="DateTime" ed:ValidateRequired="false" ed:Guid="65c399c5-3ea7-4b3e-8f20-f22c1a5923dd" />
+    <Property Name="DateCreation" Type="DateTime" Nullable="false" ed:ValidateRequired="true" ed:Guid="2a0397ef-ab62-45cb-9cec-e3c9ab887293" />
+    <Property Name="DateMaj" Type="DateTime" ed:ValidateRequired="false" ed:Guid="378d95d4-9195-4fa6-92cd-0afa8442c889" />
+    <Property Name="IsDeleted" Type="Boolean" Nullable="false" ed:ValidateRequired="true" ed:Guid="4c1b572c-45d3-41fd-8e92-5318a0406177" />
+    <Property Name="DataKey" Type="String" MaxLength="50" ed:ValidateMaxLength="50" ed:ValidateRequired="false" ed:Guid="bf37202c-d8ee-47d4-9453-9afb3b688b59" />
+  </EntityType>
+  <EntityType Name="ViewSysStrategieMotDePasse" ed:Guid="52a134b7-6b1e-43c9-bb72-1b0eff94f2b3">
+    <Key>
+      <PropertyRef Name="IdSysStrategieMotDePasse" />
+      <PropertyRef Name="IdSysComplexiteMotDePasse" />
+      <PropertyRef Name="Actif" />
+      <PropertyRef Name="IsDeleted" />
+      <PropertyRef Name="DateCreation" />
+      <PropertyRef Name="DateMaj" />
+      <PropertyRef Name="CreatedBy" />
+      <PropertyRef Name="ModifiedBy" />
+    </Key>
+    <Property Name="IdSysStrategieMotDePasse" Type="Int32" Nullable="false" ed:ValidateRequired="true" ed:Guid="3579752f-522a-420a-b8de-40a0949d8198" />
+    <Property Name="Libelle" Type="String" MaxLength="150" ed:ValidateMaxLength="150" ed:ValidateRequired="false" ed:Guid="544a101d-5e81-4275-8dcd-1ab39c49f981" />
+    <Property Name="LongeurMinimum" Type="Int32" ed:ValidateRequired="false" ed:Guid="899e50e2-3125-4bdb-afbc-1b102ea8caa8" />
+    <Property Name="DureeDeVie" Type="Int32" ed:ValidateRequired="false" ed:Guid="98c2dbf5-5472-4ccf-b884-2c07887ea397" />
+    <Property Name="NombreTentativeAvantVerrouillage" Type="Int32" ed:ValidateRequired="false" ed:Guid="5dc3c7cb-71b8-4de0-bfe4-576f040be44d" />
+    <Property Name="IdSysComplexiteMotDePasse" Type="Int32" Nullable="false" ed:ValidateRequired="true" ed:Guid="02b0f4dd-8765-48f1-abbc-6368c6789bad" />
+    <Property Name="LibelleComplexite" Type="String" MaxLength="150" ed:ValidateMaxLength="150" ed:ValidateRequired="false" ed:Guid="4fce3b04-3806-4e20-9d3d-0f26b1771019" />
+    <Property Name="UtiliserAncienMotDePasse" Type="String" MaxLength="3" ed:ValidateMaxLength="3" ed:ValidateRequired="false" ed:Guid="3fa0f141-9be1-4910-b51d-f69743db2506" />
+    <Property Name="ChangerMotDePasseApresAttribution" Type="String" MaxLength="3" ed:ValidateMaxLength="3" ed:ValidateRequired="false" ed:Guid="eccc1695-fe9a-431f-986f-67842d29ef4f" />
+    <Property Name="Actif" Type="Boolean" Nullable="false" ed:ValidateRequired="true" ed:Guid="bf5fba73-74c5-4067-a8b5-caddecbe141e" />
+    <Property Name="IsDeleted" Type="Boolean" Nullable="false" ed:ValidateRequired="true" ed:Guid="b7c9ba0f-be77-4c2c-902c-7a9555e40dec" />
+    <Property Name="DateCreation" Type="DateTime" Nullable="false" ed:ValidateRequired="true" ed:Guid="e4e31e6f-9081-4cf4-8d3b-6794646b72d6" />
+    <Property Name="DateMaj" Type="DateTime" Nullable="false" ed:ValidateRequired="true" ed:Guid="8e7f6018-2050-48fa-b8cd-dd63f95830d9" />
+    <Property Name="CreatedBy" Type="Int64" Nullable="false" ed:ValidateRequired="true" ed:Guid="c477d1c1-07c5-46f7-9bd2-36fa4b993204" />
+    <Property Name="ModifiedBy" Type="Int64" Nullable="false" ed:ValidateRequired="true" ed:Guid="167db4cc-9035-4d69-a92b-6bc3350909bf" />
+    <Property Name="Code" Type="String" MaxLength="30" ed:ValidateMaxLength="30" ed:ValidateRequired="false" ed:Guid="a3993bec-73ba-4284-ac84-bbe6fc508ea6" />
+  </EntityType>
+  <EntityType Name="ViewUtilisateur" ed:Guid="94e22124-b840-41b0-ac55-b3935b98aa84">
+    <Key>
+      <PropertyRef Name="IdUtilisateur" />
+      <PropertyRef Name="Login" />
+      <PropertyRef Name="Password" />
+      <PropertyRef Name="IsDeleted" />
+      <PropertyRef Name="DateCreation" />
+      <PropertyRef Name="CreatedBy" />
+    </Key>
+    <Property Name="IdUtilisateur" Type="Int64" Nullable="false" ed:ValidateRequired="true" ed:Guid="ae313af9-d484-4be4-9b89-e38447079d3c" />
+    <Property Name="Login" Type="String" Nullable="false" MaxLength="50" ed:ValidateMaxLength="50" ed:ValidateRequired="true" ed:Guid="2cafdadc-179f-4575-933e-9c7de992a0a1" />
+    <Property Name="Password" Type="String" Nullable="false" ed:ValidateRequired="true" ed:Guid="337667ef-8716-4cef-aace-d191679e0da2" />
+    <Property Name="TimeSession" Type="Int32" ed:ValidateRequired="false" ed:Guid="a64ee260-92d4-4085-baab-0755e5c23cd9" />
+    <Property Name="Actif" Type="String" MaxLength="3" ed:ValidateMaxLength="3" ed:ValidateRequired="false" ed:Guid="b3dd056a-e0c5-4994-8472-cf3035f2e8c1" />
+    <Property Name="IsWindowAccount" Type="Boolean" ed:ValidateRequired="false" ed:Guid="57bd89b9-93f9-4bc1-82ad-6aa2cd734d9f" />
+    <Property Name="CanApplySingleSession" Type="Boolean" ed:ValidateRequired="false" ed:Guid="529541a5-f245-4890-b751-0fabf9dec624" />
+    <Property Name="IsDeleted" Type="Boolean" Nullable="false" ed:ValidateRequired="true" ed:Guid="62000f76-df55-4a0f-b95f-7b585b0f3926" />
+    <Property Name="DateMaj" Type="DateTime" ed:ValidateRequired="false" ed:Guid="0ca41e2d-fa5f-4a8e-a0bf-16265320d3ce" />
+    <Property Name="DateCreation" Type="DateTime" Nullable="false" ed:ValidateRequired="true" ed:Guid="404c70b2-1165-421a-8b50-9f73305f6901" />
+    <Property Name="CreatedBy" Type="Int64" Nullable="false" ed:ValidateRequired="true" ed:Guid="4ccebeea-61ab-49c2-89a8-f3b7f2bdf913" />
+    <Property Name="ModifiedBy" Type="Int64" ed:ValidateRequired="false" ed:Guid="77b746dd-8df5-4960-9601-2fe681630986" />
+    <Property Name="Adresse" Type="String" MaxLength="250" ed:ValidateMaxLength="250" ed:ValidateRequired="false" ed:Guid="59ce5ce8-df0d-4ec4-930a-6c8f7d7a8f46" />
+    <Property Name="Email" Type="String" MaxLength="250" ed:ValidateMaxLength="250" ed:ValidateRequired="false" ed:Guid="51a62b9c-d66f-4bdc-86ec-0651a36ae6ff" />
+    <Property Name="Telephone" Type="String" MaxLength="250" ed:ValidateMaxLength="250" ed:ValidateRequired="false" ed:Guid="b2105cf2-70f1-435f-b045-0b4649c20c99" />
+    <Property Name="NomUtilisateur" Type="String" MaxLength="301" ed:ValidateMaxLength="301" ed:ValidateRequired="false" ed:Guid="7b70573b-2c10-4506-beee-65cb2e006de7" />
+    <Property Name="Photo" Type="String" ed:ValidateRequired="false" ed:Guid="b977a4e2-9a25-462f-8772-3d2952191c29" />
+    <Property Name="VoirCompteSensible" Type="Boolean" ed:ValidateRequired="false" ed:Guid="7f6c0599-f08f-4617-809c-c3601ea1e499" />
+    <Property Name="IsOldUser" Type="Boolean" ed:ValidateRequired="false" ed:Guid="ff668a9e-28eb-4983-88e8-19649a7ce464" />
+    <Property Name="Nom" Type="String" MaxLength="150" ed:ValidateMaxLength="150" ed:ValidateRequired="false" ed:Guid="08c3eb00-6152-468f-ae8a-e5165b337342" />
+    <Property Name="Prenom" Type="String" MaxLength="150" ed:ValidateMaxLength="150" ed:ValidateRequired="false" ed:Guid="aa3490bd-6182-4934-a95d-0576aaaff2af" />
+    <Property Name="IsConnected" Type="String" MaxLength="3" ed:ValidateMaxLength="3" ed:ValidateRequired="false" ed:Guid="9d61bec6-0c84-4471-8ba3-408fd60fc06b" />
+    <Property Name="ComptePermanent" Type="String" MaxLength="3" ed:ValidateMaxLength="3" ed:ValidateRequired="false" ed:Guid="ced811a4-b8db-4344-b9cb-6afac16687a3" />
+    <Property Name="DateDebutValidite" Type="DateTime" ed:ValidateRequired="false" ed:Guid="298f7437-856b-448a-ac35-14c4aed734cd" />
+    <Property Name="DateFinValidite" Type="DateTime" ed:ValidateRequired="false" ed:Guid="1a3d3efc-ea45-42f1-a5ec-c02f4a59d4e2" />
+    <Property Name="ChangeLogin" Type="Boolean" ed:ValidateRequired="false" ed:Guid="e320dff2-d38e-473b-9939-2fa112f5bf6d" />
+    <Property Name="ChangePassword" Type="Boolean" ed:ValidateRequired="false" ed:Guid="86f15f65-44f1-4b50-9e43-961987885382" />
+    <Property Name="IdProfil" Type="Int64" ed:ValidateRequired="false" ed:Guid="36c96802-3d33-49a8-9484-5b2f6d628beb" />
+    <Property Name="IdStructure" Type="Int64" ed:ValidateRequired="false" ed:Guid="264d8c7c-d9c7-4140-8ad8-476cb94e93ca" />
+    <Property Name="RecevoirMail" Type="String" MaxLength="3" ed:ValidateMaxLength="3" ed:ValidateRequired="false" ed:Guid="8527cf71-0913-4196-bb08-b67a7c211128" />
+    <Property Name="RecevoirMailSysteme" Type="String" MaxLength="3" ed:ValidateMaxLength="3" ed:ValidateRequired="false" ed:Guid="d42fe28f-33a1-4290-bdad-560cf2f2bdb4" />
+    <Property Name="TentativeConnexion" Type="Int32" ed:ValidateRequired="false" ed:Guid="398d822f-8a19-4b28-8e6b-11a7245b2797" />
+    <Property Name="DateDebutValiditePassword" Type="DateTime" ed:ValidateRequired="false" ed:Guid="aba884f4-e74b-445e-89de-3eb9b455786a" />
+    <Property Name="DateFinValiditePassword" Type="DateTime" ed:ValidateRequired="false" ed:Guid="53b01969-8286-4dce-9679-e2c0d4bdb6a9" />
+    <Property Name="UserSageCode" Type="String" MaxLength="50" ed:ValidateMaxLength="50" ed:ValidateRequired="false" ed:Guid="2d3af61c-5481-4695-a62f-b6804fdfabc3" />
+  </EntityType>
+  <EntityType Name="ViewUtilisateurProfil" ed:Guid="4ea97cfc-3bdc-490d-aa9e-d8fe38717dc5">
+    <Key>
+      <PropertyRef Name="IdUtilisateurProfil" />
+      <PropertyRef Name="IdUtilisateur" />
+      <PropertyRef Name="IdProfil" />
+      <PropertyRef Name="IsDeleted" />
+      <PropertyRef Name="CreatedBy" />
+      <PropertyRef Name="ModifiedBy" />
+      <PropertyRef Name="DateCreation" />
+      <PropertyRef Name="DateMaj" />
+    </Key>
+    <Property Name="IdUtilisateurProfil" Type="Int64" Nullable="false" ed:ValidateRequired="true" ed:Guid="d8066128-7ed4-4107-a6cb-d91ef3a5aab7" />
+    <Property Name="IdUtilisateur" Type="Int64" Nullable="false" ed:ValidateRequired="true" ed:Guid="5bf8e1f4-b811-4e9c-bc4f-8a08e12fadf7" />
+    <Property Name="NomUtilisateur" Type="String" MaxLength="301" ed:ValidateMaxLength="301" ed:ValidateRequired="false" ed:Guid="dec575ed-0837-4ca7-a828-283af72df3b4" />
+    <Property Name="IdProfil" Type="Int32" Nullable="false" ed:ValidateRequired="true" ed:Guid="9990fa1e-8d63-4b6e-af6d-1c2f10e4e4d8" />
+    <Property Name="Intitule" Type="String" MaxLength="150" ed:ValidateMaxLength="150" ed:ValidateRequired="false" ed:Guid="8393bcd9-0d5d-493a-8e5b-f2c816c4f612" />
+    <Property Name="DateValiditeDebut" Type="DateTime" ed:ValidateRequired="false" ed:Guid="2352c5ab-392e-411c-a7a7-a9a798266350" />
+    <Property Name="DateValiditeFin" Type="DateTime" ed:ValidateRequired="false" ed:Guid="a30bd0b5-44db-4644-8a20-249bc3d9ade7" />
+    <Property Name="DateFinIndeterminer" Type="Boolean" ed:ValidateRequired="false" ed:Guid="3539207d-9395-490b-9b2f-8f6d20962748" />
+    <Property Name="Autorise" Type="Boolean" ed:ValidateRequired="false" ed:Guid="c07326b5-3831-40d9-b561-ace04083ed88" />
+    <Property Name="IsDeleted" Type="Boolean" Nullable="false" ed:ValidateRequired="true" ed:Guid="2c590c08-bd7c-48e9-89fe-8d3b7e2472a0" />
+    <Property Name="CreatedBy" Type="Int64" Nullable="false" ed:ValidateRequired="true" ed:Guid="8ccb9772-e61b-4d0f-a367-f6da977e23b2" />
+    <Property Name="ModifiedBy" Type="Int64" Nullable="false" ed:ValidateRequired="true" ed:Guid="74fe0006-196d-4c5e-b0c2-49178d42d1c4" />
+    <Property Name="DateCreation" Type="DateTime" Nullable="false" ed:ValidateRequired="true" ed:Guid="4f878b48-c2b9-46c4-9f66-23b4e690f836" />
+    <Property Name="DateMaj" Type="DateTime" Nullable="false" ed:ValidateRequired="true" ed:Guid="174abb7a-5282-45a2-a08d-82be017e681d" />
+  </EntityType>
+  <EntityType Name="ViewUtilisateurRestriction" ed:Guid="b84cdaa9-a801-453f-8ee3-6def48044106">
+    <Key>
+      <PropertyRef Name="IdUtilisateurRestriction" />
+      <PropertyRef Name="IdUtilisateur" />
+      <PropertyRef Name="IdSysObjet" />
+      <PropertyRef Name="Autorise" />
+      <PropertyRef Name="DateCreation" />
+      <PropertyRef Name="CreatedBy" />
+    </Key>
+    <Property Name="IdUtilisateurRestriction" Type="Int32" Nullable="false" ed:ValidateRequired="true" ed:Guid="dacc516a-82a7-490d-bbb0-dbce22740b14" />
+    <Property Name="IdUtilisateur" Type="Int64" Nullable="false" ed:ValidateRequired="true" ed:Guid="ad3b5c84-70bf-4a97-be74-81485cf5d8b3" />
+    <Property Name="Login" Type="String" MaxLength="50" ed:ValidateMaxLength="50" ed:ValidateRequired="false" ed:Guid="9043d4a1-c82f-4ca3-bad8-c426afe8beb2" />
+    <Property Name="Nom" Type="String" MaxLength="150" ed:ValidateMaxLength="150" ed:ValidateRequired="false" ed:Guid="1c43b3a4-8d75-41de-83c4-c132ddab7117" />
+    <Property Name="Prenom" Type="String" MaxLength="150" ed:ValidateMaxLength="150" ed:ValidateRequired="false" ed:Guid="7dfad3af-ce0b-4528-b5aa-3d05b668edd2" />
+    <Property Name="IdSysObjet" Type="Int32" Nullable="false" ed:ValidateRequired="true" ed:Guid="3940323b-3d91-43c8-8ee6-a9c9fce46309" />
+    <Property Name="TypeObjet" Type="String" MaxLength="100" ed:ValidateMaxLength="100" ed:ValidateRequired="false" ed:Guid="7ace8bdc-3f08-4db1-8a2c-3c80157f064c" />
+    <Property Name="Code" Type="String" MaxLength="100" ed:ValidateMaxLength="100" ed:ValidateRequired="false" ed:Guid="523fe6ab-cc9c-497f-8e13-2c4f845cb97a" />
+    <Property Name="Libelle" Type="String" MaxLength="250" ed:ValidateMaxLength="250" ed:ValidateRequired="false" ed:Guid="3e371055-7022-4f5e-92ee-21a8cfc542c5" />
+    <Property Name="Description" Type="String" MaxLength="500" ed:ValidateMaxLength="500" ed:ValidateRequired="false" ed:Guid="55b39e95-0681-40cf-a629-0d0a23880083" />
+    <Property Name="Autorise" Type="String" Nullable="false" MaxLength="3" ed:ValidateMaxLength="3" ed:ValidateRequired="true" ed:Guid="7189b9ef-a643-42a6-8936-149c4f3878a8" />
+    <Property Name="DateCreation" Type="DateTime" Nullable="false" ed:ValidateRequired="true" ed:Guid="870d59ef-c6b4-4f26-a5cb-34b3caf391d7" />
+    <Property Name="CreatedBy" Type="Int64" Nullable="false" ed:ValidateRequired="true" ed:Guid="803e6890-ff93-4b27-85f4-2dc0962d2b73" />
+  </EntityType>
+  <EntityType Name="Structure" ed:Guid="5a38fd1b-99cf-4fa2-b5db-25c2c77c2780">
+    <Key>
+      <PropertyRef Name="IdStructure" />
+    </Key>
+    <Property Name="IdStructure" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" ed:ValidateRequired="true" ed:Guid="bea71ad6-d168-415c-8d72-e342d37aecb3" />
+    <Property Name="RaisonSocialeStructure" Type="String" Nullable="false" MaxLength="50" ed:ValidateMaxLength="50" ed:ValidateRequired="true" ed:Guid="06168f16-b8d6-4c04-bb4c-105a28055785" />
+    <Property Name="DateCreation1" Type="DateTime" ed:ValidateRequired="false" ed:Guid="322276b1-8a61-4862-8223-1832584d4daf" />
+    <Property Name="DecretCreation" Type="String" Nullable="false" MaxLength="50" ed:ValidateMaxLength="50" ed:ValidateRequired="true" ed:Guid="0e2c698f-ee31-4525-a379-9f2df874fdaf" />
+    <Property Name="NumeroAgrement" Type="String" Nullable="false" MaxLength="50" ed:ValidateMaxLength="50" ed:ValidateRequired="true" ed:Guid="e8fb7d53-dde3-4aec-81b1-77db78264306" />
+    <Property Name="IdDevise" Type="Int32" Nullable="false" ed:ValidateRequired="true" ed:Guid="4ab7b8e7-cbbb-4b03-9e44-6f49ebf39614" />
+    <Property Name="CapitalSocial" Type="Decimal" Nullable="false" Precision="18" Scale="2" ed:ValidateRequired="true" ed:Guid="4b163f0e-bc34-472a-a9c0-90fab62353c4" />
+    <Property Name="IdPays" Type="Int32" Nullable="false" ed:ValidateRequired="true" ed:Guid="05c6a38d-027a-4976-8ce6-50348c0b0f82" />
+    <Property Name="DateMAJ" Type="DateTime" ed:ValidateRequired="false" ed:Guid="d6cc9c49-235e-409a-97ef-610c52e155c9" />
+    <Property Name="DataKey" Type="String" MaxLength="50" ed:ValidateMaxLength="50" ed:ValidateRequired="false" ed:Guid="d0d9ad5b-33af-4446-a753-a547f56d47db" />
+    <Property Name="ModifiedBy" Type="Int64" ed:ValidateRequired="false" ed:Guid="f1275420-ee2f-4a62-8660-7de469347735" />
+    <Property Name="IsDeleted" Type="Boolean" ed:ValidateRequired="false" ed:Guid="240a3aed-60f0-4115-bae4-706ac1038928" />
+    <Property Name="CreatedBy" Type="Int64" ed:ValidateRequired="false" ed:Guid="d21dd7b1-e187-41cd-8537-cf5680160c43" />
+    <NavigationProperty Name="Devise" Relationship="Inexa.Atlantis.Re.Dal.FK__Structure__idDev__75E27017" FromRole="Structures" ToRole="Devise" ed:Guid="4543eb40-917e-4cce-bd72-58fee724cb10" />
+    <NavigationProperty Name="Pay" Relationship="Inexa.Atlantis.Re.Dal.FK__Structure__idPay__76D69450" FromRole="Structures" ToRole="Pay" ed:Guid="ba23d756-52e3-4b2e-8b05-08947ba1cc85" />
+  </EntityType>
+  <EntityType Name="Civilite" ed:Guid="3b1c7dcf-f96a-4205-8fa0-4116a5b76669">
+    <Key>
+      <PropertyRef Name="IdCivilite" />
+    </Key>
+    <Property Name="IdCivilite" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" ed:ValidateRequired="true" ed:Guid="c07b857f-641e-4847-a907-30ee711ab1b1" />
+    <Property Name="Libelle" Type="String" MaxLength="250" ed:ValidateMaxLength="250" ed:ValidateRequired="false" ed:Guid="fe2bf654-4c2c-4e3d-8c7c-43428a0e54cd" />
+    <Property Name="IsDeleted" Type="Boolean" Nullable="false" ed:ValidateRequired="true" ed:Guid="9f02b4e5-622f-4d76-ba65-ce9077247ec4" />
+    <Property Name="CreatedBy" Type="Int64" ed:ValidateRequired="false" ed:Guid="03d4ee28-3d63-401a-8137-8c87e1da5eef" />
+    <Property Name="ModifiedBy" Type="Int64" ed:ValidateRequired="false" ed:Guid="29e979ce-5381-4ad2-a86a-3af80f4ac3be" />
+    <Property Name="DateCreation" Type="DateTime" ed:ValidateRequired="false" ed:Guid="4a6e7f5a-0a1b-470f-b5cd-0eaa949aa15e" />
+    <Property Name="DateMAJ" Type="DateTime" ed:ValidateRequired="false" ed:Guid="e18491f3-83f7-41f0-899e-7b82a8073734" />
+    <Property Name="DataKey" Type="String" MaxLength="50" ed:ValidateMaxLength="50" ed:ValidateRequired="false" ed:Guid="8346be1a-aa37-4995-9434-f0b16c090470" />
+  </EntityType>
+  <EntityType Name="TypePieceIdentite" ed:Guid="b7a61602-6164-44e7-a8dd-2fc94cc63dcd">
+    <Key>
+      <PropertyRef Name="IdTypePieceIdentite" />
+    </Key>
+    <Property Name="IdTypePieceIdentite" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" ed:ValidateRequired="true" ed:Guid="a52b6f43-0e28-443e-9518-3eb5827722b3" />
+    <Property Name="Libelle" Type="String" MaxLength="250" ed:ValidateMaxLength="250" ed:ValidateRequired="false" ed:Guid="54a8d5f0-45b4-418d-bd6b-aff55ba062d5" />
+    <Property Name="IsDeleted" Type="Boolean" Nullable="false" ed:ValidateRequired="true" ed:Guid="502e9aa8-431f-4565-9b18-1872de38b5ad" />
+    <Property Name="CreatedBy" Type="Int64" ed:ValidateRequired="false" ed:Guid="2463afc8-18b5-4399-87c9-6501bff9fc4c" />
+    <Property Name="ModifiedBy" Type="Int64" ed:ValidateRequired="false" ed:Guid="3617669d-9d89-48cc-8307-8060644c7d9f" />
+    <Property Name="DateCreation" Type="DateTime" ed:ValidateRequired="false" ed:Guid="f46bad52-92b9-4ea1-a860-176d8be7a6de" />
+    <Property Name="DateMAJ" Type="DateTime" ed:ValidateRequired="false" ed:Guid="ef820ce5-6079-4dd8-8a53-9ec2207d192f" />
+    <Property Name="DataKey" Type="String" MaxLength="50" ed:ValidateMaxLength="50" ed:ValidateRequired="false" ed:Guid="f5880e5d-2ec9-49f1-b160-dbdbeb773b02" />
+  </EntityType>
+  <EntityType Name="CategorieProcessu" ed:Guid="520fd4b5-f707-4691-9938-e2c441256d05">
+    <Key>
+      <PropertyRef Name="IdCategorieProcessus" />
+    </Key>
+    <Property Name="IdCategorieProcessus" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" ed:ValidateRequired="true" ed:Guid="15d0a1f1-b3b4-48ed-93bc-69bcacfe8e0c" />
+    <Property Name="Libelle" Type="String" Nullable="false" MaxLength="255" ed:ValidateMaxLength="255" ed:ValidateRequired="true" ed:Guid="2d49cb82-bad4-4b9f-92c1-2493be5f5052" />
+    <Property Name="IsDeleted" Type="Boolean" Nullable="false" ed:ValidateRequired="true" ed:Guid="f2ac80b8-f4ef-4d7b-9ad1-4f228a4ce030" />
+    <Property Name="CreatedBy" Type="Int64" ed:ValidateRequired="false" ed:Guid="341a4129-9633-4674-9220-dc36fab6357a" />
+    <Property Name="ModifiedBy" Type="Int64" ed:ValidateRequired="false" ed:Guid="fd4f1848-ba2e-4f12-87e9-0b3a45548f0f" />
+    <Property Name="DateCreation" Type="DateTime" ed:ValidateRequired="false" ed:Guid="9373902d-a045-4247-a3eb-0775edd480d4" />
+    <Property Name="DateMAJ" Type="DateTime" ed:ValidateRequired="false" ed:Guid="2eba5c34-5989-4310-bfc1-f2c3bdaae74f" />
+    <Property Name="DataKey" Type="String" MaxLength="50" ed:ValidateMaxLength="50" ed:ValidateRequired="false" ed:Guid="f88ade2a-d7e8-4941-ad51-a295cf3b79b5" />
+  </EntityType>
+  <Association Name="FK__Structure__idDev__75E27017" ed:Guid="d6abccb1-c643-4690-8899-a3dd693d092e">
+    <End Role="Devise" Type="Inexa.Atlantis.Re.Dal.Devise" Multiplicity="1" />
+    <End Role="Structures" Type="Inexa.Atlantis.Re.Dal.Structure" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Devise">
+        <PropertyRef Name="IdDevise" />
+      </Principal>
+      <Dependent Role="Structures">
+        <PropertyRef Name="IdDevise" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Structure__idPay__76D69450" ed:Guid="3409035e-292f-4931-9b2e-1f8ae2186f65">
+    <End Role="Pay" Type="Inexa.Atlantis.Re.Dal.Pay" Multiplicity="1" />
+    <End Role="Structures" Type="Inexa.Atlantis.Re.Dal.Structure" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Pay">
+        <PropertyRef Name="IdPays" />
+      </Principal>
+      <Dependent Role="Structures">
+        <PropertyRef Name="IdPays" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

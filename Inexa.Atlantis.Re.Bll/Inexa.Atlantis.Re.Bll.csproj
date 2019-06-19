@@ -1,0 +1,140 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{0189C040-776E-4BEE-B317-AFCA897882B7}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Inexa.Atlantis.Re.Bll</RootNamespace>
+    <AssemblyName>Inexa.Atlantis.Re.Bll</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Managers\AffaireManager.cs" />
+    <Compile Include="Managers\AssureManager.cs" />
+    <Compile Include="Managers\AtlantisReDbContextManager.cs" />
+    <Compile Include="Managers\BrancheManager.cs" />
+    <Compile Include="Managers\CategorieProcessuManager.cs" />
+    <Compile Include="Managers\CiviliteManager.cs" />
+    <Compile Include="Managers\DeclarationSinistreManager.cs" />
+    <Compile Include="Managers\DemandePlacementFacultativeManager.cs" />
+    <Compile Include="Managers\DeviseManager.cs" />
+    <Compile Include="Managers\DocumentEchangeManager.cs" />
+    <Compile Include="Managers\DomaineActiviteManager.cs" />
+    <Compile Include="Managers\EchangeManager.cs" />
+    <Compile Include="Managers\EtapeProcessuManager.cs" />
+    <Compile Include="Managers\FilialeManager.cs" />
+    <Compile Include="Managers\FonctionnaliteManager.cs" />
+    <Compile Include="Managers\FormeJuridiqueManager.cs" />
+    <Compile Include="Managers\HistoriqueLigneSchemasPlacementManager.cs" />
+    <Compile Include="Managers\HistoriqueLigneTableauRepartitionChargeManager.cs" />
+    <Compile Include="Managers\InterlocuteurFilialeManager.cs" />
+    <Compile Include="Managers\InterlocuteurReassureurManager.cs" />
+    <Compile Include="Managers\LigneRepartitionChargeManager.cs" />
+    <Compile Include="Managers\LigneSchemasPlacementManager.cs" />
+    <Compile Include="Managers\MailParametreManager.cs" />
+    <Compile Include="Managers\MouvementTresorerieManager.cs" />
+    <Compile Include="Managers\PayManager.cs" />
+    <Compile Include="Managers\PersonneManager.cs" />
+    <Compile Include="Managers\ProcessuManager.cs" />
+    <Compile Include="Managers\ProfessionManager.cs" />
+    <Compile Include="Managers\ProfilFonctionnaliteHistoManager.cs" />
+    <Compile Include="Managers\ProfilFonctionnaliteManager.cs" />
+    <Compile Include="Managers\ProfilManager.cs" />
+    <Compile Include="Managers\ReassureurManager.cs" />
+    <Compile Include="Managers\SchemasPlacementManager.cs" />
+    <Compile Include="Managers\SecteurActiviteManager.cs" />
+    <Compile Include="Managers\SituationMatrimonialeManager.cs" />
+    <Compile Include="Managers\StatutAffaireManager.cs" />
+    <Compile Include="Managers\StatutMouvementManager.cs" />
+    <Compile Include="Managers\StructureManager.cs" />
+    <Compile Include="Managers\SuiviProcessuManager.cs" />
+    <Compile Include="Managers\SysComplexiteMotDePasseManager.cs" />
+    <Compile Include="Managers\SysLogManager.cs" />
+    <Compile Include="Managers\SysMailBoxManager.cs" />
+    <Compile Include="Managers\SysNotificationManager.cs" />
+    <Compile Include="Managers\SysObjetManager.cs" />
+    <Compile Include="Managers\SysStrategieMotDePasseHistoManager.cs" />
+    <Compile Include="Managers\SysStrategieMotDePasseManager.cs" />
+    <Compile Include="Managers\TableauRepartitionChargeManager.cs" />
+    <Compile Include="Managers\TermeManager.cs" />
+    <Compile Include="Managers\TermeTraiteManager.cs" />
+    <Compile Include="Managers\TraceManager.cs" />
+    <Compile Include="Managers\TraiteManager.cs" />
+    <Compile Include="Managers\TypeEchangeManager.cs" />
+    <Compile Include="Managers\TypePersonneManager.cs" />
+    <Compile Include="Managers\TypePieceIdentiteManager.cs" />
+    <Compile Include="Managers\TypeProcessuManager.cs" />
+    <Compile Include="Managers\UtilisateurFonctionnaliteHistoManager.cs" />
+    <Compile Include="Managers\UtilisateurFonctionnaliteManager.cs" />
+    <Compile Include="Managers\UtilisateurFonctionnalitePriveHistoManager.cs" />
+    <Compile Include="Managers\UtilisateurFonctionnalitePriveManager.cs" />
+    <Compile Include="Managers\UtilisateurHistoManager.cs" />
+    <Compile Include="Managers\UtilisateurManager.cs" />
+    <Compile Include="Managers\UtilisateurProfilHistoManager.cs" />
+    <Compile Include="Managers\UtilisateurProfilManager.cs" />
+    <Compile Include="Managers\UtilisateurRestrictionHistoManager.cs" />
+    <Compile Include="Managers\UtilisateurRestrictionManager.cs" />
+    <Compile Include="Managers\UtilisateurSessionManager.cs" />
+    <Compile Include="Managers\ViewSysStrategieMotDePasseManager.cs" />
+    <Compile Include="Managers\ViewUtilisateurManager.cs" />
+    <Compile Include="Managers\ViewUtilisateurProfilManager.cs" />
+    <Compile Include="Managers\ViewUtilisateurRestrictionManager.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="ManagersCust\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Inexa.Atlantis.Re.Commons\Inexa.Atlantis.Re.Commons.csproj">
+      <Project>{07f2b8e3-6301-4f03-bfc1-b2d29c07308f}</Project>
+      <Name>Inexa.Atlantis.Re.Commons</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Inexa.Atlantis.Re.Dal\Inexa.Atlantis.Re.Dal.csproj">
+      <Project>{699ffcfa-bfe3-488e-8b7c-71f7700cc583}</Project>
+      <Name>Inexa.Atlantis.Re.Dal</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

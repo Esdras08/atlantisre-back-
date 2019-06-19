@@ -1,0 +1,1222 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="BD_ATLANTIS_RE_EntitiesStoreContainer" CdmEntityContainer="AtlantisReDbContext">
+    <EntitySetMapping Name="Affaires">
+      <EntityTypeMapping TypeName="Inexa.Atlantis.Re.Dal.Affaire">
+        <MappingFragment StoreEntitySet="Affaires">
+          <ScalarProperty Name="IdAffaire" ColumnName="IdAffaire" />
+          <ScalarProperty Name="NumeroOrdre" ColumnName="NumeroOrdre" />
+          <ScalarProperty Name="NumeroPolice" ColumnName="NumeroPolice" />
+          <ScalarProperty Name="CapitauxAssure" ColumnName="CapitauxAssure" />
+          <ScalarProperty Name="Activite" ColumnName="Activite" />
+          <ScalarProperty Name="IdStatutAffaire" ColumnName="IdStatutAffaire" />
+          <ScalarProperty Name="IdBranche" ColumnName="IdBranche" />
+          <ScalarProperty Name="IdFiliale" ColumnName="IdFiliale" />
+          <ScalarProperty Name="IdAssure" ColumnName="IdAssure" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="DateCreation" ColumnName="DateCreation" />
+          <ScalarProperty Name="DateMAJ" ColumnName="DateMAJ" />
+          <ScalarProperty Name="DataKey" ColumnName="DataKey" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Assures">
+      <EntityTypeMapping TypeName="Inexa.Atlantis.Re.Dal.Assure">
+        <MappingFragment StoreEntitySet="Assures">
+          <ScalarProperty Name="IdAssure" ColumnName="IdAssure" />
+          <ScalarProperty Name="NumeroAssure" ColumnName="NumeroAssure" />
+          <ScalarProperty Name="IdFiliale" ColumnName="IdFiliale" />
+          <ScalarProperty Name="IdPersonne" ColumnName="IdPersonne" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="DateCreation" ColumnName="DateCreation" />
+          <ScalarProperty Name="DateMAJ" ColumnName="DateMAJ" />
+          <ScalarProperty Name="DataKey" ColumnName="DataKey" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Branches">
+      <EntityTypeMapping TypeName="Inexa.Atlantis.Re.Dal.Branche">
+        <MappingFragment StoreEntitySet="Branches">
+          <ScalarProperty Name="IdBranche" ColumnName="IdBranche" />
+          <ScalarProperty Name="Libelle" ColumnName="Libelle" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="Code" ColumnName="Code" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="DateCreation" ColumnName="DateCreation" />
+          <ScalarProperty Name="DateMAJ" ColumnName="DateMAJ" />
+          <ScalarProperty Name="DataKey" ColumnName="DataKey" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DeclarationSinistres">
+      <EntityTypeMapping TypeName="Inexa.Atlantis.Re.Dal.DeclarationSinistre">
+        <MappingFragment StoreEntitySet="DeclarationSinistres">
+          <ScalarProperty Name="IdDeclarationSinistre" ColumnName="IdDeclarationSinistre" />
+          <ScalarProperty Name="DateSurvenance" ColumnName="DateSurvenance" />
+          <ScalarProperty Name="DateDeclaration" ColumnName="DateDeclaration" />
+          <ScalarProperty Name="NatureSinistre" ColumnName="NatureSinistre" />
+          <ScalarProperty Name="Evaluation" ColumnName="Evaluation" />
+          <ScalarProperty Name="HonoraireExperts" ColumnName="HonoraireExperts" />
+          <ScalarProperty Name="MontantPaye" ColumnName="MontantPaye" />
+          <ScalarProperty Name="MontantRestant" ColumnName="MontantRestant" />
+          <ScalarProperty Name="IdProcessus" ColumnName="IdProcessus" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="DateCreation" ColumnName="DateCreation" />
+          <ScalarProperty Name="DateMAJ" ColumnName="DateMAJ" />
+          <ScalarProperty Name="DataKey" ColumnName="DataKey" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DemandePlacementFacultatives">
+      <EntityTypeMapping TypeName="Inexa.Atlantis.Re.Dal.DemandePlacementFacultative">
+        <MappingFragment StoreEntitySet="DemandePlacementFacultatives">
+          <ScalarProperty Name="IdDemandePlacementFacultative" ColumnName="IdDemandePlacementFacultative" />
+          <ScalarProperty Name="DateConsultation" ColumnName="DateConsultation" />
+          <ScalarProperty Name="GarantieCedee" ColumnName="GarantieCedee" />
+          <ScalarProperty Name="Prime" ColumnName="Prime" />
+          <ScalarProperty Name="SMP" ColumnName="SMP" />
+          <ScalarProperty Name="PartFiliale" ColumnName="PartFiliale" />
+          <ScalarProperty Name="VersementAuTraite" ColumnName="VersementAuTraite" />
+          <ScalarProperty Name="IdProcessus" ColumnName="IdProcessus" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="DateCreation" ColumnName="DateCreation" />
+          <ScalarProperty Name="DateMAJ" ColumnName="DateMAJ" />
+          <ScalarProperty Name="DataKey" ColumnName="DataKey" />
+          <ScalarProperty Name="DateEffet" ColumnName="DateEffet" />
+          <ScalarProperty Name="DateEcheance" ColumnName="DateEcheance" />
+          <ScalarProperty Name="EnCours" ColumnName="EnCours" />
+          <ScalarProperty Name="IdPays" ColumnName="IdPays" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Devises">
+      <EntityTypeMapping TypeName="Inexa.Atlantis.Re.Dal.Devise">
+        <MappingFragment StoreEntitySet="Devises">
+          <ScalarProperty Name="IdDevise" ColumnName="idDevise" />
+          <ScalarProperty Name="CodeDevise" ColumnName="codeDevise" />
+          <ScalarProperty Name="SymboleDevise" ColumnName="symboleDevise" />
+          <ScalarProperty Name="LibelleDevise" ColumnName="libelleDevise" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="DateCreation" ColumnName="DateCreation" />
+          <ScalarProperty Name="DateMAJ" ColumnName="DateMAJ" />
+          <ScalarProperty Name="DataKey" ColumnName="DataKey" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DocumentEchanges">
+      <EntityTypeMapping TypeName="Inexa.Atlantis.Re.Dal.DocumentEchange">
+        <MappingFragment StoreEntitySet="DocumentEchanges">
+          <ScalarProperty Name="IdEchange" ColumnName="IdEchange" />
+          <ScalarProperty Name="IdDocument" ColumnName="IdDocument" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="DateCreation" ColumnName="DateCreation" />
+          <ScalarProperty Name="DateMAJ" ColumnName="DateMAJ" />
+          <ScalarProperty Name="DataKey" ColumnName="DataKey" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DomaineActivites">
+      <EntityTypeMapping TypeName="Inexa.Atlantis.Re.Dal.DomaineActivite">
+        <MappingFragment StoreEntitySet="DomaineActivites">
+          <ScalarProperty Name="IdDomaineActivite" ColumnName="idDomaineActivite" />
+          <ScalarProperty Name="Libelle" ColumnName="libelle" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="DateCreation" ColumnName="DateCreation" />
+          <ScalarProperty Name="DateMAJ" ColumnName="DateMAJ" />
+          <ScalarProperty Name="DataKey" ColumnName="DataKey" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Echanges">
+      <EntityTypeMapping TypeName="Inexa.Atlantis.Re.Dal.Echange">
+        <MappingFragment StoreEntitySet="Echanges">
+          <ScalarProperty Name="IdEchange" ColumnName="IdEchange" />
+          <ScalarProperty Name="DateEchange" ColumnName="DateEchange" />
+          <ScalarProperty Name="IdEmetteur" ColumnName="IdEmetteur" />
+          <ScalarProperty Name="IdDestinataire" ColumnName="IdDestinataire" />
+          <ScalarProperty Name="NatureEmetteur" ColumnName="NatureEmetteur" />
+          <ScalarProperty Name="NatureDestinataire" ColumnName="NatureDestinataire" />
+          <ScalarProperty Name="IdProcessus" ColumnName="IdProcessus" />
+          <ScalarProperty Name="IdTypeEchange" ColumnName="IdTypeEchange" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="DateCreation" ColumnName="DateCreation" />
+          <ScalarProperty Name="DateMAJ" ColumnName="DateMAJ" />
+          <ScalarProperty Name="DataKey" ColumnName="DataKey" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="EtapeProcessus">
+      <EntityTypeMapping TypeName="Inexa.Atlantis.Re.Dal.EtapeProcessu">
+        <MappingFragment StoreEntitySet="EtapeProcessus">
+          <ScalarProperty Name="IdEtapeProcessus" ColumnName="IdEtapeProcessus" />
+          <ScalarProperty Name="Libelle" ColumnName="Libelle" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="Position" ColumnName="Position" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="DateCreation" ColumnName="DateCreation" />
+          <ScalarProperty Name="DateMAJ" ColumnName="DateMAJ" />
+          <ScalarProperty Name="DataKey" ColumnName="DataKey" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Filiales">
+      <EntityTypeMapping TypeName="Inexa.Atlantis.Re.Dal.Filiale">
+        <MappingFragment StoreEntitySet="Filiales">
+          <ScalarProperty Name="IdFiliale" ColumnName="IdFiliale" />
+          <ScalarProperty Name="NomFilliale" ColumnName="NomFilliale" />
+          <ScalarProperty Name="AdresseFiliale" ColumnName="AdresseFiliale" />
+          <ScalarProperty Name="CodeFiliale" ColumnName="CodeFiliale" />
+          <ScalarProperty Name="IdPays" ColumnName="IdPays" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="DateCreation" ColumnName="DateCreation" />
+          <ScalarProperty Name="DateMAJ" ColumnName="DateMAJ" />
+          <ScalarProperty Name="DataKey" ColumnName="DataKey" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Fonctionnalites">
+      <EntityTypeMapping TypeName="Inexa.Atlantis.Re.Dal.Fonctionnalite">
+        <MappingFragment StoreEntitySet="Fonctionnalites">
+          <ScalarProperty Name="CodeParent" ColumnName="CodeParent" />
+          <ScalarProperty Name="Code" ColumnName="Code" />
+          <ScalarProperty Name="Libelle" ColumnName="Libelle" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="IdModule" ColumnName="IdModule" />
+          <ScalarProperty Name="CodeSousModule" ColumnName="CodeSousModule" />
+          <ScalarProperty Name="OrdreSousModule" ColumnName="OrdreSousModule" />
+          <ScalarProperty Name="Ordre" ColumnName="Ordre" />
+          <ScalarProperty Name="Activer" ColumnName="Activer" />
+          <ScalarProperty Name="Police" ColumnName="Police" />
+          <ScalarProperty Name="DateCreation" ColumnName="DateCreation" />
+          <ScalarProperty Name="DateMAJ" ColumnName="DateMAJ" />
+          <ScalarProperty Name="DataKey" ColumnName="DataKey" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="IdFonctionnalite" ColumnName="idFonctionnalite" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="FormeJuridiques">
+      <EntityTypeMapping TypeName="Inexa.Atlantis.Re.Dal.FormeJuridique">
+        <MappingFragment StoreEntitySet="FormeJuridiques">
+          <ScalarProperty Name="Libelle" ColumnName="libelle" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="DateCreation" ColumnName="DateCreation" />
+          <ScalarProperty Name="DateMAJ" ColumnName="DateMAJ" />
+          <ScalarProperty Name="DataKey" ColumnName="DataKey" />
+          <ScalarProperty Name="IdFormeJuridique" ColumnName="idFormeJuridique" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="HistoriqueLigneSchemasPlacements">
+      <EntityTypeMapping TypeName="Inexa.Atlantis.Re.Dal.HistoriqueLigneSchemasPlacement">
+        <MappingFragment StoreEntitySet="HistoriqueLigneSchemasPlacements">
+          <ScalarProperty Name="IdHistoriqueLigneSchemaPlacement" ColumnName="IdHistoriqueLigneSchemaPlacement" />
+          <ScalarProperty Name="IdLigneSchemaPlacement" ColumnName="IdLigneSchemaPlacement" />
+          <ScalarProperty Name="Proposition" ColumnName="Proposition" />
+          <ScalarProperty Name="Pourcentage" ColumnName="Pourcentage" />
+          <ScalarProperty Name="CapitauxAssures" ColumnName="CapitauxAssures" />
+          <ScalarProperty Name="TauxCommission" ColumnName="TauxCommission" />
+          <ScalarProperty Name="Commission" ColumnName="Commission" />
+          <ScalarProperty Name="PrimeNette" ColumnName="PrimeNette" />
+          <ScalarProperty Name="IdReassureur" ColumnName="IdReassureur" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="DateCreation" ColumnName="DateCreation" />
+          <ScalarProperty Name="DateMAJ" ColumnName="DateMAJ" />
+          <ScalarProperty Name="DataKey" ColumnName="DataKey" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="HistoriqueLigneTableauRepartitionCharges">
+      <EntityTypeMapping TypeName="Inexa.Atlantis.Re.Dal.HistoriqueLigneTableauRepartitionCharge">
+        <MappingFragment StoreEntitySet="HistoriqueLigneTableauRepartitionCharges">
+          <ScalarProperty Name="IdHistoriqueLigneTableauRepartitionCharge" ColumnName="IdHistoriqueLigneTableauRepartitionCharge" />
+          <ScalarProperty Name="IdTableauRepartition" ColumnName="IdTableauRepartition" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="Proposition" ColumnName="Proposition" />
+          <ScalarProperty Name="IdReassureur" ColumnName="IdReassureur" />
+          <ScalarProperty Name="DateCreation" ColumnName="DateCreation" />
+          <ScalarProperty Name="DateMAJ" ColumnName="DateMAJ" />
+          <ScalarProperty Name="DataKey" ColumnName="DataKey" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="InterlocuteurFiliales">
+      <EntityTypeMapping TypeName="Inexa.Atlantis.Re.Dal.InterlocuteurFiliale">
+        <MappingFragment StoreEntitySet="InterlocuteurFiliales">
+          <ScalarProperty Name="IdInterlocuteurFiliale" ColumnName="IdInterlocuteurFiliale" />
+          <ScalarProperty Name="Poste" ColumnName="Poste" />
+          <ScalarProperty Name="IdFiliale" ColumnName="IdFiliale" />
+          <ScalarProperty Name="IdPersonne" ColumnName="IdPersonne" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="DateCreation" ColumnName="DateCreation" />
+          <ScalarProperty Name="DateMAJ" ColumnName="DateMAJ" />
+          <ScalarProperty Name="DataKey" ColumnName="DataKey" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="InterlocuteurReassureurs">
+      <EntityTypeMapping TypeName="Inexa.Atlantis.Re.Dal.InterlocuteurReassureur">
+        <MappingFragment StoreEntitySet="InterlocuteurReassureurs">
+          <ScalarProperty Name="IdInterlocuteurReassureur" ColumnName="IdInterlocuteurReassureur" />
+          <ScalarProperty Name="Poste" ColumnName="Poste" />
+          <ScalarProperty Name="IdReassureur" ColumnName="IdReassureur" />
+          <ScalarProperty Name="IdPersonne" ColumnName="IdPersonne" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="DateCreation" ColumnName="DateCreation" />
+          <ScalarProperty Name="DateMAJ" ColumnName="DateMAJ" />
+          <ScalarProperty Name="DataKey" ColumnName="DataKey" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="LigneRepartitionCharges">
+      <EntityTypeMapping TypeName="Inexa.Atlantis.Re.Dal.LigneRepartitionCharge">
+        <MappingFragment StoreEntitySet="LigneRepartitionCharges">
+          <ScalarProperty Name="IdLigneRepartitionCharge" ColumnName="IdLigneRepartitionCharge" />
+          <ScalarProperty Name="IdTableauRepartitionCharge" ColumnName="IdTableauRepartitionCharge" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="IdReassureur" ColumnName="IdReassureur" />
+          <ScalarProperty Name="DateCreation" ColumnName="DateCreation" />
+          <ScalarProperty Name="DateMAJ" ColumnName="DateMAJ" />
+          <ScalarProperty Name="DataKey" ColumnName="DataKey" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="LigneSchemasPlacements">
+      <EntityTypeMapping TypeName="Inexa.Atlantis.Re.Dal.LigneSchemasPlacement">
+        <MappingFragment StoreEntitySet="LigneSchemasPlacements">
+          <ScalarProperty Name="IdLigneSchemaPlacement" ColumnName="IdLigneSchemaPlacement" />
+          <ScalarProperty Name="Proposition" ColumnName="Proposition" />
+          <ScalarProperty Name="Pourcentage" ColumnName="Pourcentage" />
+          <ScalarProperty Name="CapitauxAssures" ColumnName="CapitauxAssures" />
+          <ScalarProperty Name="TauxCommission" ColumnName="TauxCommission" />
+          <ScalarProperty Name="Commission" ColumnName="Commission" />
+          <ScalarProperty Name="PrimeNette" ColumnName="PrimeNette" />
+          <ScalarProperty Name="IdReassureur" ColumnName="IdReassureur" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="IdSchemasPlacement" ColumnName="IdSchemasPlacement" />
+          <ScalarProperty Name="DateCreation" ColumnName="DateCreation" />
+          <ScalarProperty Name="DateMAJ" ColumnName="DateMAJ" />
+          <ScalarProperty Name="DataKey" ColumnName="DataKey" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MailParametres">
+      <EntityTypeMapping TypeName="Inexa.Atlantis.Re.Dal.MailParametre">
+        <MappingFragment StoreEntitySet="MailParametres">
+          <ScalarProperty Name="IdMailParametre" ColumnName="IdMailParametre" />
+          <ScalarProperty Name="Code" ColumnName="Code" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="Valeur" ColumnName="Valeur" />
+          <ScalarProperty Name="Ordre" ColumnName="Ordre" />
+          <ScalarProperty Name="DateCreation" ColumnName="DateCreation" />
+          <ScalarProperty Name="DateMAJ" ColumnName="DateMAJ" />
+          <ScalarProperty Name="DataKey" ColumnName="DataKey" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MouvementTresoreries">
+      <EntityTypeMapping TypeName="Inexa.Atlantis.Re.Dal.MouvementTresorerie">
+        <MappingFragment StoreEntitySet="MouvementTresoreries">
+          <ScalarProperty Name="IdMouvement" ColumnName="IdMouvement" />
+          <ScalarProperty Name="IdStatutMouvement" ColumnName="IdStatutMouvement" />
+          <ScalarProperty Name="Entrant" ColumnName="Entrant" />
+          <ScalarProperty Name="Libelle" ColumnName="Libelle" />
+          <ScalarProperty Name="Code" ColumnName="Code" />
+          <ScalarProperty Name="IdProcessus" ColumnName="IdProcessus" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="DateCreation" ColumnName="DateCreation" />
+          <ScalarProperty Name="DateMAJ" ColumnName="DateMAJ" />
+          <ScalarProperty Name="DataKey" ColumnName="DataKey" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Pays">
+      <EntityTypeMapping TypeName="Inexa.Atlantis.Re.Dal.Pay">
+        <MappingFragment StoreEntitySet="Pays">
+          <ScalarProperty Name="IdPays" ColumnName="IdPays" />
+          <ScalarProperty Name="Libelle" ColumnName="Libelle" />
+          <ScalarProperty Name="LibelleNationnalite" ColumnName="LibelleNationnalite" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="DateCreation" ColumnName="DateCreation" />
+          <ScalarProperty Name="DateMAJ" ColumnName="DateMAJ" />
+          <ScalarProperty Name="DataKey" ColumnName="DataKey" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Personnes">
+      <EntityTypeMapping TypeName="Inexa.Atlantis.Re.Dal.Personne">
+        <MappingFragment StoreEntitySet="Personnes">
+          <ScalarProperty Name="IdPersonne" ColumnName="IdPersonne" />
+          <ScalarProperty Name="IdCivilite" ColumnName="IdCivilite" />
+          <ScalarProperty Name="Nom" ColumnName="Nom" />
+          <ScalarProperty Name="Prenom" ColumnName="Prenom" />
+          <ScalarProperty Name="DateNaissance" ColumnName="DateNaissance" />
+          <ScalarProperty Name="LieuNaissance" ColumnName="LieuNaissance" />
+          <ScalarProperty Name="IdTypePieceIdentite" ColumnName="IdTypePieceIdentite" />
+          <ScalarProperty Name="NumeroPieceIdentite" ColumnName="NumeroPieceIdentite" />
+          <ScalarProperty Name="DatePieceIdentite" ColumnName="DatePieceIdentite" />
+          <ScalarProperty Name="DateValiditePieceIdentite" ColumnName="DateValiditePieceIdentite" />
+          <ScalarProperty Name="IdFormeJuridique" ColumnName="IdFormeJuridique" />
+          <ScalarProperty Name="Actif" ColumnName="Actif" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="DateCreation" ColumnName="DateCreation" />
+          <ScalarProperty Name="DateMaj" ColumnName="DateMaj" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="DataKey" ColumnName="DataKey" />
+          <ScalarProperty Name="IdPays" ColumnName="IdPays" />
+          <ScalarProperty Name="TypePersonne" ColumnName="TypePersonne" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Processus">
+      <EntityTypeMapping TypeName="Inexa.Atlantis.Re.Dal.Processu">
+        <MappingFragment StoreEntitySet="Processus">
+          <ScalarProperty Name="IdProcessus" ColumnName="IdProcessus" />
+          <ScalarProperty Name="IdAffaire" ColumnName="IdAffaire" />
+          <ScalarProperty Name="IdTypeProcessus" ColumnName="IdTypeProcessus" />
+          <ScalarProperty Name="Categorie" ColumnName="Categorie" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="DateCreation" ColumnName="DateCreation" />
+          <ScalarProperty Name="DateMAJ" ColumnName="DateMAJ" />
+          <ScalarProperty Name="DataKey" ColumnName="DataKey" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Professions">
+      <EntityTypeMapping TypeName="Inexa.Atlantis.Re.Dal.Profession">
+        <MappingFragment StoreEntitySet="Professions">
+          <ScalarProperty Name="IdProfession" ColumnName="IdProfession" />
+          <ScalarProperty Name="Libelle" ColumnName="libelle" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="DateCreation" ColumnName="DateCreation" />
+          <ScalarProperty Name="DateMAJ" ColumnName="DateMAJ" />
+          <ScalarProperty Name="DataKey" ColumnName="DataKey" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Profils">
+      <EntityTypeMapping TypeName="Inexa.Atlantis.Re.Dal.Profil">
+        <MappingFragment StoreEntitySet="Profils">
+          <ScalarProperty Name="IdProfil" ColumnName="IdProfil" />
+          <ScalarProperty Name="CodeProfil" ColumnName="CodeProfil" />
+          <ScalarProperty Name="Intitule" ColumnName="Intitule" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="DateCreation" ColumnName="DateCreation" />
+          <ScalarProperty Name="DateMaj" ColumnName="DateMaj" />
+          <ScalarProperty Name="DataKey" ColumnName="DataKey" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ProfilFonctionnalites">
+      <EntityTypeMapping TypeName="Inexa.Atlantis.Re.Dal.ProfilFonctionnalite">
+        <MappingFragment StoreEntitySet="ProfilFonctionnalites">
+          <ScalarProperty Name="IdProfilFonctionnalite" ColumnName="IdProfilFonctionnalite" />
+          <ScalarProperty Name="IdProfil" ColumnName="IdProfil" />
+          <ScalarProperty Name="CodeFonctionnalite" ColumnName="CodeFonctionnalite" />
+          <ScalarProperty Name="Autorise" ColumnName="Autorise" />
+          <ScalarProperty Name="DateCreation" ColumnName="DateCreation" />
+          <ScalarProperty Name="DateMAJ" ColumnName="DateMAJ" />
+          <ScalarProperty Name="DataKey" ColumnName="DataKey" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ProfilFonctionnaliteHistos">
+      <EntityTypeMapping TypeName="Inexa.Atlantis.Re.Dal.ProfilFonctionnaliteHisto">
+        <MappingFragment StoreEntitySet="ProfilFonctionnaliteHistos">
+          <ScalarProperty Name="IdProfilFonctionnalite" ColumnName="IdProfilFonctionnalite" />
+          <ScalarProperty Name="IdProfil" ColumnName="IdProfil" />
+          <ScalarProperty Name="CodeFonctionnalite" ColumnName="CodeFonctionnalite" />
+          <ScalarProperty Name="Autorise" ColumnName="Autorise" />
+          <ScalarProperty Name="DateCreation" ColumnName="DateCreation" />
+          <ScalarProperty Name="DateMAJ" ColumnName="DateMAJ" />
+          <ScalarProperty Name="DataKey" ColumnName="DataKey" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Reassureurs">
+      <EntityTypeMapping TypeName="Inexa.Atlantis.Re.Dal.Reassureur">
+        <MappingFragment StoreEntitySet="Reassureurs">
+          <ScalarProperty Name="IdReassureur" ColumnName="IdReassureur" />
+          <ScalarProperty Name="CodeReassureur" ColumnName="CodeReassureur" />
+          <ScalarProperty Name="NomReassureur" ColumnName="NomReassureur" />
+          <ScalarProperty Name="IdPays" ColumnName="IdPays" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="DateCreation" ColumnName="DateCreation" />
+          <ScalarProperty Name="DateMAJ" ColumnName="DateMAJ" />
+          <ScalarProperty Name="DataKey" ColumnName="DataKey" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SchemasPlacements">
+      <EntityTypeMapping TypeName="Inexa.Atlantis.Re.Dal.SchemasPlacement">
+        <MappingFragment StoreEntitySet="SchemasPlacements">
+          <ScalarProperty Name="IdSchemaPlacement" ColumnName="IdSchemaPlacement" />
+          <ScalarProperty Name="Proposition" ColumnName="Proposition" />
+          <ScalarProperty Name="NumeroFiche" ColumnName="NumeroFiche" />
+          <ScalarProperty Name="IdProcessus" ColumnName="IdProcessus" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="DateCreation" ColumnName="DateCreation" />
+          <ScalarProperty Name="DateMAJ" ColumnName="DateMAJ" />
+          <ScalarProperty Name="DataKey" ColumnName="DataKey" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SecteurActivites">
+      <EntityTypeMapping TypeName="Inexa.Atlantis.Re.Dal.SecteurActivite">
+        <MappingFragment StoreEntitySet="SecteurActivites">
+          <ScalarProperty Name="IdDomaineActivite" ColumnName="idDomaineActivite" />
+          <ScalarProperty Name="Libelle" ColumnName="libelle" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="DateCreation" ColumnName="DateCreation" />
+          <ScalarProperty Name="DateMAJ" ColumnName="DateMAJ" />
+          <ScalarProperty Name="DataKey" ColumnName="DataKey" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SituationMatrimoniales">
+      <EntityTypeMapping TypeName="Inexa.Atlantis.Re.Dal.SituationMatrimoniale">
+        <MappingFragment StoreEntitySet="SituationMatrimoniales">
+          <ScalarProperty Name="IdSituationMatrimoniale" ColumnName="IdSituationMatrimoniale" />
+          <ScalarProperty Name="Libelle" ColumnName="libelle" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="DateCreation" ColumnName="DateCreation" />
+          <ScalarProperty Name="DateMAJ" ColumnName="DateMAJ" />
+          <ScalarProperty Name="DataKey" ColumnName="DataKey" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="StatutAffaires">
+      <EntityTypeMapping TypeName="Inexa.Atlantis.Re.Dal.StatutAffaire">
+        <MappingFragment StoreEntitySet="StatutAffaires">
+          <ScalarProperty Name="IdStatutAffaire" ColumnName="IdStatutAffaire" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="Libelle" ColumnName="Libelle" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="DateCreation" ColumnName="DateCreation" />
+          <ScalarProperty Name="DateMAJ" ColumnName="DateMAJ" />
+          <ScalarProperty Name="DataKey" ColumnName="DataKey" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="StatutMouvements">
+      <EntityTypeMapping TypeName="Inexa.Atlantis.Re.Dal.StatutMouvement">
+        <MappingFragment StoreEntitySet="StatutMouvements">
+          <ScalarProperty Name="IdStatutMouvement" ColumnName="IdStatutMouvement" />
+          <ScalarProperty Name="Libelle" ColumnName="Libelle" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="DateCreation" ColumnName="DateCreation" />
+          <ScalarProperty Name="DateMAJ" ColumnName="DateMAJ" />
+          <ScalarProperty Name="DataKey" ColumnName="DataKey" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SuiviProcessus">
+      <EntityTypeMapping TypeName="Inexa.Atlantis.Re.Dal.SuiviProcessu">
+        <MappingFragment StoreEntitySet="SuiviProcessus">
+          <ScalarProperty Name="IdTypeEchange" ColumnName="IdTypeEchange" />
+          <ScalarProperty Name="IdEtapeProcessus" ColumnName="IdEtapeProcessus" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="DateCreation" ColumnName="DateCreation" />
+          <ScalarProperty Name="DateMAJ" ColumnName="DateMAJ" />
+          <ScalarProperty Name="DataKey" ColumnName="DataKey" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SysComplexiteMotDePasses">
+      <EntityTypeMapping TypeName="Inexa.Atlantis.Re.Dal.SysComplexiteMotDePasse">
+        <MappingFragment StoreEntitySet="SysComplexiteMotDePasses">
+          <ScalarProperty Name="IdSysComplexiteMotDePasse" ColumnName="IdSysComplexiteMotDePasse" />
+          <ScalarProperty Name="Code" ColumnName="Code" />
+          <ScalarProperty Name="Libelle" ColumnName="Libelle" />
+          <ScalarProperty Name="DateCreation" ColumnName="DateCreation" />
+          <ScalarProperty Name="DateMAJ" ColumnName="DateMAJ" />
+          <ScalarProperty Name="DataKey" ColumnName="DataKey" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SysLogs">
+      <EntityTypeMapping TypeName="Inexa.Atlantis.Re.Dal.SysLog">
+        <MappingFragment StoreEntitySet="SysLogs">
+          <ScalarProperty Name="IdSysLog" ColumnName="IdSysLog" />
+          <ScalarProperty Name="Entite" ColumnName="Entite" />
+          <ScalarProperty Name="IdEntite" ColumnName="IdEntite" />
+          <ScalarProperty Name="AppMessage" ColumnName="AppMessage" />
+          <ScalarProperty Name="SysMessage" ColumnName="SysMessage" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="DateCreation" ColumnName="DateCreation" />
+          <ScalarProperty Name="DateMAJ" ColumnName="DateMAJ" />
+          <ScalarProperty Name="DataKey" ColumnName="DataKey" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SysMailBoxes">
+      <EntityTypeMapping TypeName="Inexa.Atlantis.Re.Dal.SysMailBox">
+        <MappingFragment StoreEntitySet="SysMailBoxes">
+          <ScalarProperty Name="IdSysMailBox" ColumnName="IdSysMailBox" />
+          <ScalarProperty Name="Entite" ColumnName="Entite" />
+          <ScalarProperty Name="IdEntite" ColumnName="IdEntite" />
+          <ScalarProperty Name="IdMailitem" ColumnName="IdMailitem" />
+          <ScalarProperty Name="Statut" ColumnName="Statut" />
+          <ScalarProperty Name="DateCreation" ColumnName="DateCreation" />
+          <ScalarProperty Name="MailMessage" ColumnName="MailMessage" />
+          <ScalarProperty Name="DateMAJ" ColumnName="DateMAJ" />
+          <ScalarProperty Name="DataKey" ColumnName="DataKey" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SysNotifications">
+      <EntityTypeMapping TypeName="Inexa.Atlantis.Re.Dal.SysNotification">
+        <MappingFragment StoreEntitySet="SysNotifications">
+          <ScalarProperty Name="IdNotification" ColumnName="IdNotification" />
+          <ScalarProperty Name="Titre" ColumnName="Titre" />
+          <ScalarProperty Name="Message" ColumnName="Message" />
+          <ScalarProperty Name="Url" ColumnName="Url" />
+          <ScalarProperty Name="IdUtilisateur" ColumnName="IdUtilisateur" />
+          <ScalarProperty Name="DateCreation" ColumnName="DateCreation" />
+          <ScalarProperty Name="IsClicked" ColumnName="IsClicked" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="DateMAJ" ColumnName="DateMAJ" />
+          <ScalarProperty Name="DataKey" ColumnName="DataKey" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SysObjets">
+      <EntityTypeMapping TypeName="Inexa.Atlantis.Re.Dal.SysObjet">
+        <MappingFragment StoreEntitySet="SysObjets">
+          <ScalarProperty Name="IdSysObjet" ColumnName="IdSysObjet" />
+          <ScalarProperty Name="TypeObjet" ColumnName="TypeObjet" />
+          <ScalarProperty Name="Code" ColumnName="Code" />
+          <ScalarProperty Name="Libelle" ColumnName="Libelle" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="DateCreation" ColumnName="DateCreation" />
+          <ScalarProperty Name="DateMAJ" ColumnName="DateMAJ" />
+          <ScalarProperty Name="DataKey" ColumnName="DataKey" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SysStrategieMotDePasses">
+      <EntityTypeMapping TypeName="Inexa.Atlantis.Re.Dal.SysStrategieMotDePasse">
+        <MappingFragment StoreEntitySet="SysStrategieMotDePasses">
+          <ScalarProperty Name="IdSysStrategieMotDePasse" ColumnName="IdSysStrategieMotDePasse" />
+          <ScalarProperty Name="Libelle" ColumnName="Libelle" />
+          <ScalarProperty Name="LongeurMinimum" ColumnName="LongeurMinimum" />
+          <ScalarProperty Name="DureeDeVie" ColumnName="DureeDeVie" />
+          <ScalarProperty Name="NombreTentativeAvantVerrouillage" ColumnName="NombreTentativeAvantVerrouillage" />
+          <ScalarProperty Name="IdSysComplexiteMotDePasse" ColumnName="IdSysComplexiteMotDePasse" />
+          <ScalarProperty Name="UtiliserAncienMotDePasse" ColumnName="UtiliserAncienMotDePasse" />
+          <ScalarProperty Name="ChangerMotDePasseApresAttribution" ColumnName="ChangerMotDePasseApresAttribution" />
+          <ScalarProperty Name="Actif" ColumnName="Actif" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="DateCreation" ColumnName="DateCreation" />
+          <ScalarProperty Name="DateMaj" ColumnName="DateMaj" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="DataKey" ColumnName="DataKey" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SysStrategieMotDePasseHistos">
+      <EntityTypeMapping TypeName="Inexa.Atlantis.Re.Dal.SysStrategieMotDePasseHisto">
+        <MappingFragment StoreEntitySet="SysStrategieMotDePasseHistos">
+          <ScalarProperty Name="IdSysStrategieMotDePasseHisto" ColumnName="IdSysStrategieMotDePasseHisto" />
+          <ScalarProperty Name="IdSysStrategieMotDePasse" ColumnName="IdSysStrategieMotDePasse" />
+          <ScalarProperty Name="Libelle" ColumnName="Libelle" />
+          <ScalarProperty Name="LongeurMinimum" ColumnName="LongeurMinimum" />
+          <ScalarProperty Name="DureeDeVie" ColumnName="DureeDeVie" />
+          <ScalarProperty Name="NombreTentativeAvantVerrouillage" ColumnName="NombreTentativeAvantVerrouillage" />
+          <ScalarProperty Name="IdSysComplexiteMotDePasse" ColumnName="IdSysComplexiteMotDePasse" />
+          <ScalarProperty Name="UtiliserAncienMotDePasse" ColumnName="UtiliserAncienMotDePasse" />
+          <ScalarProperty Name="ChangerMotDePasseApresAttribution" ColumnName="ChangerMotDePasseApresAttribution" />
+          <ScalarProperty Name="Actif" ColumnName="Actif" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="DateCreation" ColumnName="DateCreation" />
+          <ScalarProperty Name="DateMaj" ColumnName="DateMaj" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="Temps" ColumnName="Temps" />
+          <ScalarProperty Name="DataKey" ColumnName="DataKey" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TableauRepartitionCharges">
+      <EntityTypeMapping TypeName="Inexa.Atlantis.Re.Dal.TableauRepartitionCharge">
+        <MappingFragment StoreEntitySet="TableauRepartitionCharges">
+          <ScalarProperty Name="IdTableauRepartitionCharge" ColumnName="IdTableauRepartitionCharge" />
+          <ScalarProperty Name="NumeroFiche" ColumnName="NumeroFiche" />
+          <ScalarProperty Name="Proposition" ColumnName="Proposition" />
+          <ScalarProperty Name="IdProcessus" ColumnName="IdProcessus" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="DateCreation" ColumnName="DateCreation" />
+          <ScalarProperty Name="DateMAJ" ColumnName="DateMAJ" />
+          <ScalarProperty Name="DataKey" ColumnName="DataKey" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Termes">
+      <EntityTypeMapping TypeName="Inexa.Atlantis.Re.Dal.Terme">
+        <MappingFragment StoreEntitySet="Termes">
+          <ScalarProperty Name="IdTerme" ColumnName="IdTerme" />
+          <ScalarProperty Name="LimiteSouscription" ColumnName="LimiteSouscription" />
+          <ScalarProperty Name="Exclusion" ColumnName="Exclusion" />
+          <ScalarProperty Name="Taux" ColumnName="Taux" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="DateCreation" ColumnName="DateCreation" />
+          <ScalarProperty Name="DateMAJ" ColumnName="DateMAJ" />
+          <ScalarProperty Name="DataKey" ColumnName="DataKey" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TermeTraites">
+      <EntityTypeMapping TypeName="Inexa.Atlantis.Re.Dal.TermeTraite">
+        <MappingFragment StoreEntitySet="TermeTraites">
+          <ScalarProperty Name="IdTermeTraite" ColumnName="IdTermeTraite" />
+          <ScalarProperty Name="IdTraite" ColumnName="IdTraite" />
+          <ScalarProperty Name="IdTerme" ColumnName="IdTerme" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="DateCreation" ColumnName="DateCreation" />
+          <ScalarProperty Name="DateMAJ" ColumnName="DateMAJ" />
+          <ScalarProperty Name="DataKey" ColumnName="DataKey" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Traces">
+      <EntityTypeMapping TypeName="Inexa.Atlantis.Re.Dal.Trace">
+        <MappingFragment StoreEntitySet="Traces">
+          <ScalarProperty Name="IdTrace" ColumnName="IdTrace" />
+          <ScalarProperty Name="IdStructure" ColumnName="IdStructure" />
+          <ScalarProperty Name="IdUtilisateur" ColumnName="IdUtilisateur" />
+          <ScalarProperty Name="DateOperation" ColumnName="DateOperation" />
+          <ScalarProperty Name="HeureOperation" ColumnName="HeureOperation" />
+          <ScalarProperty Name="DateSysteme" ColumnName="DateSysteme" />
+          <ScalarProperty Name="HeureSysteme" ColumnName="HeureSysteme" />
+          <ScalarProperty Name="IdTypeOperation" ColumnName="IdTypeOperation" />
+          <ScalarProperty Name="CodeOperation" ColumnName="CodeOperation" />
+          <ScalarProperty Name="Origine" ColumnName="Origine" />
+          <ScalarProperty Name="IdOrigine" ColumnName="IdOrigine" />
+          <ScalarProperty Name="IdFormulaire" ColumnName="IdFormulaire" />
+          <ScalarProperty Name="CodeFormulaire" ColumnName="CodeFormulaire" />
+          <ScalarProperty Name="LibelleOperation" ColumnName="LibelleOperation" />
+          <ScalarProperty Name="DateCreation" ColumnName="DateCreation" />
+          <ScalarProperty Name="DateMAJ" ColumnName="DateMAJ" />
+          <ScalarProperty Name="DataKey" ColumnName="DataKey" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Traites">
+      <EntityTypeMapping TypeName="Inexa.Atlantis.Re.Dal.Traite">
+        <MappingFragment StoreEntitySet="Traites">
+          <ScalarProperty Name="IdTraite" ColumnName="IdTraite" />
+          <ScalarProperty Name="Libelle" ColumnName="Libelle" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="NatureActivite" ColumnName="NatureActivite" />
+          <ScalarProperty Name="IdBranche" ColumnName="IdBranche" />
+          <ScalarProperty Name="IdReassureur" ColumnName="IdReassureur" />
+          <ScalarProperty Name="IdStructure" ColumnName="IdStructure" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="DateCreation" ColumnName="DateCreation" />
+          <ScalarProperty Name="DateMAJ" ColumnName="DateMAJ" />
+          <ScalarProperty Name="DataKey" ColumnName="DataKey" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TypeEchanges">
+      <EntityTypeMapping TypeName="Inexa.Atlantis.Re.Dal.TypeEchange">
+        <MappingFragment StoreEntitySet="TypeEchanges">
+          <ScalarProperty Name="IdTypeEchange" ColumnName="IdTypeEchange" />
+          <ScalarProperty Name="Libelle" ColumnName="Libelle" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="DateCreation" ColumnName="DateCreation" />
+          <ScalarProperty Name="DateMAJ" ColumnName="DateMAJ" />
+          <ScalarProperty Name="DataKey" ColumnName="DataKey" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TypePersonnes">
+      <EntityTypeMapping TypeName="Inexa.Atlantis.Re.Dal.TypePersonne">
+        <MappingFragment StoreEntitySet="TypePersonnes">
+          <ScalarProperty Name="IdTypePersonne" ColumnName="IdTypePersonne" />
+          <ScalarProperty Name="LibelleTypePersonne" ColumnName="LibelleTypePersonne" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="DateCreation" ColumnName="DateCreation" />
+          <ScalarProperty Name="DateMAJ" ColumnName="DateMAJ" />
+          <ScalarProperty Name="DataKey" ColumnName="DataKey" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TypeProcessus">
+      <EntityTypeMapping TypeName="Inexa.Atlantis.Re.Dal.TypeProcessu">
+        <MappingFragment StoreEntitySet="TypeProcessus">
+          <ScalarProperty Name="IdTypeProcessus" ColumnName="IdTypeProcessus" />
+          <ScalarProperty Name="Libelle" ColumnName="Libelle" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="DateCreation" ColumnName="DateCreation" />
+          <ScalarProperty Name="DateMAJ" ColumnName="DateMAJ" />
+          <ScalarProperty Name="DataKey" ColumnName="DataKey" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Utilisateurs">
+      <EntityTypeMapping TypeName="Inexa.Atlantis.Re.Dal.Utilisateur">
+        <MappingFragment StoreEntitySet="Utilisateurs">
+          <ScalarProperty Name="IdUtilisateur" ColumnName="IdUtilisateur" />
+          <ScalarProperty Name="Login" ColumnName="Login" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+          <ScalarProperty Name="Nom" ColumnName="Nom" />
+          <ScalarProperty Name="Prenom" ColumnName="Prenom" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="Telephone" ColumnName="Telephone" />
+          <ScalarProperty Name="Adresse" ColumnName="Adresse" />
+          <ScalarProperty Name="Photo" ColumnName="Photo" />
+          <ScalarProperty Name="VoirCompteSensible" ColumnName="VoirCompteSensible" />
+          <ScalarProperty Name="ChangeLogin" ColumnName="ChangeLogin" />
+          <ScalarProperty Name="ChangePassword" ColumnName="ChangePassword" />
+          <ScalarProperty Name="TimeSession" ColumnName="TimeSession" />
+          <ScalarProperty Name="Actif" ColumnName="Actif" />
+          <ScalarProperty Name="IsConnected" ColumnName="IsConnected" />
+          <ScalarProperty Name="ComptePermanent" ColumnName="ComptePermanent" />
+          <ScalarProperty Name="DateDebutValidite" ColumnName="DateDebutValidite" />
+          <ScalarProperty Name="DateFinValidite" ColumnName="DateFinValidite" />
+          <ScalarProperty Name="RecevoirMail" ColumnName="RecevoirMail" />
+          <ScalarProperty Name="RecevoirMailSysteme" ColumnName="RecevoirMailSysteme" />
+          <ScalarProperty Name="IdProfil" ColumnName="IdProfil" />
+          <ScalarProperty Name="CanApplySingleSession" ColumnName="CanApplySingleSession" />
+          <ScalarProperty Name="IsOldUser" ColumnName="IsOldUser" />
+          <ScalarProperty Name="IsWindowAccount" ColumnName="IsWindowAccount" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="DateCreation" ColumnName="DateCreation" />
+          <ScalarProperty Name="DateMaj" ColumnName="DateMaj" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="IdStructure" ColumnName="IdStructure" />
+          <ScalarProperty Name="TentativeConnexion" ColumnName="TentativeConnexion" />
+          <ScalarProperty Name="DateDebutValiditePassword" ColumnName="DateDebutValiditePassword" />
+          <ScalarProperty Name="DateFinValiditePassword" ColumnName="DateFinValiditePassword" />
+          <ScalarProperty Name="UserSageCode" ColumnName="UserSageCode" />
+          <ScalarProperty Name="DataKey" ColumnName="DataKey" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UtilisateurFonctionnalites">
+      <EntityTypeMapping TypeName="Inexa.Atlantis.Re.Dal.UtilisateurFonctionnalite">
+        <MappingFragment StoreEntitySet="UtilisateurFonctionnalites">
+          <ScalarProperty Name="IdUtilisateurFonctionnalite" ColumnName="IdUtilisateurFonctionnalite" />
+          <ScalarProperty Name="IdUtilisateur" ColumnName="IdUtilisateur" />
+          <ScalarProperty Name="CodeFonctionnalite" ColumnName="CodeFonctionnalite" />
+          <ScalarProperty Name="Autorise" ColumnName="Autorise" />
+          <ScalarProperty Name="DateCreation" ColumnName="DateCreation" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="DateMAJ" ColumnName="DateMAJ" />
+          <ScalarProperty Name="DataKey" ColumnName="DataKey" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UtilisateurFonctionnaliteHistos">
+      <EntityTypeMapping TypeName="Inexa.Atlantis.Re.Dal.UtilisateurFonctionnaliteHisto">
+        <MappingFragment StoreEntitySet="UtilisateurFonctionnaliteHistos">
+          <ScalarProperty Name="IdUtilisateurFonctionnalite" ColumnName="IdUtilisateurFonctionnalite" />
+          <ScalarProperty Name="IdUtilisateur" ColumnName="IdUtilisateur" />
+          <ScalarProperty Name="CodeFonctionnalite" ColumnName="CodeFonctionnalite" />
+          <ScalarProperty Name="Autorise" ColumnName="Autorise" />
+          <ScalarProperty Name="DateCreation" ColumnName="DateCreation" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="DateMAJ" ColumnName="DateMAJ" />
+          <ScalarProperty Name="DataKey" ColumnName="DataKey" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UtilisateurFonctionnalitePrives">
+      <EntityTypeMapping TypeName="Inexa.Atlantis.Re.Dal.UtilisateurFonctionnalitePrive">
+        <MappingFragment StoreEntitySet="UtilisateurFonctionnalitePrives">
+          <ScalarProperty Name="IdUtilisateurFonctionnalitePrive" ColumnName="IdUtilisateurFonctionnalitePrive" />
+          <ScalarProperty Name="IdUtilisateur" ColumnName="IdUtilisateur" />
+          <ScalarProperty Name="CodeFonctionnalite" ColumnName="CodeFonctionnalite" />
+          <ScalarProperty Name="Autorise" ColumnName="Autorise" />
+          <ScalarProperty Name="DateCreation" ColumnName="DateCreation" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="DateMAJ" ColumnName="DateMAJ" />
+          <ScalarProperty Name="DataKey" ColumnName="DataKey" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UtilisateurFonctionnalitePriveHistos">
+      <EntityTypeMapping TypeName="Inexa.Atlantis.Re.Dal.UtilisateurFonctionnalitePriveHisto">
+        <MappingFragment StoreEntitySet="UtilisateurFonctionnalitePriveHistos">
+          <ScalarProperty Name="IdUtilisateurFonctionnalitePrive" ColumnName="IdUtilisateurFonctionnalitePrive" />
+          <ScalarProperty Name="IdUtilisateur" ColumnName="IdUtilisateur" />
+          <ScalarProperty Name="CodeFonctionnalite" ColumnName="CodeFonctionnalite" />
+          <ScalarProperty Name="Autorise" ColumnName="Autorise" />
+          <ScalarProperty Name="DateCreation" ColumnName="DateCreation" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="DateMAJ" ColumnName="DateMAJ" />
+          <ScalarProperty Name="DataKey" ColumnName="DataKey" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UtilisateurHistos">
+      <EntityTypeMapping TypeName="Inexa.Atlantis.Re.Dal.UtilisateurHisto">
+        <MappingFragment StoreEntitySet="UtilisateurHistos">
+          <ScalarProperty Name="IdUtilisateurHisto" ColumnName="IdUtilisateurHisto" />
+          <ScalarProperty Name="IdUtilisateur" ColumnName="IdUtilisateur" />
+          <ScalarProperty Name="Login" ColumnName="Login" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+          <ScalarProperty Name="Nom" ColumnName="Nom" />
+          <ScalarProperty Name="Prenom" ColumnName="Prenom" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="Telephone" ColumnName="Telephone" />
+          <ScalarProperty Name="Adresse" ColumnName="Adresse" />
+          <ScalarProperty Name="Photo" ColumnName="Photo" />
+          <ScalarProperty Name="VoirCompteSensible" ColumnName="VoirCompteSensible" />
+          <ScalarProperty Name="ChangeLogin" ColumnName="ChangeLogin" />
+          <ScalarProperty Name="ChangePassword" ColumnName="ChangePassword" />
+          <ScalarProperty Name="TimeSession" ColumnName="TimeSession" />
+          <ScalarProperty Name="Actif" ColumnName="Actif" />
+          <ScalarProperty Name="IsConnected" ColumnName="IsConnected" />
+          <ScalarProperty Name="ComptePermanent" ColumnName="ComptePermanent" />
+          <ScalarProperty Name="DateDebutValidite" ColumnName="DateDebutValidite" />
+          <ScalarProperty Name="DateFinValidite" ColumnName="DateFinValidite" />
+          <ScalarProperty Name="RecevoirMail" ColumnName="RecevoirMail" />
+          <ScalarProperty Name="RecevoirMailSysteme" ColumnName="RecevoirMailSysteme" />
+          <ScalarProperty Name="IdProfil" ColumnName="IdProfil" />
+          <ScalarProperty Name="CanApplySingleSession" ColumnName="CanApplySingleSession" />
+          <ScalarProperty Name="IsOldUser" ColumnName="IsOldUser" />
+          <ScalarProperty Name="IsWindowAccount" ColumnName="IsWindowAccount" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="DateCreation" ColumnName="DateCreation" />
+          <ScalarProperty Name="DateMaj" ColumnName="DateMaj" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="IdStructure" ColumnName="IdStructure" />
+          <ScalarProperty Name="TentativeConnexion" ColumnName="TentativeConnexion" />
+          <ScalarProperty Name="DateDebutValiditePassword" ColumnName="DateDebutValiditePassword" />
+          <ScalarProperty Name="DateFinValiditePassword" ColumnName="DateFinValiditePassword" />
+          <ScalarProperty Name="UserSageCode" ColumnName="UserSageCode" />
+          <ScalarProperty Name="DataKey" ColumnName="DataKey" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UtilisateurProfils">
+      <EntityTypeMapping TypeName="Inexa.Atlantis.Re.Dal.UtilisateurProfil">
+        <MappingFragment StoreEntitySet="UtilisateurProfils">
+          <ScalarProperty Name="IdUtilisateurProfil" ColumnName="IdUtilisateurProfil" />
+          <ScalarProperty Name="IdUtilisateur" ColumnName="IdUtilisateur" />
+          <ScalarProperty Name="IdProfil" ColumnName="IdProfil" />
+          <ScalarProperty Name="DateValiditeDebut" ColumnName="DateValiditeDebut" />
+          <ScalarProperty Name="DateValiditeFin" ColumnName="DateValiditeFin" />
+          <ScalarProperty Name="DateFinIndeterminer" ColumnName="DateFinIndeterminer" />
+          <ScalarProperty Name="Autorise" ColumnName="Autorise" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="DateCreation" ColumnName="DateCreation" />
+          <ScalarProperty Name="DateMaj" ColumnName="DateMaj" />
+          <ScalarProperty Name="DataKey" ColumnName="DataKey" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UtilisateurProfilHistos">
+      <EntityTypeMapping TypeName="Inexa.Atlantis.Re.Dal.UtilisateurProfilHisto">
+        <MappingFragment StoreEntitySet="UtilisateurProfilHistos">
+          <ScalarProperty Name="IdUtilisateurProfil" ColumnName="IdUtilisateurProfil" />
+          <ScalarProperty Name="IdUtilisateur" ColumnName="IdUtilisateur" />
+          <ScalarProperty Name="IdProfil" ColumnName="IdProfil" />
+          <ScalarProperty Name="DateValiditeDebut" ColumnName="DateValiditeDebut" />
+          <ScalarProperty Name="DateValiditeFin" ColumnName="DateValiditeFin" />
+          <ScalarProperty Name="DateFinIndeterminer" ColumnName="DateFinIndeterminer" />
+          <ScalarProperty Name="Autorise" ColumnName="Autorise" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="DateCreation" ColumnName="DateCreation" />
+          <ScalarProperty Name="DateMaj" ColumnName="DateMaj" />
+          <ScalarProperty Name="DataKey" ColumnName="DataKey" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UtilisateurRestrictions">
+      <EntityTypeMapping TypeName="Inexa.Atlantis.Re.Dal.UtilisateurRestriction">
+        <MappingFragment StoreEntitySet="UtilisateurRestrictions">
+          <ScalarProperty Name="IdUtilisateurRestriction" ColumnName="IdUtilisateurRestriction" />
+          <ScalarProperty Name="IdUtilisateur" ColumnName="IdUtilisateur" />
+          <ScalarProperty Name="IdSysObjet" ColumnName="IdSysObjet" />
+          <ScalarProperty Name="DateCreation" ColumnName="DateCreation" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="DateMAJ" ColumnName="DateMAJ" />
+          <ScalarProperty Name="DataKey" ColumnName="DataKey" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UtilisateurRestrictionHistos">
+      <EntityTypeMapping TypeName="Inexa.Atlantis.Re.Dal.UtilisateurRestrictionHisto">
+        <MappingFragment StoreEntitySet="UtilisateurRestrictionHistos">
+          <ScalarProperty Name="IdUtilisateurRestrictionHisto" ColumnName="IdUtilisateurRestrictionHisto" />
+          <ScalarProperty Name="IdUtilisateurRestriction" ColumnName="IdUtilisateurRestriction" />
+          <ScalarProperty Name="IdUtilisateur" ColumnName="IdUtilisateur" />
+          <ScalarProperty Name="IdSysObjet" ColumnName="IdSysObjet" />
+          <ScalarProperty Name="DateCreation" ColumnName="DateCreation" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="DateMAJ" ColumnName="DateMAJ" />
+          <ScalarProperty Name="DataKey" ColumnName="DataKey" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UtilisateurSessions">
+      <EntityTypeMapping TypeName="Inexa.Atlantis.Re.Dal.UtilisateurSession">
+        <MappingFragment StoreEntitySet="UtilisateurSessions">
+          <ScalarProperty Name="IdUtilisateurSession" ColumnName="IdUtilisateurSession" />
+          <ScalarProperty Name="IdUtilisateur" ColumnName="IdUtilisateur" />
+          <ScalarProperty Name="TimeSession" ColumnName="TimeSession" />
+          <ScalarProperty Name="IsConnected" ColumnName="IsConnected" />
+          <ScalarProperty Name="DateLastConnection" ColumnName="DateLastConnection" />
+          <ScalarProperty Name="DateLastActivity" ColumnName="DateLastActivity" />
+          <ScalarProperty Name="DateCreation" ColumnName="DateCreation" />
+          <ScalarProperty Name="DateMaj" ColumnName="DateMaj" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="DataKey" ColumnName="DataKey" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ViewSysStrategieMotDePasses">
+      <EntityTypeMapping TypeName="Inexa.Atlantis.Re.Dal.ViewSysStrategieMotDePasse">
+        <MappingFragment StoreEntitySet="ViewSysStrategieMotDePasses">
+          <ScalarProperty Name="IdSysStrategieMotDePasse" ColumnName="IdSysStrategieMotDePasse" />
+          <ScalarProperty Name="Libelle" ColumnName="Libelle" />
+          <ScalarProperty Name="LongeurMinimum" ColumnName="LongeurMinimum" />
+          <ScalarProperty Name="DureeDeVie" ColumnName="DureeDeVie" />
+          <ScalarProperty Name="NombreTentativeAvantVerrouillage" ColumnName="NombreTentativeAvantVerrouillage" />
+          <ScalarProperty Name="IdSysComplexiteMotDePasse" ColumnName="IdSysComplexiteMotDePasse" />
+          <ScalarProperty Name="LibelleComplexite" ColumnName="LibelleComplexite" />
+          <ScalarProperty Name="UtiliserAncienMotDePasse" ColumnName="UtiliserAncienMotDePasse" />
+          <ScalarProperty Name="ChangerMotDePasseApresAttribution" ColumnName="ChangerMotDePasseApresAttribution" />
+          <ScalarProperty Name="Actif" ColumnName="Actif" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="DateCreation" ColumnName="DateCreation" />
+          <ScalarProperty Name="DateMaj" ColumnName="DateMaj" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="Code" ColumnName="Code" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ViewUtilisateurs">
+      <EntityTypeMapping TypeName="Inexa.Atlantis.Re.Dal.ViewUtilisateur">
+        <MappingFragment StoreEntitySet="ViewUtilisateurs">
+          <ScalarProperty Name="IdUtilisateur" ColumnName="IdUtilisateur" />
+          <ScalarProperty Name="Login" ColumnName="Login" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+          <ScalarProperty Name="TimeSession" ColumnName="TimeSession" />
+          <ScalarProperty Name="Actif" ColumnName="Actif" />
+          <ScalarProperty Name="IsWindowAccount" ColumnName="IsWindowAccount" />
+          <ScalarProperty Name="CanApplySingleSession" ColumnName="CanApplySingleSession" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="DateMaj" ColumnName="DateMaj" />
+          <ScalarProperty Name="DateCreation" ColumnName="DateCreation" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="Adresse" ColumnName="Adresse" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="Telephone" ColumnName="Telephone" />
+          <ScalarProperty Name="NomUtilisateur" ColumnName="NomUtilisateur" />
+          <ScalarProperty Name="Photo" ColumnName="Photo" />
+          <ScalarProperty Name="VoirCompteSensible" ColumnName="VoirCompteSensible" />
+          <ScalarProperty Name="IsOldUser" ColumnName="IsOldUser" />
+          <ScalarProperty Name="Nom" ColumnName="Nom" />
+          <ScalarProperty Name="Prenom" ColumnName="Prenom" />
+          <ScalarProperty Name="IsConnected" ColumnName="IsConnected" />
+          <ScalarProperty Name="ComptePermanent" ColumnName="ComptePermanent" />
+          <ScalarProperty Name="DateDebutValidite" ColumnName="DateDebutValidite" />
+          <ScalarProperty Name="DateFinValidite" ColumnName="DateFinValidite" />
+          <ScalarProperty Name="ChangeLogin" ColumnName="ChangeLogin" />
+          <ScalarProperty Name="ChangePassword" ColumnName="ChangePassword" />
+          <ScalarProperty Name="IdProfil" ColumnName="IdProfil" />
+          <ScalarProperty Name="IdStructure" ColumnName="IdStructure" />
+          <ScalarProperty Name="RecevoirMail" ColumnName="RecevoirMail" />
+          <ScalarProperty Name="RecevoirMailSysteme" ColumnName="RecevoirMailSysteme" />
+          <ScalarProperty Name="TentativeConnexion" ColumnName="TentativeConnexion" />
+          <ScalarProperty Name="DateDebutValiditePassword" ColumnName="DateDebutValiditePassword" />
+          <ScalarProperty Name="DateFinValiditePassword" ColumnName="DateFinValiditePassword" />
+          <ScalarProperty Name="UserSageCode" ColumnName="UserSageCode" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ViewUtilisateurProfils">
+      <EntityTypeMapping TypeName="Inexa.Atlantis.Re.Dal.ViewUtilisateurProfil">
+        <MappingFragment StoreEntitySet="ViewUtilisateurProfils">
+          <ScalarProperty Name="IdUtilisateurProfil" ColumnName="IdUtilisateurProfil" />
+          <ScalarProperty Name="IdUtilisateur" ColumnName="IdUtilisateur" />
+          <ScalarProperty Name="NomUtilisateur" ColumnName="NomUtilisateur" />
+          <ScalarProperty Name="IdProfil" ColumnName="IdProfil" />
+          <ScalarProperty Name="Intitule" ColumnName="Intitule" />
+          <ScalarProperty Name="DateValiditeDebut" ColumnName="DateValiditeDebut" />
+          <ScalarProperty Name="DateValiditeFin" ColumnName="DateValiditeFin" />
+          <ScalarProperty Name="DateFinIndeterminer" ColumnName="DateFinIndeterminer" />
+          <ScalarProperty Name="Autorise" ColumnName="Autorise" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="DateCreation" ColumnName="DateCreation" />
+          <ScalarProperty Name="DateMaj" ColumnName="DateMaj" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ViewUtilisateurRestrictions">
+      <EntityTypeMapping TypeName="Inexa.Atlantis.Re.Dal.ViewUtilisateurRestriction">
+        <MappingFragment StoreEntitySet="ViewUtilisateurRestrictions">
+          <ScalarProperty Name="IdUtilisateurRestriction" ColumnName="IdUtilisateurRestriction" />
+          <ScalarProperty Name="IdUtilisateur" ColumnName="IdUtilisateur" />
+          <ScalarProperty Name="Login" ColumnName="Login" />
+          <ScalarProperty Name="Nom" ColumnName="Nom" />
+          <ScalarProperty Name="Prenom" ColumnName="Prenom" />
+          <ScalarProperty Name="IdSysObjet" ColumnName="IdSysObjet" />
+          <ScalarProperty Name="TypeObjet" ColumnName="TypeObjet" />
+          <ScalarProperty Name="Code" ColumnName="Code" />
+          <ScalarProperty Name="Libelle" ColumnName="Libelle" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="Autorise" ColumnName="Autorise" />
+          <ScalarProperty Name="DateCreation" ColumnName="DateCreation" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Structures">
+      <EntityTypeMapping TypeName="Inexa.Atlantis.Re.Dal.Structure">
+        <MappingFragment StoreEntitySet="Structures">
+          <ScalarProperty Name="IdStructure" ColumnName="idStructure" />
+          <ScalarProperty Name="RaisonSocialeStructure" ColumnName="raisonSocialeStructure" />
+          <ScalarProperty Name="DecretCreation" ColumnName="decretCreation" />
+          <ScalarProperty Name="NumeroAgrement" ColumnName="numeroAgrement" />
+          <ScalarProperty Name="IdDevise" ColumnName="idDevise" />
+          <ScalarProperty Name="CapitalSocial" ColumnName="capitalSocial" />
+          <ScalarProperty Name="IdPays" ColumnName="idPays" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="DateMAJ" ColumnName="DateMAJ" />
+          <ScalarProperty Name="DataKey" ColumnName="DataKey" />
+          <ScalarProperty Name="DateCreation1" ColumnName="dateCreation" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Civilites">
+      <EntityTypeMapping TypeName="Inexa.Atlantis.Re.Dal.Civilite">
+        <MappingFragment StoreEntitySet="Civilites">
+          <ScalarProperty Name="IdCivilite" ColumnName="IdCivilite" />
+          <ScalarProperty Name="Libelle" ColumnName="Libelle" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="DateCreation" ColumnName="DateCreation" />
+          <ScalarProperty Name="DateMAJ" ColumnName="DateMAJ" />
+          <ScalarProperty Name="DataKey" ColumnName="DataKey" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TypePieceIdentites">
+      <EntityTypeMapping TypeName="Inexa.Atlantis.Re.Dal.TypePieceIdentite">
+        <MappingFragment StoreEntitySet="TypePieceIdentites">
+          <ScalarProperty Name="IdTypePieceIdentite" ColumnName="IdTypePieceIdentite" />
+          <ScalarProperty Name="Libelle" ColumnName="Libelle" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="DateCreation" ColumnName="DateCreation" />
+          <ScalarProperty Name="DateMAJ" ColumnName="DateMAJ" />
+          <ScalarProperty Name="DataKey" ColumnName="DataKey" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CategorieProcessus">
+      <EntityTypeMapping TypeName="Inexa.Atlantis.Re.Dal.CategorieProcessu">
+        <MappingFragment StoreEntitySet="CategorieProcessus">
+          <ScalarProperty Name="IdCategorieProcessus" ColumnName="IdCategorieProcessus" />
+          <ScalarProperty Name="Libelle" ColumnName="Libelle" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="DateCreation" ColumnName="DateCreation" />
+          <ScalarProperty Name="DateMAJ" ColumnName="DateMAJ" />
+          <ScalarProperty Name="DataKey" ColumnName="DataKey" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

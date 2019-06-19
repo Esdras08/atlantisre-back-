@@ -1,0 +1,12 @@
+D:\dev\AtlantisRE\Inexa.Atlantis.Re.Commons\bin\Debug\Inexa.Atlantis.Re.Commons.dll
+D:\dev\AtlantisRE\Inexa.Atlantis.Re.Commons\bin\Debug\Inexa.Atlantis.Re.Commons.pdb
+D:\dev\AtlantisRE\Inexa.Atlantis.Re.Commons\bin\Debug\log4net.dll
+D:\dev\AtlantisRE\Inexa.Atlantis.Re.Commons\bin\Debug\Newtonsoft.Json.dll
+D:\dev\AtlantisRE\Inexa.Atlantis.Re.Commons\bin\Debug\YAXLib.dll
+D:\dev\AtlantisRE\Inexa.Atlantis.Re.Commons\bin\Debug\log4net.xml
+D:\dev\AtlantisRE\Inexa.Atlantis.Re.Commons\bin\Debug\Newtonsoft.Json.xml
+D:\dev\AtlantisRE\Inexa.Atlantis.Re.Commons\bin\Debug\YAXLib.pdb
+D:\dev\AtlantisRE\Inexa.Atlantis.Re.Commons\bin\Debug\YAXLib.xml
+D:\dev\AtlantisRE\Inexa.Atlantis.Re.Commons\obj\Debug\Inexa.Atlantis.Re.Commons.dll
+D:\dev\AtlantisRE\Inexa.Atlantis.Re.Commons\obj\Debug\Inexa.Atlantis.Re.Commons.pdb
+D:\dev\AtlantisRE\Inexa.Atlantis.Re.Commons\obj\Debug\Inexa.Atlantis.Re.Commons.csprojResolveAssemblyReference.cache
